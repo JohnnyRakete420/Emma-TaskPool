@@ -25,10 +25,10 @@ public partial class App : System.Windows.Application
     private readonly HashSet<int> _bekannteAbgeschlossenenIds = [];
 
     private Forms.NotifyIcon? _notifyIcon;
-    private Forms.ToolStripMenuItem? _autostartMenuItem;
     private ProzessAuswahlWindow? _prozessFenster;
     private WiederkehrendePlaeneWindow? _plaeneFenster;
     private VerlaufWindow? _verlaufFenster;
+    private EinstellungenWindow? _einstellungenFenster;
     private DispatcherTimer? _benachrichtigungsTimer;
 
     protected override void OnStartup(StartupEventArgs e)
@@ -46,19 +46,12 @@ public partial class App : System.Windows.Application
             args.Handled = true;
         };
 
-        _autostartMenuItem = new Forms.ToolStripMenuItem("Beim Anmelden starten")
-        {
-            CheckOnClick = true,
-            Checked = IstAutostartAktiv()
-        };
-        _autostartMenuItem.Click += (_, _) => SetzeAutostart(_autostartMenuItem.Checked);
-
         var menu = new Forms.ContextMenuStrip();
         menu.Items.Add("Prozess auswählen...", null, (_, _) => ZeigeProzessFenster());
         menu.Items.Add("Wiederkehrende Pläne verwalten...", null, (_, _) => ZeigePlaeneFenster());
         menu.Items.Add("Verlauf & Übersicht...", null, (_, _) => ZeigeVerlaufFenster());
         menu.Items.Add(new Forms.ToolStripSeparator());
-        menu.Items.Add(_autostartMenuItem);
+        menu.Items.Add("Einstellungen...", null, (_, _) => ZeigeEinstellungenFenster());
         menu.Items.Add(new Forms.ToolStripSeparator());
         menu.Items.Add("Beenden", null, (_, _) => BeendenAnwendung());
 
@@ -106,13 +99,22 @@ public partial class App : System.Windows.Application
         _verlaufFenster.Activate();
     }
 
-    private static bool IstAutostartAktiv()
+    private void ZeigeEinstellungenFenster()
+    {
+        if (_einstellungenFenster is null || !_einstellungenFenster.IsLoaded)
+            _einstellungenFenster = new EinstellungenWindow();
+
+        _einstellungenFenster.Show();
+        _einstellungenFenster.Activate();
+    }
+
+    internal static bool IstAutostartAktiv()
     {
         using var key = Registry.CurrentUser.OpenSubKey(AutostartRegistryPfad, writable: false);
         return key?.GetValue(AutostartName) is not null;
     }
 
-    private static void SetzeAutostart(bool aktiv)
+    internal static void SetzeAutostart(bool aktiv)
     {
         using var key = Registry.CurrentUser.OpenSubKey(AutostartRegistryPfad, writable: true);
         if (key is null)
@@ -156,10 +158,11 @@ public partial class App : System.Windows.Application
         {
             var erledigte = await _api.GetAufgabenAsync(AufgabeStatus.Erledigt);
             var fehlgeschlagene = await _api.GetAufgabenAsync(AufgabeStatus.Fehlgeschlagen);
+            var benachrichtigungenAktiv = LokaleEinstellungen.Lade().BenachrichtigungenAktiv;
 
             foreach (var aufgabe in erledigte.Where(a => a.ErstelltVon == Environment.UserName))
             {
-                if (_bekannteAbgeschlossenenIds.Add(aufgabe.Id))
+                if (_bekannteAbgeschlossenenIds.Add(aufgabe.Id) && benachrichtigungenAktiv)
                 {
                     _notifyIcon!.BalloonTipIcon = Forms.ToolTipIcon.Info;
                     _notifyIcon.BalloonTipTitle = "EMMA hat eine Aufgabe erledigt";
@@ -170,7 +173,7 @@ public partial class App : System.Windows.Application
 
             foreach (var aufgabe in fehlgeschlagene.Where(a => a.ErstelltVon == Environment.UserName))
             {
-                if (_bekannteAbgeschlossenenIds.Add(aufgabe.Id))
+                if (_bekannteAbgeschlossenenIds.Add(aufgabe.Id) && benachrichtigungenAktiv)
                 {
                     _notifyIcon!.BalloonTipIcon = Forms.ToolTipIcon.Warning;
                     _notifyIcon.BalloonTipTitle = "EMMA konnte eine Aufgabe nicht abschließen";

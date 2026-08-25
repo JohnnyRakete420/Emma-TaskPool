@@ -28,6 +28,12 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.6.0
+- Neues **Einstellungen**-Fenster (Rechtsklick auf das Tray-Symbol → "Einstellungen..."), lokal pro Rechner:
+  - "Beim Anmelden starten" (vorher direkt im Kontextmenü, jetzt hierher verschoben)
+  - Benachrichtigungen an/aus (die Windows-Sprechblasen bei Erfolg/Fehlschlag lassen sich jetzt abschalten)
+  - Anzeige der installierten Version
+
 ### 1.5.0
 - Neue Eingabetypen im Formular: Dropdown- und Häkchen-Felder werden jetzt automatisch mit dem passenden Steuerelement angezeigt (statt für jedes Feld nur eine Textbox)
 

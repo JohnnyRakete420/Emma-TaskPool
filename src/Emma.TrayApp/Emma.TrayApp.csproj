@@ -16,6 +16,9 @@
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <!-- Muss zusammen mit installer/TrayApp.wxs (Version=) hochgezählt werden - wird im
+         Einstellungen-Fenster als Versionsnummer angezeigt. -->
+    <Version>1.5.0</Version>
   </PropertyGroup>
 
 </Project>
