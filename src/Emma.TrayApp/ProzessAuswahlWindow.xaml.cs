@@ -67,14 +67,15 @@ public partial class ProzessAuswahlWindow : Window
                 .ToList();
 
             await _api.ErstelleAufgabeAsync(new NeueAufgabeRequest(prozess.Id, Environment.UserName, parameterWerte));
-            StatusText.Text = $"\"{prozess.Name}\" wurde an EMMA übergeben.";
 
             ParameterItemsControl.ItemsSource = null;
             ParameterItemsControl.ItemsSource = prozess.ParameterFelder.Select(feld => ParameterEingabe.Neu(feld)).ToList();
+
+            new AufgabeUebergebenWindow(erfolgreich: true, prozess.Name) { Owner = this }.ShowDialog();
         }
         catch (Exception ex)
         {
-            StatusText.Text = $"Fehler beim Anlegen der Aufgabe: {ex.Message}";
+            new AufgabeUebergebenWindow(erfolgreich: false, prozess.Name, ex.Message) { Owner = this }.ShowDialog();
         }
         finally
         {

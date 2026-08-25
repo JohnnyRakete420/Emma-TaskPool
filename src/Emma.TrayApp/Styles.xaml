@@ -13,6 +13,7 @@
     <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF" />
     <SolidColorBrush x:Key="TextPrimaryBrush" Color="#2E3A17" />
     <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6B7360" />
+    <SolidColorBrush x:Key="FehlerBrush" Color="#D9534F" />
 
     <!-- Fenster & Basistext -->
     <Style TargetType="Window">

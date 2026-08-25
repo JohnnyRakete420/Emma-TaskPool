@@ -28,6 +28,9 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.7.0
+- Neues Bestätigungsfenster nach "An EMMA übergeben": zeigt in einem kleinen Popup an, ob die Aufgabe erfolgreich in den Aufgabenpool aufgenommen wurde oder ob das fehlgeschlagen ist (mit Fehlermeldung) - stellt klar, dass das nur die Übergabe bestätigt, nicht dass EMMA die Aufgabe bereits erledigt hat
+
 ### 1.6.0
 - Neues **Einstellungen**-Fenster (Rechtsklick auf das Tray-Symbol → "Einstellungen..."), lokal pro Rechner:
   - "Beim Anmelden starten" (vorher direkt im Kontextmenü, jetzt hierher verschoben)

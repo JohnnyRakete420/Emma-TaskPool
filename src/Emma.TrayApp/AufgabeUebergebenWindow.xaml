@@ -1,0 +1,26 @@
+<Window x:Class="Emma.TrayApp.AufgabeUebergebenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EMMA Aufgabenpool" SizeToContent="Height" Width="360"
+        WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Topmost="True"
+        Icon="Icon.ico">
+    <Border Background="{StaticResource CardBrush}" CornerRadius="16" Margin="14">
+        <Border.Effect>
+            <DropShadowEffect Color="#93C003" BlurRadius="24" ShadowDepth="0" Opacity="0.18" />
+        </Border.Effect>
+        <StackPanel Margin="28" HorizontalAlignment="Center">
+            <Border x:Name="IconBorder" Width="56" Height="56" CornerRadius="28" HorizontalAlignment="Center">
+                <TextBlock x:Name="IconText" FontSize="26" FontWeight="Bold" Foreground="White"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+
+            <TextBlock x:Name="TitelText" FontSize="18" FontWeight="Bold" Margin="0,16,0,6"
+                       HorizontalAlignment="Center" TextAlignment="Center" />
+            <TextBlock x:Name="NachrichtText" FontSize="13" TextWrapping="Wrap" TextAlignment="Center"
+                       Foreground="{StaticResource TextSecondaryBrush}" MaxWidth="280" />
+
+            <Button Content="OK" Style="{StaticResource PrimaryButton}"
+                    HorizontalAlignment="Stretch" Margin="0,20,0,0" Click="OkButton_Click" />
+        </StackPanel>
+    </Border>
+</Window>
