@@ -44,16 +44,26 @@ public partial class App : System.Windows.Application
 
     private const int DwmwaUseImmersiveDarkMode = 20;
 
-    /// <summary>Setzt die native Fenster-Titelleiste (Windows 10 1809+/11) auf dunkel, damit sie
-    /// nicht als heller Fremdkörper über dem dunklen Fensterinhalt sitzt.</summary>
+    // Windows 11 zeichnet um jedes Fenster einen dünnen Akzentrahmen (separat von der
+    // Titelleiste) - DWMWA_USE_IMMERSIVE_DARK_MODE allein färbt den nicht mit, deshalb
+    // zusätzlich DWMWA_BORDER_COLOR setzen. Nur ab Windows 11 22H2 unterstützt; auf älteren
+    // Systemen schlägt der Aufruf einfach folgenlos fehl (kein Absturz).
+    private const int DwmwaBorderColor = 34;
+
+    /// <summary>Setzt Titelleiste UND Rahmen jedes Fensters (Windows 10 1809+/11) auf dunkel,
+    /// damit kein heller Fremdkörper um den dunklen Fensterinhalt übrig bleibt.</summary>
     private static void FaerbeTitelleisteDunkel(Window fenster)
     {
         var handle = new System.Windows.Interop.WindowInteropHelper(fenster).Handle;
         if (handle == IntPtr.Zero)
             return;
 
-        var wert = 1;
-        DwmSetWindowAttribute(handle, DwmwaUseImmersiveDarkMode, ref wert, sizeof(int));
+        var dunkelModus = 1;
+        DwmSetWindowAttribute(handle, DwmwaUseImmersiveDarkMode, ref dunkelModus, sizeof(int));
+
+        // COLORREF (0x00BBGGRR) für die dunkle Seitenhintergrundfarbe #1B2416 aus ColorsDark.xaml.
+        var rahmenfarbe = 0x00162419;
+        DwmSetWindowAttribute(handle, DwmwaBorderColor, ref rahmenfarbe, sizeof(int));
     }
 
     protected override void OnStartup(StartupEventArgs e)

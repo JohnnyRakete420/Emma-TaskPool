@@ -16,8 +16,8 @@
 
     <SolidColorBrush x:Key="PageBackgroundBrush" Color="#1B2416" />
     <SolidColorBrush x:Key="CardBrush" Color="#26331C" />
-    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#E8F0D8" />
-    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#9FAF8C" />
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#C7D4B8" />
     <SolidColorBrush x:Key="FehlerBrush" Color="#E2726D" />
 
 </ResourceDictionary>

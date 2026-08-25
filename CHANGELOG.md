@@ -33,6 +33,11 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.8.2
+- Dunkles Design weiter nachgebessert:
+  - Text (v.a. Beschriftungen/Nebentext) heller gestellt - Haupttext jetzt reinweiß statt leicht getönt
+  - Der dünne Windows-11-Akzentrahmen um jedes Fenster blieb hell, obwohl Titelleiste und Inhalt schon dunkel waren - wird jetzt per DWM mit eingefärbt (nur Windows 11 22H2+, auf älteren Systemen ohne Effekt)
+
 ### 1.8.1
 - Dunkles Design nachgebessert (Rückmeldung: "sieht nicht fertig aus"):
   - Die Datumsfelder ("Von"/"Bis" im Verlauf) waren komplett unthemed und standen als helle Kästen im dunklen Fenster - jetzt an die Palette angepasst (das kleine Kalender-Symbol bleibt aus Aufwandsgründen im Windows-Standard)
