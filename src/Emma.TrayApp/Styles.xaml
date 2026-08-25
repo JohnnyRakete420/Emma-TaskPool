@@ -13,6 +13,30 @@
         <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
     </Style>
 
+    <!-- DatePicker (Verlauf-Filter "Von"/"Bis") - Textfeld-Teil themed, Kalender-Popup bleibt
+         Windows-Standard (kompletter Calendar-Retemplate wäre unverhältnismäßig aufwendig). -->
+    <Style TargetType="DatePicker">
+        <Setter Property="Padding" Value="6,4" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftGreenBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Background" Value="{StaticResource CardBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+    </Style>
+
+    <Style TargetType="DatePickerTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DatePickerTextBox">
+                    <Border Background="{StaticResource CardBrush}" BorderThickness="0" CornerRadius="6">
+                        <ScrollViewer x:Name="PART_ContentHost" Margin="4" Foreground="{StaticResource TextPrimaryBrush}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <!-- Primärer Button (grüner Verlauf-Akzent) -->
     <Style x:Key="PrimaryButton" TargetType="Button">
         <Setter Property="Background" Value="{StaticResource GreenBrush}" />

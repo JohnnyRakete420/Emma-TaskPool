@@ -12,7 +12,7 @@
     <SolidColorBrush x:Key="LightGreenBrush" Color="#A9CC4A" />
     <SolidColorBrush x:Key="SoftGreenBrush" Color="#4A5A32" />
     <SolidColorBrush x:Key="PastelGreenBrush" Color="#3A4728" />
-    <SolidColorBrush x:Key="MintBrush" Color="#2F3B24" />
+    <SolidColorBrush x:Key="MintBrush" Color="#37472A" />
 
     <SolidColorBrush x:Key="PageBackgroundBrush" Color="#1B2416" />
     <SolidColorBrush x:Key="CardBrush" Color="#26331C" />

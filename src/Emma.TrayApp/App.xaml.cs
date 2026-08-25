@@ -39,6 +39,23 @@ public partial class App : System.Windows.Application
     [System.Runtime.InteropServices.DllImport("user32.dll", SetLastError = true)]
     private static extern bool DestroyIcon(IntPtr hIcon);
 
+    [System.Runtime.InteropServices.DllImport("dwmapi.dll")]
+    private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attribute, ref int value, int valueSize);
+
+    private const int DwmwaUseImmersiveDarkMode = 20;
+
+    /// <summary>Setzt die native Fenster-Titelleiste (Windows 10 1809+/11) auf dunkel, damit sie
+    /// nicht als heller Fremdkörper über dem dunklen Fensterinhalt sitzt.</summary>
+    private static void FaerbeTitelleisteDunkel(Window fenster)
+    {
+        var handle = new System.Windows.Interop.WindowInteropHelper(fenster).Handle;
+        if (handle == IntPtr.Zero)
+            return;
+
+        var wert = 1;
+        DwmSetWindowAttribute(handle, DwmwaUseImmersiveDarkMode, ref wert, sizeof(int));
+    }
+
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
@@ -47,9 +64,18 @@ public partial class App : System.Windows.Application
         // Farbpalette + Styles zur Laufzeit mergen (statt statisch in App.xaml), damit das
         // Dunkle Design (Einstellungen-Fenster) ausgewählt werden kann, bevor irgendein
         // Fenster erzeugt wird. Wirkt erst nach einem Neustart, kein Live-Umschalten.
-        var farbdatei = LokaleEinstellungen.Lade().DarkMode ? "ColorsDark.xaml" : "ColorsLight.xaml";
+        var dunkel = LokaleEinstellungen.Lade().DarkMode;
+        var farbdatei = dunkel ? "ColorsDark.xaml" : "ColorsLight.xaml";
         Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri(farbdatei, UriKind.Relative) });
         Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("Styles.xaml", UriKind.Relative) });
+
+        // Bei Dunklem Design auch die native Titelleiste jedes Fensters einfärben (sonst bliebe
+        // sie hell, egal was im Fenster steht) - für alle Fenster zentral statt pro Fenster.
+        if (dunkel)
+        {
+            EventManager.RegisterClassHandler(typeof(Window), Window.LoadedEvent,
+                new RoutedEventHandler((sender, _) => FaerbeTitelleisteDunkel((Window)sender)));
+        }
 
         // Sicherheitsnetz: ein unerwarteter Fehler soll eine Meldung zeigen statt die
         // Anwendung stillschweigend abstürzen zu lassen.

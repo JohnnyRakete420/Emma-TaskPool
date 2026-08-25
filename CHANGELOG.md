@@ -33,6 +33,12 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.8.1
+- Dunkles Design nachgebessert (Rückmeldung: "sieht nicht fertig aus"):
+  - Die Datumsfelder ("Von"/"Bis" im Verlauf) waren komplett unthemed und standen als helle Kästen im dunklen Fenster - jetzt an die Palette angepasst (das kleine Kalender-Symbol bleibt aus Aufwandsgründen im Windows-Standard)
+  - Abwechselnde Tabellenzeilen waren im Dunklen kaum zu unterscheiden - Kontrast erhöht
+  - Die native Fenster-Titelleiste blieb bisher hell, obwohl der Inhalt dunkel wurde - wird jetzt bei aktivem Dunklen Design ebenfalls eingefärbt
+
 ### 1.8.0
 - **Prozesse verwalten**: neues Fenster (Tray-Menü → "Prozesse verwalten...") zum Anlegen/Bearbeiten/Löschen von Prozessen inkl. Formularfeldern (Text/Auswahl/Mehrfachauswahl mit Optionen) - vorher nur per Code-Änderung möglich
 - **Dunkles Design**: Umschalter in den Einstellungen, wirkt nach einem Neustart der Anwendung. Komplette Farbpalette für dunklen Hintergrund abgestimmt
