@@ -2,7 +2,7 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
   <Package Name="EMMA Aufgabenpool - TrayApp"
            Manufacturer="EMMA Aufgabenpool"
-           Version="1.7.0"
+           Version="1.8.0"
            UpgradeCode="8FAA6A2F-D043-4957-85FE-C86DC2F7443F"
            Scope="perMachine">
 

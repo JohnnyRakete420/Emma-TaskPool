@@ -1,0 +1,23 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--
+        Dunkles Design - gleiche Rollen wie ColorsLight.xaml, nur umgekehrter Kontrast.
+        GreenBrush/LightGreenBrush bleiben nah am Original (Markenfarbe, funktioniert auf
+        dunklem Grund genauso), die "weichen" Grüntöne (Soft/Pastel/Mint), die in Hell als
+        helle Flächen mit dunklem Text dienen, werden dunkel gehalten, damit der (jetzt helle)
+        Text darauf lesbar bleibt.
+    -->
+    <SolidColorBrush x:Key="GreenBrush" Color="#93C003" />
+    <SolidColorBrush x:Key="LightGreenBrush" Color="#A9CC4A" />
+    <SolidColorBrush x:Key="SoftGreenBrush" Color="#4A5A32" />
+    <SolidColorBrush x:Key="PastelGreenBrush" Color="#3A4728" />
+    <SolidColorBrush x:Key="MintBrush" Color="#2F3B24" />
+
+    <SolidColorBrush x:Key="PageBackgroundBrush" Color="#1B2416" />
+    <SolidColorBrush x:Key="CardBrush" Color="#26331C" />
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#E8F0D8" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#9FAF8C" />
+    <SolidColorBrush x:Key="FehlerBrush" Color="#E2726D" />
+
+</ResourceDictionary>

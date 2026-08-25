@@ -102,4 +102,12 @@ public static class EmmaConfig
             // Kein Schreibzugriff - Standardwert wird trotzdem verwendet.
         }
     }
+
+    /// <summary>Schreibt geänderte Verbindungsdaten zurück (z.B. aus dem Einstellungen-Fenster).</summary>
+    public static void Speichere(EmmaClientConfig config)
+    {
+        var pfad = Path.Combine(KonfigurationsOrdner(), DateiName);
+        var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(pfad, json);
+    }
 }

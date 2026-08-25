@@ -2,19 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Emma.TrayApp">
 
-    <!-- Farbpalette -->
-    <SolidColorBrush x:Key="GreenBrush" Color="#93C003" />
-    <SolidColorBrush x:Key="LightGreenBrush" Color="#ADCD4E" />
-    <SolidColorBrush x:Key="SoftGreenBrush" Color="#C4DA80" />
-    <SolidColorBrush x:Key="PastelGreenBrush" Color="#D8E7AF" />
-    <SolidColorBrush x:Key="MintBrush" Color="#ECF3D9" />
-
-    <SolidColorBrush x:Key="PageBackgroundBrush" Color="#FAFCF5" />
-    <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF" />
-    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#2E3A17" />
-    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6B7360" />
-    <SolidColorBrush x:Key="FehlerBrush" Color="#D9534F" />
-
     <!-- Fenster & Basistext -->
     <Style TargetType="Window">
         <Setter Property="Background" Value="{StaticResource PageBackgroundBrush}" />
@@ -75,7 +62,7 @@
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="BorderBrush" Value="{StaticResource SoftGreenBrush}" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Background" Value="{StaticResource CardBrush}" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
@@ -120,7 +107,7 @@
         <Setter Property="Padding" Value="12,8" />
         <Setter Property="FontSize" Value="13" />
         <Setter Property="FontFamily" Value="Segoe UI" />
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Background" Value="{StaticResource CardBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource SoftGreenBrush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
@@ -173,7 +160,7 @@
 
                         <Popup x:Name="Popup" Placement="Bottom" AllowsTransparency="True"
                                IsOpen="{TemplateBinding IsDropDownOpen}" Focusable="False" PopupAnimation="Slide">
-                            <Border Background="White" BorderBrush="{StaticResource SoftGreenBrush}"
+                            <Border Background="{StaticResource CardBrush}" BorderBrush="{StaticResource SoftGreenBrush}"
                                     BorderThickness="1" CornerRadius="8" Margin="0,4,0,0"
                                     MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}"
                                     SnapsToDevicePixels="True">
@@ -195,7 +182,7 @@
     <Style TargetType="ListBox">
         <Setter Property="BorderBrush" Value="{StaticResource PastelGreenBrush}" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Background" Value="{StaticResource CardBrush}" />
         <Setter Property="Padding" Value="4" />
     </Style>
 
@@ -224,10 +211,10 @@
 
     <!-- DataGrid (Aufgaben- / Plänetabellen) -->
     <Style TargetType="DataGrid">
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Background" Value="{StaticResource CardBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource PastelGreenBrush}" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="RowBackground" Value="White" />
+        <Setter Property="RowBackground" Value="{StaticResource CardBrush}" />
         <Setter Property="AlternatingRowBackground" Value="{StaticResource MintBrush}" />
         <Setter Property="GridLinesVisibility" Value="Horizontal" />
         <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource PastelGreenBrush}" />

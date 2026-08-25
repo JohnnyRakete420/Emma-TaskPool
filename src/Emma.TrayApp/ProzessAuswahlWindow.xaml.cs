@@ -19,12 +19,32 @@ public partial class ProzessAuswahlWindow : Window
         try
         {
             var prozesse = await _api.GetProzesseAsync();
-            ProzessListBox.ItemsSource = prozesse;
+            ProzessListBox.ItemsSource = SortiereNachZuletztVerwendet(prozesse);
         }
         catch (Exception ex)
         {
             StatusText.Text = $"Prozesse konnten nicht geladen werden. Läuft der Emma.Service? ({ex.Message})";
         }
+    }
+
+    /// <summary>Zuletzt verwendete Prozesse zuerst, damit häufig genutzte nicht immer wieder
+    /// gesucht werden müssen. Nie verwendete Prozesse bleiben in der ursprünglichen Reihenfolge.</summary>
+    private static List<ProzessDto> SortiereNachZuletztVerwendet(List<ProzessDto> prozesse)
+    {
+        var zuletztVerwendet = LokaleEinstellungen.Lade().ZuletztVerwendeteProzesse ?? [];
+        return prozesse
+            .Select((p, index) => (Prozess: p, Index: index))
+            .OrderByDescending(x => zuletztVerwendet.TryGetValue(x.Prozess.Name, out var zeit) ? zeit : (DateTime?)null)
+            .ThenBy(x => x.Index)
+            .Select(x => x.Prozess)
+            .ToList();
+    }
+
+    private static void MerkeAlsZuletztVerwendet(string prozessName)
+    {
+        var daten = LokaleEinstellungen.Lade();
+        var zuletztVerwendet = new Dictionary<string, DateTime>(daten.ZuletztVerwendeteProzesse ?? []) { [prozessName] = DateTime.Now };
+        LokaleEinstellungen.Speichere(daten with { ZuletztVerwendeteProzesse = zuletztVerwendet });
     }
 
     private void ProzessListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -67,6 +87,7 @@ public partial class ProzessAuswahlWindow : Window
                 .ToList();
 
             await _api.ErstelleAufgabeAsync(new NeueAufgabeRequest(prozess.Id, Environment.UserName, parameterWerte));
+            MerkeAlsZuletztVerwendet(prozess.Name);
 
             ParameterItemsControl.ItemsSource = null;
             ParameterItemsControl.ItemsSource = prozess.ParameterFelder.Select(feld => ParameterEingabe.Neu(feld)).ToList();

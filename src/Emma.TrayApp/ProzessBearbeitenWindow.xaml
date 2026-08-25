@@ -1,0 +1,89 @@
+<Window x:Class="Emma.TrayApp.ProzessBearbeitenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:shared="clr-namespace:Emma.Shared;assembly=Emma.Shared"
+        Title="Prozess" Height="640" Width="560" MinWidth="500" MinHeight="480"
+        WindowStartupLocation="CenterScreen"
+        Icon="Icon.ico">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="ParameterFeldTypWerte" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="shared:ParameterFeldTyp" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+    <Border Background="{StaticResource CardBrush}" CornerRadius="16" Margin="14">
+        <Border.Effect>
+            <DropShadowEffect Color="#93C003" BlurRadius="24" ShadowDepth="0" Opacity="0.18" />
+        </Border.Effect>
+        <Grid Margin="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" x:Name="TitelText" Text="Prozess" FontSize="20" FontWeight="Bold" Margin="0,0,0,16" />
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Text="Name" FontSize="11" Foreground="{StaticResource TextSecondaryBrush}" Margin="0,0,0,4" />
+                    <TextBox x:Name="NameTextBox" Margin="0,0,0,16" />
+
+                    <TextBlock Text="Beschreibung (optional)" FontSize="11" Foreground="{StaticResource TextSecondaryBrush}" Margin="0,0,0,4" />
+                    <TextBox x:Name="BeschreibungTextBox" Margin="0,0,0,20" />
+
+                    <TextBlock Text="Formularfelder" FontSize="11" Foreground="{StaticResource TextSecondaryBrush}" Margin="0,0,0,8" />
+                    <ItemsControl x:Name="FelderItemsControl">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="{StaticResource MintBrush}" CornerRadius="8" Padding="12" Margin="0,0,0,10">
+                                    <StackPanel>
+                                        <Grid Margin="0,0,0,8">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="10" />
+                                                <ColumnDefinition Width="150" />
+                                                <ColumnDefinition Width="8" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox Grid.Column="0" Text="{Binding Bezeichnung, UpdateSourceTrigger=PropertyChanged}" />
+                                            <ComboBox Grid.Column="2" ItemsSource="{Binding Source={StaticResource ParameterFeldTypWerte}}"
+                                                      SelectedItem="{Binding Typ}" />
+                                            <Button Grid.Column="4" Content="✕" Width="30" Height="30" Padding="0" FontSize="12"
+                                                    Style="{StaticResource SecondaryButton}"
+                                                    Click="FeldEntfernen_Click" Tag="{Binding}" />
+                                        </Grid>
+                                        <TextBox Text="{Binding OptionenText, UpdateSourceTrigger=PropertyChanged}" />
+                                        <TextBlock Text="Optionen durch Komma getrennt - nur für Auswahl/Mehrfachauswahl relevant."
+                                                   FontSize="10" Foreground="{StaticResource TextSecondaryBrush}" Margin="0,4,0,0" TextWrapping="Wrap" />
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <Button Content="+ Feld hinzufügen" Style="{StaticResource SecondaryButton}"
+                            HorizontalAlignment="Left" Padding="14,8" Click="FeldHinzufuegen_Click" />
+                </StackPanel>
+            </ScrollViewer>
+
+            <TextBlock Grid.Row="2" x:Name="StatusText" Margin="0,12,0,10" TextWrapping="Wrap"
+                       Foreground="{StaticResource TextSecondaryBrush}" FontSize="12" />
+
+            <DockPanel Grid.Row="3">
+                <Button x:Name="LoeschenButton" DockPanel.Dock="Left" Content="Prozess löschen"
+                        Style="{StaticResource SecondaryButton}" Padding="14,9" Visibility="Collapsed"
+                        Click="LoeschenButton_Click" />
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Abbrechen" Style="{StaticResource SecondaryButton}" Padding="16,9"
+                            Margin="0,0,10,0" Click="AbbrechenButton_Click" />
+                    <Button Content="Speichern" Style="{StaticResource PrimaryButton}" Padding="20,9"
+                            Click="SpeichernButton_Click" />
+                </StackPanel>
+            </DockPanel>
+        </Grid>
+    </Border>
+</Window>

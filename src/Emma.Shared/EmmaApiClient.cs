@@ -34,6 +34,37 @@ public class EmmaApiClient
     public async Task<List<ProzessDto>> GetProzesseAsync(CancellationToken ct = default) =>
         await _http.GetFromJsonAsync<List<ProzessDto>>("api/prozesse", ct) ?? [];
 
+    public async Task<ProzessDto> ErstelleProzessAsync(NeuerProzessRequest request, CancellationToken ct = default)
+    {
+        var response = await _http.PostAsJsonAsync("api/prozesse", request, ct);
+        await WirfBeiFehlerAsync(response, ct);
+        return (await response.Content.ReadFromJsonAsync<ProzessDto>(cancellationToken: ct))!;
+    }
+
+    public async Task<ProzessDto> AktualisiereProzessAsync(int prozessId, NeuerProzessRequest request, CancellationToken ct = default)
+    {
+        var response = await _http.PutAsJsonAsync($"api/prozesse/{prozessId}", request, ct);
+        await WirfBeiFehlerAsync(response, ct);
+        return (await response.Content.ReadFromJsonAsync<ProzessDto>(cancellationToken: ct))!;
+    }
+
+    public async Task LoescheProzessAsync(int prozessId, CancellationToken ct = default)
+    {
+        var response = await _http.DeleteAsync($"api/prozesse/{prozessId}", ct);
+        await WirfBeiFehlerAsync(response, ct);
+    }
+
+    /// <summary>Wirft mit dem Antworttext als Meldung statt nur "400 Bad Request", damit die
+    /// serverseitigen Validierungsmeldungen (z.B. "Name bereits vergeben") beim Nutzer ankommen.</summary>
+    private static async Task WirfBeiFehlerAsync(HttpResponseMessage response, CancellationToken ct)
+    {
+        if (response.IsSuccessStatusCode)
+            return;
+
+        var text = await response.Content.ReadAsStringAsync(ct);
+        throw new HttpRequestException(string.IsNullOrWhiteSpace(text) ? response.ReasonPhrase : text);
+    }
+
     public async Task<List<AufgabeDto>> GetAufgabenAsync(AufgabeStatus? status = null, CancellationToken ct = default)
     {
         var url = status is null ? "api/aufgaben" : $"api/aufgaben?status={status}";

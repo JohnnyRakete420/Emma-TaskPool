@@ -120,12 +120,104 @@ string? PruefeParameterFelder(Prozess prozess, List<ParameterFeldWert>? werte)
 
 // ---- Prozesse ----
 
+// Prüft Name (Pflicht, eindeutig) und Felddefinitionen (Bezeichnung Pflicht+eindeutig,
+// Auswahl/Mehrfachauswahl brauchen mindestens eine Option). Gibt bei Verstoß eine
+// Fehlermeldung zurück, sonst null. "ignoriereProzessId" schließt beim Bearbeiten den
+// eigenen Prozess von der Namens-Eindeutigkeitsprüfung aus.
+async Task<string?> PruefeProzessAsync(EmmaDbContext db, string name, List<ParameterFeldDefinition> felder, int? ignoriereProzessId)
+{
+    if (string.IsNullOrWhiteSpace(name))
+        return "Bitte einen Namen angeben.";
+
+    var nameVergeben = await db.Prozesse
+        .AnyAsync(p => p.Name.ToLower() == name.Trim().ToLower() && p.Id != (ignoriereProzessId ?? -1));
+    if (nameVergeben)
+        return $"Ein Prozess mit dem Namen \"{name.Trim()}\" existiert bereits.";
+
+    var leereBezeichnung = felder.Any(f => string.IsNullOrWhiteSpace(f.Bezeichnung));
+    if (leereBezeichnung)
+        return "Jedes Formularfeld benötigt eine Bezeichnung.";
+
+    var doppelteBezeichnung = felder.Select(f => f.Bezeichnung.Trim().ToLower()).GroupBy(b => b).Any(g => g.Count() > 1);
+    if (doppelteBezeichnung)
+        return "Formularfeld-Bezeichnungen müssen innerhalb eines Prozesses eindeutig sein.";
+
+    var fehlendeOptionen = felder.FirstOrDefault(f =>
+        f.Typ is ParameterFeldTyp.Auswahl or ParameterFeldTyp.Mehrfachauswahl
+        && (f.Optionen is null || f.Optionen.Count(o => !string.IsNullOrWhiteSpace(o)) == 0));
+    if (fehlendeOptionen is not null)
+        return $"Feld \"{fehlendeOptionen.Bezeichnung}\" benötigt mindestens eine Auswahl-Option.";
+
+    return null;
+}
+
+// Text-Felder brauchen keine Optionen - werden hier bereinigt, damit sie nicht versehentlich
+// mitgespeichert werden (z.B. wenn ein Feld im Formular von Auswahl auf Text umgestellt wurde).
+List<ParameterFeldDefinition> BereinigeFelder(List<ParameterFeldDefinition> felder) =>
+    felder.Select(f => f.Typ == ParameterFeldTyp.Text ? f with { Optionen = null } : f).ToList();
+
 app.MapGet("/api/prozesse", async (EmmaDbContext db) =>
 {
     var prozesse = await db.Prozesse.ToListAsync();
     return prozesse
         .Select(p => new ProzessDto(p.Id, p.Name, p.Beschreibung, ParameterJsonHelper.DeserializeFelder(p.ParameterFelderJson)))
         .ToList();
+});
+
+app.MapPost("/api/prozesse", async (EmmaDbContext db, NeuerProzessRequest request) =>
+{
+    var felder = BereinigeFelder(request.ParameterFelder ?? []);
+    var fehler = await PruefeProzessAsync(db, request.Name, felder, ignoriereProzessId: null);
+    if (fehler is not null)
+        return Results.BadRequest(fehler);
+
+    var prozess = new Prozess
+    {
+        Name = request.Name.Trim(),
+        Beschreibung = string.IsNullOrWhiteSpace(request.Beschreibung) ? null : request.Beschreibung.Trim(),
+        ParameterFelderJson = ParameterJsonHelper.SerializeFelder(felder)
+    };
+    db.Prozesse.Add(prozess);
+    await db.SaveChangesAsync();
+
+    var dto = new ProzessDto(prozess.Id, prozess.Name, prozess.Beschreibung, felder);
+    return Results.Created($"/api/prozesse/{prozess.Id}", dto);
+});
+
+app.MapPut("/api/prozesse/{id:int}", async (EmmaDbContext db, int id, NeuerProzessRequest request) =>
+{
+    var prozess = await db.Prozesse.FindAsync(id);
+    if (prozess is null)
+        return Results.NotFound();
+
+    var felder = BereinigeFelder(request.ParameterFelder ?? []);
+    var fehler = await PruefeProzessAsync(db, request.Name, felder, ignoriereProzessId: id);
+    if (fehler is not null)
+        return Results.BadRequest(fehler);
+
+    prozess.Name = request.Name.Trim();
+    prozess.Beschreibung = string.IsNullOrWhiteSpace(request.Beschreibung) ? null : request.Beschreibung.Trim();
+    prozess.ParameterFelderJson = ParameterJsonHelper.SerializeFelder(felder);
+    await db.SaveChangesAsync();
+
+    return Results.Ok(new ProzessDto(prozess.Id, prozess.Name, prozess.Beschreibung, felder));
+});
+
+app.MapDelete("/api/prozesse/{id:int}", async (EmmaDbContext db, int id) =>
+{
+    var prozess = await db.Prozesse.FindAsync(id);
+    if (prozess is null)
+        return Results.NotFound();
+
+    var hatVerlauf = await db.Aufgaben.AnyAsync(a => a.ProzessId == id);
+    var hatPlaene = await db.WiederkehrendePlaene.AnyAsync(p => p.ProzessId == id);
+    if (hatVerlauf || hatPlaene)
+        return Results.BadRequest(
+            "Dieser Prozess hat bereits Aufgaben-Verlauf oder wiederkehrende Pläne und kann deshalb nicht gelöscht werden.");
+
+    db.Prozesse.Remove(prozess);
+    await db.SaveChangesAsync();
+    return Results.Ok();
 });
 
 // ---- Aufgaben ----

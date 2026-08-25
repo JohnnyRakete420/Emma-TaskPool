@@ -32,3 +32,5 @@ public record WiederkehrenderPlanDto(
     List<ParameterFeldWert> ParameterWerte);
 
 public record NeuerWiederkehrenderPlanRequest(int ProzessId, List<PlanZeitpunkt> Zeitpunkte, List<ParameterFeldWert>? ParameterWerte);
+
+public record NeuerProzessRequest(string Name, string? Beschreibung, List<ParameterFeldDefinition> ParameterFelder);

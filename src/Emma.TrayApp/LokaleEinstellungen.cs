@@ -5,7 +5,10 @@ using System.Text.Json;
 namespace Emma.TrayApp;
 
 /// <summary>Rein lokale, geräteweise Einstellungen (nicht mit dem Service synchronisiert).</summary>
-public record LokaleEinstellungenDaten(bool BenachrichtigungenAktiv = true);
+public record LokaleEinstellungenDaten(
+    bool BenachrichtigungenAktiv = true,
+    bool DarkMode = false,
+    Dictionary<string, DateTime>? ZuletztVerwendeteProzesse = null);
 
 /// <summary>
 /// Liest/schreibt "einstellungen.json" unter %ProgramData%\EmmaAufgabenpool\Emma.TrayApp\ -

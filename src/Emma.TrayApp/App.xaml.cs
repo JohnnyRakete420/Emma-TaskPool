@@ -29,12 +29,27 @@ public partial class App : System.Windows.Application
     private WiederkehrendePlaeneWindow? _plaeneFenster;
     private VerlaufWindow? _verlaufFenster;
     private EinstellungenWindow? _einstellungenFenster;
+    private ProzesseVerwaltenWindow? _prozesseVerwaltenFenster;
     private DispatcherTimer? _benachrichtigungsTimer;
+
+    private System.Drawing.Icon? _basisIcon;
+    private bool? _letzterVerbindungsStatus;
+    private IntPtr _aktuellesStatusIconHandle;
+
+    [System.Runtime.InteropServices.DllImport("user32.dll", SetLastError = true)]
+    private static extern bool DestroyIcon(IntPtr hIcon);
 
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
         ShutdownMode = ShutdownMode.OnExplicitShutdown;
+
+        // Farbpalette + Styles zur Laufzeit mergen (statt statisch in App.xaml), damit das
+        // Dunkle Design (Einstellungen-Fenster) ausgewählt werden kann, bevor irgendein
+        // Fenster erzeugt wird. Wirkt erst nach einem Neustart, kein Live-Umschalten.
+        var farbdatei = LokaleEinstellungen.Lade().DarkMode ? "ColorsDark.xaml" : "ColorsLight.xaml";
+        Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri(farbdatei, UriKind.Relative) });
+        Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("Styles.xaml", UriKind.Relative) });
 
         // Sicherheitsnetz: ein unerwarteter Fehler soll eine Meldung zeigen statt die
         // Anwendung stillschweigend abstürzen zu lassen.
@@ -49,6 +64,7 @@ public partial class App : System.Windows.Application
         var menu = new Forms.ContextMenuStrip();
         menu.Items.Add("Prozess auswählen...", null, (_, _) => ZeigeProzessFenster());
         menu.Items.Add("Wiederkehrende Pläne verwalten...", null, (_, _) => ZeigePlaeneFenster());
+        menu.Items.Add("Prozesse verwalten...", null, (_, _) => ZeigeProzesseVerwaltenFenster());
         menu.Items.Add("Verlauf & Übersicht...", null, (_, _) => ZeigeVerlaufFenster());
         menu.Items.Add(new Forms.ToolStripSeparator());
         menu.Items.Add("Einstellungen...", null, (_, _) => ZeigeEinstellungenFenster());
@@ -58,11 +74,11 @@ public partial class App : System.Windows.Application
         // MainModule.FileName statt Assembly.Location: nur die .exe trägt das per
         // ApplicationIcon eingebettete Icon, nicht die .dll.
         var exePfad = System.Diagnostics.Process.GetCurrentProcess().MainModule!.FileName;
-        var eigenesIcon = System.Drawing.Icon.ExtractAssociatedIcon(exePfad);
+        _basisIcon = System.Drawing.Icon.ExtractAssociatedIcon(exePfad) ?? System.Drawing.SystemIcons.Application;
 
         _notifyIcon = new Forms.NotifyIcon
         {
-            Icon = eigenesIcon ?? System.Drawing.SystemIcons.Application,
+            Icon = _basisIcon,
             Visible = true,
             Text = "EMMA Aufgabenpool",
             ContextMenuStrip = menu
@@ -106,6 +122,15 @@ public partial class App : System.Windows.Application
 
         _einstellungenFenster.Show();
         _einstellungenFenster.Activate();
+    }
+
+    private void ZeigeProzesseVerwaltenFenster()
+    {
+        if (_prozesseVerwaltenFenster is null || !_prozesseVerwaltenFenster.IsLoaded)
+            _prozesseVerwaltenFenster = new ProzesseVerwaltenWindow();
+
+        _prozesseVerwaltenFenster.Show();
+        _prozesseVerwaltenFenster.Activate();
     }
 
     internal static bool IstAutostartAktiv()
@@ -159,6 +184,7 @@ public partial class App : System.Windows.Application
             var erledigte = await _api.GetAufgabenAsync(AufgabeStatus.Erledigt);
             var fehlgeschlagene = await _api.GetAufgabenAsync(AufgabeStatus.Fehlgeschlagen);
             var benachrichtigungenAktiv = LokaleEinstellungen.Lade().BenachrichtigungenAktiv;
+            AktualisiereStatusIcon(verbunden: true);
 
             foreach (var aufgabe in erledigte.Where(a => a.ErstelltVon == Environment.UserName))
             {
@@ -184,8 +210,46 @@ public partial class App : System.Windows.Application
         }
         catch
         {
-            // Service kurzzeitig nicht erreichbar - nächster Tick versucht es erneut.
+            // Service nicht erreichbar - nächster Tick versucht es erneut.
+            AktualisiereStatusIcon(verbunden: false);
         }
+    }
+
+    /// <summary>
+    /// Überlagert das Tray-Symbol mit einem grünen/roten Punkt je nach Erreichbarkeit des
+    /// Service, damit ein Ausfall sofort auffällt statt erst beim Öffnen eines Fensters.
+    /// Ändert das Icon nur bei einem tatsächlichen Statuswechsel (nicht bei jedem Poll).
+    /// </summary>
+    private void AktualisiereStatusIcon(bool verbunden)
+    {
+        if (_letzterVerbindungsStatus == verbunden || _basisIcon is null || _notifyIcon is null)
+            return;
+        _letzterVerbindungsStatus = verbunden;
+
+        using var bmp = _basisIcon.ToBitmap();
+        using (var g = System.Drawing.Graphics.FromImage(bmp))
+        {
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            var farbe = verbunden
+                ? System.Drawing.Color.FromArgb(147, 192, 3)
+                : System.Drawing.Color.FromArgb(217, 83, 79);
+            var durchmesser = bmp.Width / 2.4f;
+            var rect = new System.Drawing.RectangleF(bmp.Width - durchmesser, bmp.Height - durchmesser, durchmesser, durchmesser);
+            using var brush = new System.Drawing.SolidBrush(farbe);
+            using var stift = new System.Drawing.Pen(System.Drawing.Color.White, 1.5f);
+            g.FillEllipse(brush, rect);
+            g.DrawEllipse(stift, rect);
+        }
+
+        var neuerHandle = bmp.GetHicon();
+        var alterHandle = _aktuellesStatusIconHandle;
+
+        _notifyIcon.Icon = System.Drawing.Icon.FromHandle(neuerHandle);
+        _aktuellesStatusIconHandle = neuerHandle;
+        _notifyIcon.Text = verbunden ? "EMMA Aufgabenpool" : "EMMA Aufgabenpool (Service nicht erreichbar)";
+
+        if (alterHandle != IntPtr.Zero)
+            DestroyIcon(alterHandle);
     }
 
     private void BeendenAnwendung()
@@ -199,6 +263,8 @@ public partial class App : System.Windows.Application
     protected override void OnExit(ExitEventArgs e)
     {
         _notifyIcon?.Dispose();
+        if (_aktuellesStatusIconHandle != IntPtr.Zero)
+            DestroyIcon(_aktuellesStatusIconHandle);
         base.OnExit(e);
     }
 }

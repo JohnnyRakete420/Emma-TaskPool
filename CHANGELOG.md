@@ -6,6 +6,11 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.Service (`Service.msi`)
 
+### 1.3.0
+- Neue Endpunkte zum Anlegen, Bearbeiten und Löschen von Prozessen (`POST`/`PUT`/`DELETE /api/prozesse`) - Prozesse mussten bisher fest im Code hinterlegt und neu deployed werden. Alle TrayApp-Nutzer dürfen Prozesse verwalten (kein separater Admin-Bereich)
+- Validiert Name (Pflicht, eindeutig) und Formularfelder (Bezeichnung Pflicht+eindeutig, Auswahl/Mehrfachauswahl brauchen mindestens eine Option)
+- Ein Prozess mit vorhandenem Aufgaben-Verlauf oder wiederkehrenden Plänen kann nicht gelöscht werden (verhindert versehentliches Löschen der Historie durch die Datenbank-Kaskade)
+
 ### 1.2.4
 - Echte Abteilungsliste des Odenwaldkreises (45 Einträge, Hauptabteilungen I-VI + Stabsstellen) für das Formularfeld "Abteilungen" bei "Benutzer anlegen" hinterlegt (ersetzt die vorherige, generische Platzhalterliste)
 
@@ -27,6 +32,14 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 - Windows-Dienst-Registrierung (`EmmaAufgabenpoolService`, läuft als LocalSystem)
 
 ## Emma.TrayApp (`TrayApp.msi`)
+
+### 1.8.0
+- **Prozesse verwalten**: neues Fenster (Tray-Menü → "Prozesse verwalten...") zum Anlegen/Bearbeiten/Löschen von Prozessen inkl. Formularfeldern (Text/Auswahl/Mehrfachauswahl mit Optionen) - vorher nur per Code-Änderung möglich
+- **Dunkles Design**: Umschalter in den Einstellungen, wirkt nach einem Neustart der Anwendung. Komplette Farbpalette für dunklen Hintergrund abgestimmt
+- **Server-Verbindung einrichten**: Server-Adresse, API-Key und Zertifikats-Thumbprint lassen sich jetzt direkt im Einstellungen-Fenster eintragen statt die `emma-config.json` von Hand zu bearbeiten
+- **Verbindung testen**: Button in den Einstellungen, der sofort prüft, ob der Service unter den eingetragenen Daten erreichbar ist
+- **Tray-Symbol zeigt Verbindungsstatus**: grüner/roter Punkt je nachdem, ob der Service gerade erreichbar ist - ein Ausfall fällt jetzt sofort auf, statt erst beim Öffnen eines Fensters
+- **Zuletzt verwendete Prozesse zuerst**: die Prozessliste beim Anlegen einer Aufgabe sortiert sich automatisch danach, was zuletzt benutzt wurde
 
 ### 1.7.0
 - Neues Bestätigungsfenster nach "An EMMA übergeben": zeigt in einem kleinen Popup an, ob die Aufgabe erfolgreich in den Aufgabenpool aufgenommen wurde oder ob das fehlgeschlagen ist (mit Fehlermeldung) - stellt klar, dass das nur die Übergabe bestätigt, nicht dass EMMA die Aufgabe bereits erledigt hat

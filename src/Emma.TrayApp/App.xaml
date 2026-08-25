@@ -2,11 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Emma.TrayApp">
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
+    <!--
+        Farbpalette (ColorsLight.xaml/ColorsDark.xaml) + Styles.xaml werden in App.xaml.cs
+        OnStartup zur Laufzeit gemergt, je nachdem ob Dunkles Design aktiv ist - deshalb hier
+        bewusst leer statt statisch verlinkt.
+    -->
 </Application>
