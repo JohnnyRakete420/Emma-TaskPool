@@ -33,6 +33,10 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.8.3
+- Echter Lesbarkeits-Bug behoben: Tabellenzellen (Verlauf, Prozesse verwalten, Wiederkehrende Pläne) hatten nie eine explizite Textfarbe gesetzt - nur beim Anklicken/Auswählen einer Zeile griff ein Trigger, der die Farbe auf Weiß setzte. Im hellen Design fiel das nie auf (WPFs Standard-Textfarbe ist zufällig dunkel), im Dunklen Design war der Text dadurch bis zum Anklicken quasi unsichtbar. Jetzt hat jede Zelle von Anfang an die richtige Farbe
+- Der Windows-11-Akzentrahmen um die Fenster ist bei manchen Nutzern weiterhin hell geblieben - liegt vermutlich an fehlender/übersteuerter Unterstützung des `DWMWA_BORDER_COLOR`-Attributs auf dem jeweiligen System, nicht behebbar ohne auf komplett selbst gezeichnetes Fenster-Chrome umzusteigen
+
 ### 1.8.2
 - Dunkles Design weiter nachgebessert:
   - Text (v.a. Beschriftungen/Nebentext) heller gestellt - Haupttext jetzt reinweiß statt leicht getönt

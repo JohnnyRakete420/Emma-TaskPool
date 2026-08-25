@@ -263,6 +263,10 @@
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Padding" Value="10,4" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
+        <!-- Ohne diesen Setter erbt die Zelle WPFs Standard-Textfarbe (dunkel) statt unserer
+             Palette - im hellen Design zufällig unauffällig, im Dunklen Design quasi unsichtbar
+             bis man die Zeile anklickt (dann greift erst der IsSelected-Trigger unten). -->
+        <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
         <Style.Triggers>
             <Trigger Property="IsSelected" Value="True">
                 <Setter Property="Background" Value="{StaticResource PastelGreenBrush}" />
