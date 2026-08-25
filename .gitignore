@@ -1,5 +1,24 @@
-﻿################################################################################
+################################################################################
 # Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
 ################################################################################
 
 /.vs
+
+# Build-Ausgaben (werden aus dem Quellcode neu erzeugt, gehören nicht in die Versionsverwaltung)
+[Bb]in/
+[Oo]bj/
+publish/
+
+# WiX-Installer: Ausgabedateien und automatisch generierte Datei-Fragmente
+# (siehe BETRIEB.md - Generate-FilesWxs.ps1 erzeugt *.Files.wxs bei jedem Build neu)
+installer/*.msi
+installer/*.wixpdb
+installer/*.Files.wxs
+
+# Benutzerspezifische Visual-Studio-Dateien
+*.csproj.user
+
+# Lokale Entwicklungs-Datenbank
+*.db
+*.db-shm
+*.db-wal
