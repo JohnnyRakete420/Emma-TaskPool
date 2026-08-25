@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="EMMA Aufgabenpool - TrayApp"
+           Manufacturer="EMMA Aufgabenpool"
+           Version="1.5.0"
+           UpgradeCode="8FAA6A2F-D043-4957-85FE-C86DC2F7443F"
+           Scope="perMachine">
+
+    <MajorUpgrade DowngradeErrorMessage="Es ist bereits eine neuere Version von EMMA Aufgabenpool - TrayApp installiert." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" Name="EMMA Aufgabenpool TrayApp" />
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="AppProgramMenuFolder" Name="EMMA Aufgabenpool">
+        <Component Id="TrayAppShortcut" Guid="*">
+          <Shortcut Id="TrayAppStartMenuShortcut"
+                    Name="EMMA Aufgabenpool"
+                    Description="Prozesse an EMMA übergeben und verwalten"
+                    Target="[INSTALLFOLDER]Emma.TrayApp.exe"
+                    WorkingDirectory="INSTALLFOLDER" />
+          <RemoveFolder Id="RemoveAppProgramMenuFolder" On="uninstall" />
+          <RegistryValue Root="HKCU" Key="Software\EmmaAufgabenpool\TrayApp" Name="Installed" Type="integer" Value="1" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+
+    <Feature Id="Main" Title="EMMA Aufgabenpool TrayApp" Level="1">
+      <ComponentGroupRef Id="TrayAppFiles" />
+      <ComponentRef Id="TrayAppShortcut" />
+    </Feature>
+
+  </Package>
+</Wix>

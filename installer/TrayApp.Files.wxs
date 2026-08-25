@@ -1,0 +1,1914 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+<Directory Id="d_cs_95CC64DD" Name="cs"></Directory><Directory Id="d_de_5F02F088" Name="de"></Directory><Directory Id="d_es_12470FE4" Name="es"></Directory><Directory Id="d_fr_82A9E4D2" Name="fr"></Directory><Directory Id="d_it_0D149B90" Name="it"></Directory><Directory Id="d_ja_A78C5BF6" Name="ja"></Directory><Directory Id="d_ko_ED73F6B4" Name="ko"></Directory><Directory Id="d_pl_28840420" Name="pl"></Directory><Directory Id="d_pt_BR_7114E4A6" Name="pt-BR"></Directory><Directory Id="d_ru_89484B14" Name="ru"></Directory><Directory Id="d_tr_E7D707A2" Name="tr"></Directory><Directory Id="d_zh_Hans_14515CFE" Name="zh-Hans"></Directory><Directory Id="d_zh_Hant_F99C8A14" Name="zh-Hant"></Directory>
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <Component Id="c_Accessibility.dll_EC72A339" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Accessibility.dll_EC72A339" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Accessibility.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clretwrc.dll_0E761262" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clretwrc.dll_0E761262" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\clretwrc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clrgc.dll_5F6E0AA0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clrgc.dll_5F6E0AA0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\clrgc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clrgcexp.dll_C429E07C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clrgcexp.dll_C429E07C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\clrgcexp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clrjit.dll_FD82F850" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clrjit.dll_FD82F850" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\clrjit.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_coreclr.dll_E1D86768" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_coreclr.dll_E1D86768" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\coreclr.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_createdump.exe_058B99C3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_createdump.exe_058B99C3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\createdump.exe" KeyPath="yes" />
+    </Component>
+    <Component Id="c_D3DCompiler_47_cor3.dll_E4DB7229" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_D3DCompiler_47_cor3.dll_E4DB7229" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\D3DCompiler_47_cor3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_DirectWriteForwarder.dll_5964A313" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_DirectWriteForwarder.dll_5964A313" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\DirectWriteForwarder.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Shared.dll_A4B47CF4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Shared.dll_A4B47CF4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.Shared.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Shared.pdb_85D1E157" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Shared.pdb_85D1E157" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.Shared.pdb" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.TrayApp.deps.json_CB845AEE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.TrayApp.deps.json_CB845AEE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.TrayApp.deps.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.TrayApp.dll_F0BE10AD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.TrayApp.dll_F0BE10AD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.TrayApp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.TrayApp.exe_77E57C87" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.TrayApp.exe_77E57C87" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.TrayApp.exe" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.TrayApp.pdb_BE00CBF9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.TrayApp.pdb_BE00CBF9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.TrayApp.pdb" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.TrayApp.runtimeconfig.json_66777C2B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.TrayApp.runtimeconfig.json_66777C2B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Emma.TrayApp.runtimeconfig.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_hostfxr.dll_B35FD665" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_hostfxr.dll_B35FD665" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\hostfxr.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_hostpolicy.dll_74DB664C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_hostpolicy.dll_74DB664C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\hostpolicy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.CSharp.dll_A04F819E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.CSharp.dll_A04F819E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.CSharp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.DiaSymReader.Native.amd64.dll_EB2C5360" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.DiaSymReader.Native.amd64.dll_EB2C5360" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.VisualBasic.Core.dll_625D0848" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.VisualBasic.Core.dll_625D0848" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.VisualBasic.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.VisualBasic.dll_6FDDA9DF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.VisualBasic.dll_6FDDA9DF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.VisualBasic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.VisualBasic.Forms.dll_0352D227" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.VisualBasic.Forms.dll_0352D227" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.VisualBasic.Forms.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Win32.Primitives.dll_6844B938" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Win32.Primitives.dll_6844B938" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.Win32.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_crosoft.Win32.Registry.AccessControl.dll_51FA7168" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_crosoft.Win32.Registry.AccessControl.dll_51FA7168" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.Win32.Registry.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Win32.Registry.dll_96F8A0E2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Win32.Registry.dll_96F8A0E2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.Win32.Registry.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Win32.SystemEvents.dll_41C9854F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Win32.SystemEvents.dll_41C9854F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\Microsoft.Win32.SystemEvents.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscordaccore.dll_275B3E66" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscordaccore.dll_275B3E66" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\mscordaccore.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_rdaccore_amd64_amd64_10.0.1026.32716.dll_1DF06F0A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_rdaccore_amd64_amd64_10.0.1026.32716.dll_1DF06F0A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\mscordaccore_amd64_amd64_10.0.1026.32716.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscordbi.dll_940936AD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscordbi.dll_940936AD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\mscordbi.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscorlib.dll_74601154" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscorlib.dll_74601154" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\mscorlib.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscorrc.dll_7AEFA2E3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscorrc.dll_7AEFA2E3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\mscorrc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_msquic.dll_0876328C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_msquic.dll_0876328C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\msquic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_netstandard.dll_8C10CFD1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_netstandard.dll_8C10CFD1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\netstandard.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PenImc_cor3.dll_0167D54D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PenImc_cor3.dll_0167D54D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PenImc_cor3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationCore.dll_38B879A1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationCore.dll_38B879A1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationCore.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework_SystemCore.dll_28A87250" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework_SystemCore.dll_28A87250" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework-SystemCore.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework_SystemData.dll_8D33D994" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework_SystemData.dll_8D33D994" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework-SystemData.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework_SystemDrawing.dll_9DFE0B59" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework_SystemDrawing.dll_9DFE0B59" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework-SystemDrawing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework_SystemXml.dll_FF9186BF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework_SystemXml.dll_FF9186BF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework-SystemXml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework_SystemXmlLinq.dll_B4F80050" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework_SystemXmlLinq.dll_B4F80050" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework-SystemXmlLinq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.Aero.dll_EE1DC82A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.Aero.dll_EE1DC82A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.Aero.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.Aero2.dll_E79687AB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.Aero2.dll_E79687AB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.Aero2.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.AeroLite.dll_9BE80834" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.AeroLite.dll_9BE80834" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.AeroLite.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.Classic.dll_77FCC58F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.Classic.dll_77FCC58F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.Classic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.dll_1FA8AB3A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.dll_1FA8AB3A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.Fluent.dll_431BBAF4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.Fluent.dll_431BBAF4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.Fluent.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.Luna.dll_2AE7540E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.Luna.dll_2AE7540E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.Luna.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationFramework.Royale.dll_2DBC7CAA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationFramework.Royale.dll_2DBC7CAA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationFramework.Royale.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationNative_cor3.dll_216D6A68" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationNative_cor3.dll_216D6A68" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationNative_cor3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_PresentationUI.dll_BC2E48EB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_PresentationUI.dll_BC2E48EB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\PresentationUI.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ReachFramework.dll_14680089" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ReachFramework.dll_14680089" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ReachFramework.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.AppContext.dll_825D35CF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.AppContext.dll_825D35CF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.AppContext.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Buffers.dll_FEF37070" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Buffers.dll_FEF37070" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Buffers.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.CodeDom.dll_C3029354" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.CodeDom.dll_C3029354" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.CodeDom.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.Concurrent.dll_16A06EFB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.Concurrent.dll_16A06EFB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Collections.Concurrent.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.dll_84A1C539" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.dll_84A1C539" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Collections.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.Immutable.dll_933EA1EF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.Immutable.dll_933EA1EF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Collections.Immutable.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.NonGeneric.dll_B4F083E3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.NonGeneric.dll_B4F083E3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Collections.NonGeneric.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.Specialized.dll_CB23773A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.Specialized.dll_CB23773A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Collections.Specialized.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.Annotations.dll_CAB0F1D6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.Annotations.dll_CAB0F1D6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ComponentModel.Annotations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.ComponentModel.DataAnnotations.dll_1E7EA632" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.ComponentModel.DataAnnotations.dll_1E7EA632" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ComponentModel.DataAnnotations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.dll_BFA77E7A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.dll_BFA77E7A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ComponentModel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.ComponentModel.EventBasedAsync.dll_9498AE93" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.ComponentModel.EventBasedAsync.dll_9498AE93" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.Primitives.dll_7A1D8267" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.Primitives.dll_7A1D8267" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ComponentModel.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.TypeConverter.dll_BBD0F76D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.TypeConverter.dll_BBD0F76D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ComponentModel.TypeConverter.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Configuration.ConfigurationManager.dll_48D0165F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_m.Configuration.ConfigurationManager.dll_48D0165F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Configuration.ConfigurationManager.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Configuration.dll_D131F39B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Configuration.dll_D131F39B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Configuration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Console.dll_355C1293" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Console.dll_355C1293" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Console.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Core.dll_E77F633C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Core.dll_E77F633C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Data.Common.dll_78AFB26D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Data.Common.dll_78AFB26D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Data.Common.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Data.DataSetExtensions.dll_7EA2EB3D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Data.DataSetExtensions.dll_7EA2EB3D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Data.DataSetExtensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Data.dll_58154E13" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Data.dll_58154E13" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Data.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Design.dll_6F53E5D4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Design.dll_6F53E5D4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Design.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Contracts.dll_684B6C0F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Contracts.dll_684B6C0F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.Contracts.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Debug.dll_D501E00B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Debug.dll_D501E00B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.Debug.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.DiagnosticSource.dll_947E770A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.DiagnosticSource.dll_947E770A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.EventLog.dll_6C627046" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.EventLog.dll_6C627046" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.EventLog.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.EventLog.Messages.dll_F2889D17" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.EventLog.Messages.dll_F2889D17" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.EventLog.Messages.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.FileVersionInfo.dll_34077D53" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.FileVersionInfo.dll_34077D53" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Diagnostics.PerformanceCounter.dll_C3746F35" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.Diagnostics.PerformanceCounter.dll_C3746F35" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.PerformanceCounter.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Process.dll_CF820ED7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Process.dll_CF820ED7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.Process.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.StackTrace.dll_45FAB6BB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.StackTrace.dll_45FAB6BB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.StackTrace.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Diagnostics.TextWriterTraceListener.dll_A32A6479" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Diagnostics.TextWriterTraceListener.dll_A32A6479" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Tools.dll_2D5C3C1A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Tools.dll_2D5C3C1A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.Tools.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.TraceSource.dll_5793ABE6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.TraceSource.dll_5793ABE6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.TraceSource.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Tracing.dll_03617A49" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Tracing.dll_03617A49" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Diagnostics.Tracing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.DirectoryServices.dll_C7D1E511" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.DirectoryServices.dll_C7D1E511" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.DirectoryServices.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.dll_A674FFDF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.dll_A674FFDF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Drawing.Common.dll_27812442" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Drawing.Common.dll_27812442" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Drawing.Common.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Drawing.Design.dll_2FD9B8EC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Drawing.Design.dll_2FD9B8EC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Drawing.Design.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Drawing.dll_1F6C6C9A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Drawing.dll_1F6C6C9A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Drawing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Drawing.Primitives.dll_6DE2AAF7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Drawing.Primitives.dll_6DE2AAF7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Drawing.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Dynamic.Runtime.dll_D0546209" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Dynamic.Runtime.dll_D0546209" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Dynamic.Runtime.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Formats.Asn1.dll_E64E9B18" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Formats.Asn1.dll_E64E9B18" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Formats.Asn1.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Formats.Nrbf.dll_E8EDD293" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Formats.Nrbf.dll_E8EDD293" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Formats.Nrbf.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Formats.Tar.dll_42700B7C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Formats.Tar.dll_42700B7C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Formats.Tar.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Globalization.Calendars.dll_F85D9ED6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Globalization.Calendars.dll_F85D9ED6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Globalization.Calendars.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Globalization.dll_D1B2C6B6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Globalization.dll_D1B2C6B6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Globalization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Globalization.Extensions.dll_11A8D004" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Globalization.Extensions.dll_11A8D004" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Globalization.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.Brotli.dll_FE86A889" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.Brotli.dll_FE86A889" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Compression.Brotli.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.dll_2E9012E7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.dll_2E9012E7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Compression.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.FileSystem.dll_FAF3D44C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.FileSystem.dll_FAF3D44C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Compression.FileSystem.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.Native.dll_FC11E194" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.Native.dll_FC11E194" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Compression.Native.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.ZipFile.dll_F4B9534C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.ZipFile.dll_F4B9534C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Compression.ZipFile.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.dll_06DB5174" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.dll_06DB5174" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.AccessControl.dll_F1C33BB1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.AccessControl.dll_F1C33BB1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.FileSystem.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.dll_C9953D4D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.dll_C9953D4D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.FileSystem.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.DriveInfo.dll_4066D14E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.DriveInfo.dll_4066D14E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.Primitives.dll_5F895B5D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.Primitives.dll_5F895B5D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.Watcher.dll_92462581" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.Watcher.dll_92462581" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.FileSystem.Watcher.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.IsolatedStorage.dll_80789B9D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.IsolatedStorage.dll_80789B9D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.IsolatedStorage.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.MemoryMappedFiles.dll_42937536" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.MemoryMappedFiles.dll_42937536" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.MemoryMappedFiles.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Packaging.dll_47DF02EC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Packaging.dll_47DF02EC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Packaging.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Pipelines.dll_20998DC2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Pipelines.dll_20998DC2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Pipelines.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Pipes.AccessControl.dll_B6DE5536" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Pipes.AccessControl.dll_B6DE5536" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Pipes.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Pipes.dll_F4D0A904" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Pipes.dll_F4D0A904" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.Pipes.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.UnmanagedMemoryStream.dll_41FD69A0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.UnmanagedMemoryStream.dll_41FD69A0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.AsyncEnumerable.dll_A29A8696" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.AsyncEnumerable.dll_A29A8696" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Linq.AsyncEnumerable.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.dll_513B78B8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.dll_513B78B8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Linq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.Expressions.dll_A7A636E8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.Expressions.dll_A7A636E8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Linq.Expressions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.Parallel.dll_B209AAED" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.Parallel.dll_B209AAED" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Linq.Parallel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.Queryable.dll_06FE5FB1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.Queryable.dll_06FE5FB1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Linq.Queryable.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Memory.dll_413B04CC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Memory.dll_413B04CC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Memory.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.dll_111FF7E0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.dll_111FF7E0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Http.dll_6674532B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Http.dll_6674532B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Http.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Http.Json.dll_084C98E1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Http.Json.dll_084C98E1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Http.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.HttpListener.dll_9A0138D1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.HttpListener.dll_9A0138D1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.HttpListener.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Mail.dll_654E0050" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Mail.dll_654E0050" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Mail.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.NameResolution.dll_E676BF22" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.NameResolution.dll_E676BF22" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.NameResolution.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.NetworkInformation.dll_ED547C15" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.NetworkInformation.dll_ED547C15" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.NetworkInformation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Ping.dll_C33D3B15" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Ping.dll_C33D3B15" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Ping.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Primitives.dll_2BC8E06D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Primitives.dll_2BC8E06D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Quic.dll_3FA8163C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Quic.dll_3FA8163C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Quic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Requests.dll_4C132C80" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Requests.dll_4C132C80" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Requests.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Security.dll_9EC85993" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Security.dll_9EC85993" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Security.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.ServerSentEvents.dll_9890FEFB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.ServerSentEvents.dll_9890FEFB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.ServerSentEvents.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.ServicePoint.dll_90D2AEF7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.ServicePoint.dll_90D2AEF7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.ServicePoint.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Sockets.dll_D8EE744B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Sockets.dll_D8EE744B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.Sockets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebClient.dll_909D122C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebClient.dll_909D122C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.WebClient.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebHeaderCollection.dll_682E28F3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebHeaderCollection.dll_682E28F3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.WebHeaderCollection.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebProxy.dll_566E84C1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebProxy.dll_566E84C1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.WebProxy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebSockets.Client.dll_39A7E751" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebSockets.Client.dll_39A7E751" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.WebSockets.Client.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebSockets.dll_46DFA227" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebSockets.dll_46DFA227" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Net.WebSockets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Numerics.dll_3555DEC6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Numerics.dll_3555DEC6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Numerics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Numerics.Vectors.dll_DF054063" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Numerics.Vectors.dll_DF054063" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Numerics.Vectors.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ObjectModel.dll_D3D2FA67" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ObjectModel.dll_D3D2FA67" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ObjectModel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Printing.dll_4EC4B008" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Printing.dll_4EC4B008" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Printing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.CoreLib.dll_BCCC6F16" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.CoreLib.dll_BCCC6F16" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.CoreLib.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Private.DataContractSerialization.dll_BE2EB9A0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_em.Private.DataContractSerialization.dll_BE2EB9A0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.DataContractSerialization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Uri.dll_4BD94145" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Uri.dll_4BD94145" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.Uri.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Windows.Core.dll_968455A6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Windows.Core.dll_968455A6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.Windows.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Windows.GdiPlus.dll_EE850E46" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Windows.GdiPlus.dll_EE850E46" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.Windows.GdiPlus.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Xml.dll_7605AB18" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Xml.dll_7605AB18" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Xml.Linq.dll_D0B42C74" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Xml.Linq.dll_D0B42C74" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Private.Xml.Linq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.DispatchProxy.dll_73B1E3DB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.DispatchProxy.dll_73B1E3DB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.DispatchProxy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.dll_60C7DFE1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.dll_60C7DFE1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Emit.dll_1A4AC658" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Emit.dll_1A4AC658" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.Emit.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Emit.ILGeneration.dll_7CE761C0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Emit.ILGeneration.dll_7CE761C0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Emit.Lightweight.dll_EA84A17C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Emit.Lightweight.dll_EA84A17C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.Emit.Lightweight.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Extensions.dll_098C4242" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Extensions.dll_098C4242" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Metadata.dll_4973EE48" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Metadata.dll_4973EE48" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.Metadata.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Primitives.dll_A3FAE730" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Primitives.dll_A3FAE730" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.TypeExtensions.dll_003C3549" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.TypeExtensions.dll_003C3549" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Reflection.TypeExtensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.Extensions.dll_376E36B2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.Extensions.dll_376E36B2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Resources.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.Reader.dll_C9DF54AF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.Reader.dll_C9DF54AF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Resources.Reader.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.ResourceManager.dll_DD5CF897" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.ResourceManager.dll_DD5CF897" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Resources.ResourceManager.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.Writer.dll_6D31FDF6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.Writer.dll_6D31FDF6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Resources.Writer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_stem.Runtime.CompilerServices.Unsafe.dll_B372F953" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_stem.Runtime.CompilerServices.Unsafe.dll_B372F953" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Runtime.CompilerServices.VisualC.dll_CAF2B39A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Runtime.CompilerServices.VisualC.dll_CAF2B39A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.dll_CFBB2B5C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.dll_CFBB2B5C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Extensions.dll_945DFCA9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Extensions.dll_945DFCA9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Handles.dll_15949052" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Handles.dll_15949052" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Handles.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.InteropServices.dll_A779180C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.InteropServices.dll_A779180C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.InteropServices.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Runtime.InteropServices.JavaScript.dll_954A714B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_m.Runtime.InteropServices.JavaScript.dll_954A714B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_e.InteropServices.RuntimeInformation.dll_463C6599" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_e.InteropServices.RuntimeInformation.dll_463C6599" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Intrinsics.dll_3F7E8B28" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Intrinsics.dll_3F7E8B28" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Intrinsics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Loader.dll_26DDA1F5" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Loader.dll_26DDA1F5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Loader.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Numerics.dll_D271976E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Numerics.dll_D271976E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Numerics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Serialization.dll_B3750820" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Serialization.dll_B3750820" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Serialization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Runtime.Serialization.Formatters.dll_57BAD482" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Runtime.Serialization.Formatters.dll_57BAD482" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Serialization.Formatters.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Serialization.Json.dll_EAE85B22" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Serialization.Json.dll_EAE85B22" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Serialization.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Runtime.Serialization.Primitives.dll_2EA423D6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Runtime.Serialization.Primitives.dll_2EA423D6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Serialization.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Serialization.Xml.dll_5C812A0D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Serialization.Xml.dll_5C812A0D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Runtime.Serialization.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.AccessControl.dll_3D2DB02B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.AccessControl.dll_3D2DB02B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Claims.dll_891808AE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Claims.dll_891808AE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Claims.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Security.Cryptography.Algorithms.dll_DB9E7BC3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Security.Cryptography.Algorithms.dll_DB9E7BC3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Cng.dll_2D17D42F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Cng.dll_2D17D42F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Cng.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Csp.dll_69DBE10B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Csp.dll_69DBE10B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Csp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.dll_EDB23E56" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.dll_EDB23E56" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Security.Cryptography.Encoding.dll_52138CC9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.Security.Cryptography.Encoding.dll_52138CC9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.OpenSsl.dll_45ADF146" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.OpenSsl.dll_45ADF146" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Pkcs.dll_14A4686C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Pkcs.dll_14A4686C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Pkcs.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Security.Cryptography.Primitives.dll_A39DE482" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Security.Cryptography.Primitives.dll_A39DE482" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Security.Cryptography.ProtectedData.dll_10791547" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Security.Cryptography.ProtectedData.dll_10791547" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.ProtectedData.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_curity.Cryptography.X509Certificates.dll_839A39C6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_curity.Cryptography.X509Certificates.dll_839A39C6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Xml.dll_1B003E83" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Xml.dll_1B003E83" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Cryptography.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.dll_E6A266E2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.dll_E6A266E2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Permissions.dll_15B1C2ED" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Permissions.dll_15B1C2ED" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Permissions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Principal.dll_0D88121E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Principal.dll_0D88121E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Principal.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Principal.Windows.dll_459E4D64" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Principal.Windows.dll_459E4D64" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.Principal.Windows.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.SecureString.dll_EF93AE26" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.SecureString.dll_EF93AE26" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Security.SecureString.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ServiceModel.Web.dll_0A1A4081" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ServiceModel.Web.dll_0A1A4081" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ServiceModel.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ServiceProcess.dll_B09B7E90" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ServiceProcess.dll_B09B7E90" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ServiceProcess.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encoding.CodePages.dll_8F909CDA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encoding.CodePages.dll_8F909CDA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Text.Encoding.CodePages.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encoding.dll_DA8EA9B6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encoding.dll_DA8EA9B6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Text.Encoding.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encoding.Extensions.dll_0C6D6E1D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encoding.Extensions.dll_0C6D6E1D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Text.Encoding.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encodings.Web.dll_61B7EA9B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encodings.Web.dll_61B7EA9B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Text.Encodings.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Json.dll_11A43862" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Json.dll_11A43862" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Text.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.RegularExpressions.dll_2FAC2DB4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.RegularExpressions.dll_2FAC2DB4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Text.RegularExpressions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.AccessControl.dll_5BFE1BEC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.AccessControl.dll_5BFE1BEC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Channels.dll_B1AF0061" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Channels.dll_B1AF0061" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Channels.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.dll_39DA6487" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.dll_39DA6487" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Overlapped.dll_CBDBA98A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Overlapped.dll_CBDBA98A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Overlapped.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.Dataflow.dll_5653ED47" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.Dataflow.dll_5653ED47" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Tasks.Dataflow.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.dll_A01A12B0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.dll_A01A12B0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Tasks.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.Extensions.dll_B475AC49" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.Extensions.dll_B475AC49" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Tasks.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.Parallel.dll_BE348D32" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.Parallel.dll_BE348D32" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Tasks.Parallel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Thread.dll_8B79780C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Thread.dll_8B79780C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Thread.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.ThreadPool.dll_40185A2D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.ThreadPool.dll_40185A2D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.ThreadPool.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Timer.dll_027DD507" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Timer.dll_027DD507" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Threading.Timer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Transactions.dll_687D8940" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Transactions.dll_687D8940" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Transactions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Transactions.Local.dll_0A8352D7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Transactions.Local.dll_0A8352D7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Transactions.Local.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ValueTuple.dll_BA09FBBD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ValueTuple.dll_BA09FBBD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.ValueTuple.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Web.dll_AA222A73" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Web.dll_AA222A73" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Web.HttpUtility.dll_8A730CD7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Web.HttpUtility.dll_8A730CD7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Web.HttpUtility.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Controls.Ribbon.dll_D167F438" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Controls.Ribbon.dll_D167F438" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Controls.Ribbon.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.dll_2B2B30A4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.dll_2B2B30A4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Extensions.dll_5113AE9C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Extensions.dll_5113AE9C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Forms.Design.dll_30AA5289" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Forms.Design.dll_30AA5289" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Forms.Design.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Forms.Design.Editors.dll_12DDF98C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Forms.Design.Editors.dll_12DDF98C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Forms.Design.Editors.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Forms.dll_8BD4A031" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Forms.dll_8BD4A031" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Forms.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Forms.Primitives.dll_5AD5EE24" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Forms.Primitives.dll_5AD5EE24" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Forms.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Input.Manipulations.dll_08A5D81C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Input.Manipulations.dll_08A5D81C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Input.Manipulations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Presentation.dll_1B64B36A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Presentation.dll_1B64B36A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Presentation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.Primitives.dll_8F0EEBA4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.Primitives.dll_8F0EEBA4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Windows.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xaml.dll_3835C7C4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xaml.dll_3835C7C4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xaml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.dll_63946FB7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.dll_63946FB7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.Linq.dll_AF810015" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.Linq.dll_AF810015" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.Linq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.ReaderWriter.dll_3E4E187F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.ReaderWriter.dll_3E4E187F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.ReaderWriter.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.Serialization.dll_E5256E4C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.Serialization.dll_E5256E4C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.Serialization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XDocument.dll_61EF49C2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XDocument.dll_61EF49C2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.XDocument.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XmlDocument.dll_496B7AFF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XmlDocument.dll_496B7AFF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.XmlDocument.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XmlSerializer.dll_B20055C4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XmlSerializer.dll_B20055C4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.XmlSerializer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XPath.dll_720EC1EF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XPath.dll_720EC1EF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.XPath.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XPath.XDocument.dll_776F9FBE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XPath.XDocument.dll_776F9FBE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_UIAutomationClient.dll_8FDE6C47" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_UIAutomationClient.dll_8FDE6C47" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\UIAutomationClient.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_UIAutomationClientSideProviders.dll_3F97DD13" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_UIAutomationClientSideProviders.dll_3F97DD13" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\UIAutomationClientSideProviders.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_UIAutomationProvider.dll_CB5D061E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_UIAutomationProvider.dll_CB5D061E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\UIAutomationProvider.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_UIAutomationTypes.dll_E8D79E79" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_UIAutomationTypes.dll_E8D79E79" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\UIAutomationTypes.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_vcruntime140_cor3.dll_D2B36A3E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_vcruntime140_cor3.dll_D2B36A3E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\vcruntime140_cor3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_WindowsBase.dll_27EF1F45" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_WindowsBase.dll_27EF1F45" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\WindowsBase.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_WindowsFormsIntegration.dll_938038C0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_WindowsFormsIntegration.dll_938038C0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\WindowsFormsIntegration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_wpfgfx_cor3.dll_FB9368A8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_wpfgfx_cor3.dll_FB9368A8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\wpfgfx_cor3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_61764BC1" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_61764BC1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_PresentationCore.resources.dll_1AB0C8F6" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_PresentationCore.resources.dll_1AB0C8F6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_PresentationFramework.resources.dll_9A2E9F63" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_PresentationFramework.resources.dll_9A2E9F63" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_PresentationUI.resources.dll_C8E7CE96" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_PresentationUI.resources.dll_C8E7CE96" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_ReachFramework.resources.dll_63D1ED30" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_ReachFramework.resources.dll_63D1ED30" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_C3CA4A0B" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_C3CA4A0B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_F7C52E4D" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_F7C52E4D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_BC85F831" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_BC85F831" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_System.Windows.Forms.resources.dll_3A0CA1AE" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_System.Windows.Forms.resources.dll_3A0CA1AE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_D8C0EBF5" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_D8C0EBF5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_System.Xaml.resources.dll_8BD44521" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_System.Xaml.resources.dll_8BD44521" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_UIAutomationClient.resources.dll_8E867067" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_UIAutomationClient.resources.dll_8E867067" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_A48645A4" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_A48645A4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_UIAutomationProvider.resources.dll_A5C151F0" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_UIAutomationProvider.resources.dll_A5C151F0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_UIAutomationTypes.resources.dll_B7004C24" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_UIAutomationTypes.resources.dll_B7004C24" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_WindowsBase.resources.dll_17EF6535" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_WindowsBase.resources.dll_17EF6535" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_cs_WindowsFormsIntegration.resources.dll_38521D34" Directory="d_cs_95CC64DD" Guid="*">
+      <File Id="f_cs_WindowsFormsIntegration.resources.dll_38521D34" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\cs\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_49E79674" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_49E79674" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_PresentationCore.resources.dll_D09D02A3" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_PresentationCore.resources.dll_D09D02A3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_PresentationFramework.resources.dll_F8D30915" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_PresentationFramework.resources.dll_F8D30915" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_PresentationUI.resources.dll_5EC9C5F1" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_PresentationUI.resources.dll_5EC9C5F1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_ReachFramework.resources.dll_9027205E" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_ReachFramework.resources.dll_9027205E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_28F88A99" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_28F88A99" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_92161CAD" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_92161CAD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_25F1FC95" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_25F1FC95" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_System.Windows.Forms.resources.dll_B02F9154" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_System.Windows.Forms.resources.dll_B02F9154" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_5BE9B5EF" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_5BE9B5EF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_System.Xaml.resources.dll_1D1E5765" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_System.Xaml.resources.dll_1D1E5765" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_UIAutomationClient.resources.dll_6BE1C610" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_UIAutomationClient.resources.dll_6BE1C610" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_0ECD53AD" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_0ECD53AD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_UIAutomationProvider.resources.dll_D26A4F6A" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_UIAutomationProvider.resources.dll_D26A4F6A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_UIAutomationTypes.resources.dll_0FED15AB" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_UIAutomationTypes.resources.dll_0FED15AB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_WindowsBase.resources.dll_B3C1B058" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_WindowsBase.resources.dll_B3C1B058" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_de_WindowsFormsIntegration.resources.dll_26F38097" Directory="d_de_5F02F088" Guid="*">
+      <File Id="f_de_WindowsFormsIntegration.resources.dll_26F38097" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\de\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_71D17232" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_71D17232" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_PresentationCore.resources.dll_215359D7" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_PresentationCore.resources.dll_215359D7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_PresentationFramework.resources.dll_9A18AF61" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_PresentationFramework.resources.dll_9A18AF61" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_PresentationUI.resources.dll_039281AA" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_PresentationUI.resources.dll_039281AA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_ReachFramework.resources.dll_94324457" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_ReachFramework.resources.dll_94324457" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_347AF894" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_347AF894" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_ADE8FCA8" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_ADE8FCA8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_CD2E0159" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_CD2E0159" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_System.Windows.Forms.resources.dll_E9611396" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_System.Windows.Forms.resources.dll_E9611396" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_51F29B2E" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_51F29B2E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_System.Xaml.resources.dll_7553F399" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_System.Xaml.resources.dll_7553F399" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_UIAutomationClient.resources.dll_525B5C99" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_UIAutomationClient.resources.dll_525B5C99" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_C2615B07" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_C2615B07" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_UIAutomationProvider.resources.dll_26367A6E" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_UIAutomationProvider.resources.dll_26367A6E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_UIAutomationTypes.resources.dll_6FFF911E" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_UIAutomationTypes.resources.dll_6FFF911E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_WindowsBase.resources.dll_0560D27A" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_WindowsBase.resources.dll_0560D27A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_es_WindowsFormsIntegration.resources.dll_0FEF5468" Directory="d_es_12470FE4" Guid="*">
+      <File Id="f_es_WindowsFormsIntegration.resources.dll_0FEF5468" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\es\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_ADE1F970" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_ADE1F970" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_PresentationCore.resources.dll_107E9998" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_PresentationCore.resources.dll_107E9998" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_PresentationFramework.resources.dll_5E1571AE" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_PresentationFramework.resources.dll_5E1571AE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_PresentationUI.resources.dll_D0625016" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_PresentationUI.resources.dll_D0625016" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_ReachFramework.resources.dll_C0237074" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_ReachFramework.resources.dll_C0237074" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_4097411D" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_4097411D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_5C95902A" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_5C95902A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_76240C0D" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_76240C0D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_System.Windows.Forms.resources.dll_EFAA38CF" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_System.Windows.Forms.resources.dll_EFAA38CF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_8EF38A29" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_8EF38A29" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_System.Xaml.resources.dll_C36E6AE0" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_System.Xaml.resources.dll_C36E6AE0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_UIAutomationClient.resources.dll_6718CF1B" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_UIAutomationClient.resources.dll_6718CF1B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_6E807B6B" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_6E807B6B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_UIAutomationProvider.resources.dll_7491B1C4" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_UIAutomationProvider.resources.dll_7491B1C4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_UIAutomationTypes.resources.dll_21B04280" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_UIAutomationTypes.resources.dll_21B04280" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_WindowsBase.resources.dll_0C301895" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_WindowsBase.resources.dll_0C301895" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_fr_WindowsFormsIntegration.resources.dll_5314F740" Directory="d_fr_82A9E4D2" Guid="*">
+      <File Id="f_fr_WindowsFormsIntegration.resources.dll_5314F740" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\fr\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_067337B3" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_067337B3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_PresentationCore.resources.dll_0B6715B0" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_PresentationCore.resources.dll_0B6715B0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_PresentationFramework.resources.dll_9CBB1ECF" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_PresentationFramework.resources.dll_9CBB1ECF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_PresentationUI.resources.dll_D2282879" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_PresentationUI.resources.dll_D2282879" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_ReachFramework.resources.dll_3801D308" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_ReachFramework.resources.dll_3801D308" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_9C460652" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_9C460652" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_C5606DE1" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_C5606DE1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_65253A5B" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_65253A5B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_System.Windows.Forms.resources.dll_0FCD3B3D" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_System.Windows.Forms.resources.dll_0FCD3B3D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_C988BA9A" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_C988BA9A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_System.Xaml.resources.dll_DC1A35DA" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_System.Xaml.resources.dll_DC1A35DA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_UIAutomationClient.resources.dll_4D8CB570" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_UIAutomationClient.resources.dll_4D8CB570" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_E3FB6BA9" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_E3FB6BA9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_UIAutomationProvider.resources.dll_FF56A3CE" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_UIAutomationProvider.resources.dll_FF56A3CE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_UIAutomationTypes.resources.dll_CC5EB7FC" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_UIAutomationTypes.resources.dll_CC5EB7FC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_WindowsBase.resources.dll_7A702077" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_WindowsBase.resources.dll_7A702077" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_it_WindowsFormsIntegration.resources.dll_91B9DE2A" Directory="d_it_0D149B90" Guid="*">
+      <File Id="f_it_WindowsFormsIntegration.resources.dll_91B9DE2A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\it\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_9E63E3BA" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_9E63E3BA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_PresentationCore.resources.dll_B57D4A86" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_PresentationCore.resources.dll_B57D4A86" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_PresentationFramework.resources.dll_4A4DA610" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_PresentationFramework.resources.dll_4A4DA610" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_PresentationUI.resources.dll_2D729945" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_PresentationUI.resources.dll_2D729945" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_ReachFramework.resources.dll_7F2386FE" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_ReachFramework.resources.dll_7F2386FE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_412B9F2F" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_412B9F2F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_BB6FB213" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_BB6FB213" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_672AB2A4" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_672AB2A4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_System.Windows.Forms.resources.dll_9BA6F301" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_System.Windows.Forms.resources.dll_9BA6F301" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_45E18FEF" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_45E18FEF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_System.Xaml.resources.dll_E8EA38CB" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_System.Xaml.resources.dll_E8EA38CB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_UIAutomationClient.resources.dll_EA773A69" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_UIAutomationClient.resources.dll_EA773A69" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_40E6A1C5" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_40E6A1C5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_UIAutomationProvider.resources.dll_D3219BD8" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_UIAutomationProvider.resources.dll_D3219BD8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_UIAutomationTypes.resources.dll_EF93DB69" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_UIAutomationTypes.resources.dll_EF93DB69" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_WindowsBase.resources.dll_D685F36F" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_WindowsBase.resources.dll_D685F36F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ja_WindowsFormsIntegration.resources.dll_0A0CC0F4" Directory="d_ja_A78C5BF6" Guid="*">
+      <File Id="f_ja_WindowsFormsIntegration.resources.dll_0A0CC0F4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ja\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_90D36CB6" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_90D36CB6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_PresentationCore.resources.dll_FB97CBFE" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_PresentationCore.resources.dll_FB97CBFE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_PresentationFramework.resources.dll_C6D11467" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_PresentationFramework.resources.dll_C6D11467" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_PresentationUI.resources.dll_5266A53B" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_PresentationUI.resources.dll_5266A53B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_ReachFramework.resources.dll_14C9A6F6" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_ReachFramework.resources.dll_14C9A6F6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_56FED78C" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_56FED78C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_58AB3FBB" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_58AB3FBB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_50D0F07C" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_50D0F07C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_System.Windows.Forms.resources.dll_CDD8DAEB" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_System.Windows.Forms.resources.dll_CDD8DAEB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_E2BD543E" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_E2BD543E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_System.Xaml.resources.dll_2BC67662" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_System.Xaml.resources.dll_2BC67662" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_UIAutomationClient.resources.dll_162901D1" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_UIAutomationClient.resources.dll_162901D1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_CEE8941C" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_CEE8941C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_UIAutomationProvider.resources.dll_75E4ADF0" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_UIAutomationProvider.resources.dll_75E4ADF0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_UIAutomationTypes.resources.dll_AC12D0AA" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_UIAutomationTypes.resources.dll_AC12D0AA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_WindowsBase.resources.dll_2EBA10C3" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_WindowsBase.resources.dll_2EBA10C3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ko_WindowsFormsIntegration.resources.dll_955F9C33" Directory="d_ko_ED73F6B4" Guid="*">
+      <File Id="f_ko_WindowsFormsIntegration.resources.dll_955F9C33" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ko\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_9EFF439C" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_9EFF439C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_PresentationCore.resources.dll_EA8F7DB3" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_PresentationCore.resources.dll_EA8F7DB3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_PresentationFramework.resources.dll_BAA1BC4C" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_PresentationFramework.resources.dll_BAA1BC4C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_PresentationUI.resources.dll_315FFA90" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_PresentationUI.resources.dll_315FFA90" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_ReachFramework.resources.dll_809E8FEA" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_ReachFramework.resources.dll_809E8FEA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_BABDAE06" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_BABDAE06" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_F0B304AA" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_F0B304AA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_0DA2F08A" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_0DA2F08A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_System.Windows.Forms.resources.dll_A27A2A32" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_System.Windows.Forms.resources.dll_A27A2A32" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_2CA79E53" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_2CA79E53" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_System.Xaml.resources.dll_60C7745C" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_System.Xaml.resources.dll_60C7745C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_UIAutomationClient.resources.dll_9E08794E" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_UIAutomationClient.resources.dll_9E08794E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_9DB71C12" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_9DB71C12" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_UIAutomationProvider.resources.dll_B2CB61A8" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_UIAutomationProvider.resources.dll_B2CB61A8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_UIAutomationTypes.resources.dll_2B041CED" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_UIAutomationTypes.resources.dll_2B041CED" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_WindowsBase.resources.dll_F2C3F72F" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_WindowsBase.resources.dll_F2C3F72F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pl_WindowsFormsIntegration.resources.dll_F370CE7D" Directory="d_pl_28840420" Guid="*">
+      <File Id="f_pl_WindowsFormsIntegration.resources.dll_F370CE7D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pl\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_92CF9C8E" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_92CF9C8E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_PresentationCore.resources.dll_42E1AD73" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_PresentationCore.resources.dll_42E1AD73" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_t_BR_PresentationFramework.resources.dll_22674E5B" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_t_BR_PresentationFramework.resources.dll_22674E5B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_PresentationUI.resources.dll_2A4439FE" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_PresentationUI.resources.dll_2A4439FE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_ReachFramework.resources.dll_ACC602BD" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_ReachFramework.resources.dll_ACC602BD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_C16B31B7" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_C16B31B7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_A3838678" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_A3838678" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_D2E0F466" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_D2E0F466" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_System.Windows.Forms.resources.dll_4D8AD4AA" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_System.Windows.Forms.resources.dll_4D8AD4AA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_767C034D" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_767C034D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_System.Xaml.resources.dll_52186FA0" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_System.Xaml.resources.dll_52186FA0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_UIAutomationClient.resources.dll_F3A24D3F" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_UIAutomationClient.resources.dll_F3A24D3F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_5781C0FD" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_5781C0FD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_UIAutomationProvider.resources.dll_66B7A8B1" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_UIAutomationProvider.resources.dll_66B7A8B1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_UIAutomationTypes.resources.dll_03036D12" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_UIAutomationTypes.resources.dll_03036D12" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pt_BR_WindowsBase.resources.dll_A38C48F9" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_pt_BR_WindowsBase.resources.dll_A38C48F9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_BR_WindowsFormsIntegration.resources.dll_597E55F2" Directory="d_pt_BR_7114E4A6" Guid="*">
+      <File Id="f_BR_WindowsFormsIntegration.resources.dll_597E55F2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\pt-BR\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_5E17D929" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_5E17D929" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_PresentationCore.resources.dll_0DE46106" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_PresentationCore.resources.dll_0DE46106" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_PresentationFramework.resources.dll_3EA02B9E" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_PresentationFramework.resources.dll_3EA02B9E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_PresentationUI.resources.dll_33900B78" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_PresentationUI.resources.dll_33900B78" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_ReachFramework.resources.dll_8A06AF47" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_ReachFramework.resources.dll_8A06AF47" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_5ABAFCEA" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_5ABAFCEA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_88599E59" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_88599E59" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_925742E3" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_925742E3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_System.Windows.Forms.resources.dll_B2C8E771" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_System.Windows.Forms.resources.dll_B2C8E771" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_407C7B58" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_407C7B58" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_System.Xaml.resources.dll_4D15F11F" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_System.Xaml.resources.dll_4D15F11F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_UIAutomationClient.resources.dll_D69949C5" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_UIAutomationClient.resources.dll_D69949C5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_557EDBB3" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_557EDBB3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_UIAutomationProvider.resources.dll_7B3F4843" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_UIAutomationProvider.resources.dll_7B3F4843" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_UIAutomationTypes.resources.dll_B9739597" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_UIAutomationTypes.resources.dll_B9739597" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_WindowsBase.resources.dll_56861533" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_WindowsBase.resources.dll_56861533" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ru_WindowsFormsIntegration.resources.dll_C041490B" Directory="d_ru_89484B14" Guid="*">
+      <File Id="f_ru_WindowsFormsIntegration.resources.dll_C041490B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\ru\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_BBACF7C2" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_BBACF7C2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_PresentationCore.resources.dll_8C9C8CD5" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_PresentationCore.resources.dll_8C9C8CD5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_PresentationFramework.resources.dll_C5E13056" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_PresentationFramework.resources.dll_C5E13056" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_PresentationUI.resources.dll_6495E7B9" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_PresentationUI.resources.dll_6495E7B9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_ReachFramework.resources.dll_48D888AD" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_ReachFramework.resources.dll_48D888AD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_592F43C2" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_592F43C2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_60473F52" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_60473F52" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_11C134D8" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_11C134D8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_System.Windows.Forms.resources.dll_A6B736B2" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_System.Windows.Forms.resources.dll_A6B736B2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_F91E9CE5" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_F91E9CE5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_System.Xaml.resources.dll_E4E5F631" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_System.Xaml.resources.dll_E4E5F631" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_UIAutomationClient.resources.dll_9786AC8D" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_UIAutomationClient.resources.dll_9786AC8D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_2D2A1AF5" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_2D2A1AF5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_UIAutomationProvider.resources.dll_C4E06E5E" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_UIAutomationProvider.resources.dll_C4E06E5E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_UIAutomationTypes.resources.dll_6F22D60E" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_UIAutomationTypes.resources.dll_6F22D60E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_WindowsBase.resources.dll_299E4686" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_WindowsBase.resources.dll_299E4686" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tr_WindowsFormsIntegration.resources.dll_BB831D08" Directory="d_tr_E7D707A2" Guid="*">
+      <File Id="f_tr_WindowsFormsIntegration.resources.dll_BB831D08" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\tr\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_313690BE" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_313690BE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_PresentationCore.resources.dll_B0907383" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_PresentationCore.resources.dll_B0907383" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Hans_PresentationFramework.resources.dll_58EF735A" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_Hans_PresentationFramework.resources.dll_58EF735A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_PresentationUI.resources.dll_6EA7DAD9" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_PresentationUI.resources.dll_6EA7DAD9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_ReachFramework.resources.dll_766F864C" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_ReachFramework.resources.dll_766F864C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_7B8665B9" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_7B8665B9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_72F7AFDB" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_72F7AFDB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_E8E8702B" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_E8E8702B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c__Hans_System.Windows.Forms.resources.dll_AB3CF010" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f__Hans_System.Windows.Forms.resources.dll_AB3CF010" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_5F75DC46" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_5F75DC46" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_System.Xaml.resources.dll_73698668" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_System.Xaml.resources.dll_73698668" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_UIAutomationClient.resources.dll_8218A27E" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_UIAutomationClient.resources.dll_8218A27E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_2DBAC5BF" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_2DBAC5BF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c__Hans_UIAutomationProvider.resources.dll_0437E352" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f__Hans_UIAutomationProvider.resources.dll_0437E352" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_UIAutomationTypes.resources.dll_4FBF1A43" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_UIAutomationTypes.resources.dll_4FBF1A43" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hans_WindowsBase.resources.dll_B8E35E3D" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_zh_Hans_WindowsBase.resources.dll_B8E35E3D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ns_WindowsFormsIntegration.resources.dll_C9115621" Directory="d_zh_Hans_14515CFE" Guid="*">
+      <File Id="f_ns_WindowsFormsIntegration.resources.dll_C9115621" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hans\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.VisualBasic.Forms.resources.dll_A8B89AB1" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_icrosoft.VisualBasic.Forms.resources.dll_A8B89AB1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_PresentationCore.resources.dll_86CBC526" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_PresentationCore.resources.dll_86CBC526" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\PresentationCore.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Hant_PresentationFramework.resources.dll_ABDC01A3" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_Hant_PresentationFramework.resources.dll_ABDC01A3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\PresentationFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_PresentationUI.resources.dll_719179A7" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_PresentationUI.resources.dll_719179A7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\PresentationUI.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_ReachFramework.resources.dll_A0A4AF4D" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_ReachFramework.resources.dll_A0A4AF4D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\ReachFramework.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Windows.Controls.Ribbon.resources.dll_FB30641F" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_em.Windows.Controls.Ribbon.resources.dll_FB30641F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Windows.Forms.Design.resources.dll_B6E2BA01" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_ystem.Windows.Forms.Design.resources.dll_B6E2BA01" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\System.Windows.Forms.Design.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Windows.Forms.Primitives.resources.dll_243C59D3" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_m.Windows.Forms.Primitives.resources.dll_243C59D3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c__Hant_System.Windows.Forms.resources.dll_EFEF1B6E" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f__Hant_System.Windows.Forms.resources.dll_EFEF1B6E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\System.Windows.Forms.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_indows.Input.Manipulations.resources.dll_018BCB86" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_indows.Input.Manipulations.resources.dll_018BCB86" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_System.Xaml.resources.dll_407C6E39" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_System.Xaml.resources.dll_407C6E39" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\System.Xaml.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_UIAutomationClient.resources.dll_B9F69E87" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_UIAutomationClient.resources.dll_B9F69E87" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\UIAutomationClient.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_omationClientSideProviders.resources.dll_D14CA635" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_omationClientSideProviders.resources.dll_D14CA635" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c__Hant_UIAutomationProvider.resources.dll_775BA36C" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f__Hant_UIAutomationProvider.resources.dll_775BA36C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\UIAutomationProvider.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_UIAutomationTypes.resources.dll_9ECB1E20" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_UIAutomationTypes.resources.dll_9ECB1E20" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\UIAutomationTypes.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_zh_Hant_WindowsBase.resources.dll_7A6A57DE" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_zh_Hant_WindowsBase.resources.dll_7A6A57DE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\WindowsBase.resources.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_nt_WindowsFormsIntegration.resources.dll_E3982A69" Directory="d_zh_Hant_F99C8A14" Guid="*">
+      <File Id="f_nt_WindowsFormsIntegration.resources.dll_E3982A69" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.TrayApp\zh-Hant\WindowsFormsIntegration.resources.dll" KeyPath="yes" />
+    </Component>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="TrayAppFiles">
+    <ComponentRef Id="c_Accessibility.dll_EC72A339" />
+    <ComponentRef Id="c_clretwrc.dll_0E761262" />
+    <ComponentRef Id="c_clrgc.dll_5F6E0AA0" />
+    <ComponentRef Id="c_clrgcexp.dll_C429E07C" />
+    <ComponentRef Id="c_clrjit.dll_FD82F850" />
+    <ComponentRef Id="c_coreclr.dll_E1D86768" />
+    <ComponentRef Id="c_createdump.exe_058B99C3" />
+    <ComponentRef Id="c_D3DCompiler_47_cor3.dll_E4DB7229" />
+    <ComponentRef Id="c_DirectWriteForwarder.dll_5964A313" />
+    <ComponentRef Id="c_Emma.Shared.dll_A4B47CF4" />
+    <ComponentRef Id="c_Emma.Shared.pdb_85D1E157" />
+    <ComponentRef Id="c_Emma.TrayApp.deps.json_CB845AEE" />
+    <ComponentRef Id="c_Emma.TrayApp.dll_F0BE10AD" />
+    <ComponentRef Id="c_Emma.TrayApp.exe_77E57C87" />
+    <ComponentRef Id="c_Emma.TrayApp.pdb_BE00CBF9" />
+    <ComponentRef Id="c_Emma.TrayApp.runtimeconfig.json_66777C2B" />
+    <ComponentRef Id="c_hostfxr.dll_B35FD665" />
+    <ComponentRef Id="c_hostpolicy.dll_74DB664C" />
+    <ComponentRef Id="c_Microsoft.CSharp.dll_A04F819E" />
+    <ComponentRef Id="c_Microsoft.DiaSymReader.Native.amd64.dll_EB2C5360" />
+    <ComponentRef Id="c_Microsoft.VisualBasic.Core.dll_625D0848" />
+    <ComponentRef Id="c_Microsoft.VisualBasic.dll_6FDDA9DF" />
+    <ComponentRef Id="c_Microsoft.VisualBasic.Forms.dll_0352D227" />
+    <ComponentRef Id="c_Microsoft.Win32.Primitives.dll_6844B938" />
+    <ComponentRef Id="c_crosoft.Win32.Registry.AccessControl.dll_51FA7168" />
+    <ComponentRef Id="c_Microsoft.Win32.Registry.dll_96F8A0E2" />
+    <ComponentRef Id="c_Microsoft.Win32.SystemEvents.dll_41C9854F" />
+    <ComponentRef Id="c_mscordaccore.dll_275B3E66" />
+    <ComponentRef Id="c_rdaccore_amd64_amd64_10.0.1026.32716.dll_1DF06F0A" />
+    <ComponentRef Id="c_mscordbi.dll_940936AD" />
+    <ComponentRef Id="c_mscorlib.dll_74601154" />
+    <ComponentRef Id="c_mscorrc.dll_7AEFA2E3" />
+    <ComponentRef Id="c_msquic.dll_0876328C" />
+    <ComponentRef Id="c_netstandard.dll_8C10CFD1" />
+    <ComponentRef Id="c_PenImc_cor3.dll_0167D54D" />
+    <ComponentRef Id="c_PresentationCore.dll_38B879A1" />
+    <ComponentRef Id="c_PresentationFramework_SystemCore.dll_28A87250" />
+    <ComponentRef Id="c_PresentationFramework_SystemData.dll_8D33D994" />
+    <ComponentRef Id="c_PresentationFramework_SystemDrawing.dll_9DFE0B59" />
+    <ComponentRef Id="c_PresentationFramework_SystemXml.dll_FF9186BF" />
+    <ComponentRef Id="c_PresentationFramework_SystemXmlLinq.dll_B4F80050" />
+    <ComponentRef Id="c_PresentationFramework.Aero.dll_EE1DC82A" />
+    <ComponentRef Id="c_PresentationFramework.Aero2.dll_E79687AB" />
+    <ComponentRef Id="c_PresentationFramework.AeroLite.dll_9BE80834" />
+    <ComponentRef Id="c_PresentationFramework.Classic.dll_77FCC58F" />
+    <ComponentRef Id="c_PresentationFramework.dll_1FA8AB3A" />
+    <ComponentRef Id="c_PresentationFramework.Fluent.dll_431BBAF4" />
+    <ComponentRef Id="c_PresentationFramework.Luna.dll_2AE7540E" />
+    <ComponentRef Id="c_PresentationFramework.Royale.dll_2DBC7CAA" />
+    <ComponentRef Id="c_PresentationNative_cor3.dll_216D6A68" />
+    <ComponentRef Id="c_PresentationUI.dll_BC2E48EB" />
+    <ComponentRef Id="c_ReachFramework.dll_14680089" />
+    <ComponentRef Id="c_System.AppContext.dll_825D35CF" />
+    <ComponentRef Id="c_System.Buffers.dll_FEF37070" />
+    <ComponentRef Id="c_System.CodeDom.dll_C3029354" />
+    <ComponentRef Id="c_System.Collections.Concurrent.dll_16A06EFB" />
+    <ComponentRef Id="c_System.Collections.dll_84A1C539" />
+    <ComponentRef Id="c_System.Collections.Immutable.dll_933EA1EF" />
+    <ComponentRef Id="c_System.Collections.NonGeneric.dll_B4F083E3" />
+    <ComponentRef Id="c_System.Collections.Specialized.dll_CB23773A" />
+    <ComponentRef Id="c_System.ComponentModel.Annotations.dll_CAB0F1D6" />
+    <ComponentRef Id="c_ystem.ComponentModel.DataAnnotations.dll_1E7EA632" />
+    <ComponentRef Id="c_System.ComponentModel.dll_BFA77E7A" />
+    <ComponentRef Id="c_ystem.ComponentModel.EventBasedAsync.dll_9498AE93" />
+    <ComponentRef Id="c_System.ComponentModel.Primitives.dll_7A1D8267" />
+    <ComponentRef Id="c_System.ComponentModel.TypeConverter.dll_BBD0F76D" />
+    <ComponentRef Id="c_m.Configuration.ConfigurationManager.dll_48D0165F" />
+    <ComponentRef Id="c_System.Configuration.dll_D131F39B" />
+    <ComponentRef Id="c_System.Console.dll_355C1293" />
+    <ComponentRef Id="c_System.Core.dll_E77F633C" />
+    <ComponentRef Id="c_System.Data.Common.dll_78AFB26D" />
+    <ComponentRef Id="c_System.Data.DataSetExtensions.dll_7EA2EB3D" />
+    <ComponentRef Id="c_System.Data.dll_58154E13" />
+    <ComponentRef Id="c_System.Design.dll_6F53E5D4" />
+    <ComponentRef Id="c_System.Diagnostics.Contracts.dll_684B6C0F" />
+    <ComponentRef Id="c_System.Diagnostics.Debug.dll_D501E00B" />
+    <ComponentRef Id="c_System.Diagnostics.DiagnosticSource.dll_947E770A" />
+    <ComponentRef Id="c_System.Diagnostics.EventLog.dll_6C627046" />
+    <ComponentRef Id="c_System.Diagnostics.EventLog.Messages.dll_F2889D17" />
+    <ComponentRef Id="c_System.Diagnostics.FileVersionInfo.dll_34077D53" />
+    <ComponentRef Id="c_ystem.Diagnostics.PerformanceCounter.dll_C3746F35" />
+    <ComponentRef Id="c_System.Diagnostics.Process.dll_CF820ED7" />
+    <ComponentRef Id="c_System.Diagnostics.StackTrace.dll_45FAB6BB" />
+    <ComponentRef Id="c_.Diagnostics.TextWriterTraceListener.dll_A32A6479" />
+    <ComponentRef Id="c_System.Diagnostics.Tools.dll_2D5C3C1A" />
+    <ComponentRef Id="c_System.Diagnostics.TraceSource.dll_5793ABE6" />
+    <ComponentRef Id="c_System.Diagnostics.Tracing.dll_03617A49" />
+    <ComponentRef Id="c_System.DirectoryServices.dll_C7D1E511" />
+    <ComponentRef Id="c_System.dll_A674FFDF" />
+    <ComponentRef Id="c_System.Drawing.Common.dll_27812442" />
+    <ComponentRef Id="c_System.Drawing.Design.dll_2FD9B8EC" />
+    <ComponentRef Id="c_System.Drawing.dll_1F6C6C9A" />
+    <ComponentRef Id="c_System.Drawing.Primitives.dll_6DE2AAF7" />
+    <ComponentRef Id="c_System.Dynamic.Runtime.dll_D0546209" />
+    <ComponentRef Id="c_System.Formats.Asn1.dll_E64E9B18" />
+    <ComponentRef Id="c_System.Formats.Nrbf.dll_E8EDD293" />
+    <ComponentRef Id="c_System.Formats.Tar.dll_42700B7C" />
+    <ComponentRef Id="c_System.Globalization.Calendars.dll_F85D9ED6" />
+    <ComponentRef Id="c_System.Globalization.dll_D1B2C6B6" />
+    <ComponentRef Id="c_System.Globalization.Extensions.dll_11A8D004" />
+    <ComponentRef Id="c_System.IO.Compression.Brotli.dll_FE86A889" />
+    <ComponentRef Id="c_System.IO.Compression.dll_2E9012E7" />
+    <ComponentRef Id="c_System.IO.Compression.FileSystem.dll_FAF3D44C" />
+    <ComponentRef Id="c_System.IO.Compression.Native.dll_FC11E194" />
+    <ComponentRef Id="c_System.IO.Compression.ZipFile.dll_F4B9534C" />
+    <ComponentRef Id="c_System.IO.dll_06DB5174" />
+    <ComponentRef Id="c_System.IO.FileSystem.AccessControl.dll_F1C33BB1" />
+    <ComponentRef Id="c_System.IO.FileSystem.dll_C9953D4D" />
+    <ComponentRef Id="c_System.IO.FileSystem.DriveInfo.dll_4066D14E" />
+    <ComponentRef Id="c_System.IO.FileSystem.Primitives.dll_5F895B5D" />
+    <ComponentRef Id="c_System.IO.FileSystem.Watcher.dll_92462581" />
+    <ComponentRef Id="c_System.IO.IsolatedStorage.dll_80789B9D" />
+    <ComponentRef Id="c_System.IO.MemoryMappedFiles.dll_42937536" />
+    <ComponentRef Id="c_System.IO.Packaging.dll_47DF02EC" />
+    <ComponentRef Id="c_System.IO.Pipelines.dll_20998DC2" />
+    <ComponentRef Id="c_System.IO.Pipes.AccessControl.dll_B6DE5536" />
+    <ComponentRef Id="c_System.IO.Pipes.dll_F4D0A904" />
+    <ComponentRef Id="c_System.IO.UnmanagedMemoryStream.dll_41FD69A0" />
+    <ComponentRef Id="c_System.Linq.AsyncEnumerable.dll_A29A8696" />
+    <ComponentRef Id="c_System.Linq.dll_513B78B8" />
+    <ComponentRef Id="c_System.Linq.Expressions.dll_A7A636E8" />
+    <ComponentRef Id="c_System.Linq.Parallel.dll_B209AAED" />
+    <ComponentRef Id="c_System.Linq.Queryable.dll_06FE5FB1" />
+    <ComponentRef Id="c_System.Memory.dll_413B04CC" />
+    <ComponentRef Id="c_System.Net.dll_111FF7E0" />
+    <ComponentRef Id="c_System.Net.Http.dll_6674532B" />
+    <ComponentRef Id="c_System.Net.Http.Json.dll_084C98E1" />
+    <ComponentRef Id="c_System.Net.HttpListener.dll_9A0138D1" />
+    <ComponentRef Id="c_System.Net.Mail.dll_654E0050" />
+    <ComponentRef Id="c_System.Net.NameResolution.dll_E676BF22" />
+    <ComponentRef Id="c_System.Net.NetworkInformation.dll_ED547C15" />
+    <ComponentRef Id="c_System.Net.Ping.dll_C33D3B15" />
+    <ComponentRef Id="c_System.Net.Primitives.dll_2BC8E06D" />
+    <ComponentRef Id="c_System.Net.Quic.dll_3FA8163C" />
+    <ComponentRef Id="c_System.Net.Requests.dll_4C132C80" />
+    <ComponentRef Id="c_System.Net.Security.dll_9EC85993" />
+    <ComponentRef Id="c_System.Net.ServerSentEvents.dll_9890FEFB" />
+    <ComponentRef Id="c_System.Net.ServicePoint.dll_90D2AEF7" />
+    <ComponentRef Id="c_System.Net.Sockets.dll_D8EE744B" />
+    <ComponentRef Id="c_System.Net.WebClient.dll_909D122C" />
+    <ComponentRef Id="c_System.Net.WebHeaderCollection.dll_682E28F3" />
+    <ComponentRef Id="c_System.Net.WebProxy.dll_566E84C1" />
+    <ComponentRef Id="c_System.Net.WebSockets.Client.dll_39A7E751" />
+    <ComponentRef Id="c_System.Net.WebSockets.dll_46DFA227" />
+    <ComponentRef Id="c_System.Numerics.dll_3555DEC6" />
+    <ComponentRef Id="c_System.Numerics.Vectors.dll_DF054063" />
+    <ComponentRef Id="c_System.ObjectModel.dll_D3D2FA67" />
+    <ComponentRef Id="c_System.Printing.dll_4EC4B008" />
+    <ComponentRef Id="c_System.Private.CoreLib.dll_BCCC6F16" />
+    <ComponentRef Id="c_em.Private.DataContractSerialization.dll_BE2EB9A0" />
+    <ComponentRef Id="c_System.Private.Uri.dll_4BD94145" />
+    <ComponentRef Id="c_System.Private.Windows.Core.dll_968455A6" />
+    <ComponentRef Id="c_System.Private.Windows.GdiPlus.dll_EE850E46" />
+    <ComponentRef Id="c_System.Private.Xml.dll_7605AB18" />
+    <ComponentRef Id="c_System.Private.Xml.Linq.dll_D0B42C74" />
+    <ComponentRef Id="c_System.Reflection.DispatchProxy.dll_73B1E3DB" />
+    <ComponentRef Id="c_System.Reflection.dll_60C7DFE1" />
+    <ComponentRef Id="c_System.Reflection.Emit.dll_1A4AC658" />
+    <ComponentRef Id="c_System.Reflection.Emit.ILGeneration.dll_7CE761C0" />
+    <ComponentRef Id="c_System.Reflection.Emit.Lightweight.dll_EA84A17C" />
+    <ComponentRef Id="c_System.Reflection.Extensions.dll_098C4242" />
+    <ComponentRef Id="c_System.Reflection.Metadata.dll_4973EE48" />
+    <ComponentRef Id="c_System.Reflection.Primitives.dll_A3FAE730" />
+    <ComponentRef Id="c_System.Reflection.TypeExtensions.dll_003C3549" />
+    <ComponentRef Id="c_System.Resources.Extensions.dll_376E36B2" />
+    <ComponentRef Id="c_System.Resources.Reader.dll_C9DF54AF" />
+    <ComponentRef Id="c_System.Resources.ResourceManager.dll_DD5CF897" />
+    <ComponentRef Id="c_System.Resources.Writer.dll_6D31FDF6" />
+    <ComponentRef Id="c_stem.Runtime.CompilerServices.Unsafe.dll_B372F953" />
+    <ComponentRef Id="c_tem.Runtime.CompilerServices.VisualC.dll_CAF2B39A" />
+    <ComponentRef Id="c_System.Runtime.dll_CFBB2B5C" />
+    <ComponentRef Id="c_System.Runtime.Extensions.dll_945DFCA9" />
+    <ComponentRef Id="c_System.Runtime.Handles.dll_15949052" />
+    <ComponentRef Id="c_System.Runtime.InteropServices.dll_A779180C" />
+    <ComponentRef Id="c_m.Runtime.InteropServices.JavaScript.dll_954A714B" />
+    <ComponentRef Id="c_e.InteropServices.RuntimeInformation.dll_463C6599" />
+    <ComponentRef Id="c_System.Runtime.Intrinsics.dll_3F7E8B28" />
+    <ComponentRef Id="c_System.Runtime.Loader.dll_26DDA1F5" />
+    <ComponentRef Id="c_System.Runtime.Numerics.dll_D271976E" />
+    <ComponentRef Id="c_System.Runtime.Serialization.dll_B3750820" />
+    <ComponentRef Id="c_tem.Runtime.Serialization.Formatters.dll_57BAD482" />
+    <ComponentRef Id="c_System.Runtime.Serialization.Json.dll_EAE85B22" />
+    <ComponentRef Id="c_tem.Runtime.Serialization.Primitives.dll_2EA423D6" />
+    <ComponentRef Id="c_System.Runtime.Serialization.Xml.dll_5C812A0D" />
+    <ComponentRef Id="c_System.Security.AccessControl.dll_3D2DB02B" />
+    <ComponentRef Id="c_System.Security.Claims.dll_891808AE" />
+    <ComponentRef Id="c_tem.Security.Cryptography.Algorithms.dll_DB9E7BC3" />
+    <ComponentRef Id="c_System.Security.Cryptography.Cng.dll_2D17D42F" />
+    <ComponentRef Id="c_System.Security.Cryptography.Csp.dll_69DBE10B" />
+    <ComponentRef Id="c_System.Security.Cryptography.dll_EDB23E56" />
+    <ComponentRef Id="c_ystem.Security.Cryptography.Encoding.dll_52138CC9" />
+    <ComponentRef Id="c_System.Security.Cryptography.OpenSsl.dll_45ADF146" />
+    <ComponentRef Id="c_System.Security.Cryptography.Pkcs.dll_14A4686C" />
+    <ComponentRef Id="c_tem.Security.Cryptography.Primitives.dll_A39DE482" />
+    <ComponentRef Id="c_.Security.Cryptography.ProtectedData.dll_10791547" />
+    <ComponentRef Id="c_curity.Cryptography.X509Certificates.dll_839A39C6" />
+    <ComponentRef Id="c_System.Security.Cryptography.Xml.dll_1B003E83" />
+    <ComponentRef Id="c_System.Security.dll_E6A266E2" />
+    <ComponentRef Id="c_System.Security.Permissions.dll_15B1C2ED" />
+    <ComponentRef Id="c_System.Security.Principal.dll_0D88121E" />
+    <ComponentRef Id="c_System.Security.Principal.Windows.dll_459E4D64" />
+    <ComponentRef Id="c_System.Security.SecureString.dll_EF93AE26" />
+    <ComponentRef Id="c_System.ServiceModel.Web.dll_0A1A4081" />
+    <ComponentRef Id="c_System.ServiceProcess.dll_B09B7E90" />
+    <ComponentRef Id="c_System.Text.Encoding.CodePages.dll_8F909CDA" />
+    <ComponentRef Id="c_System.Text.Encoding.dll_DA8EA9B6" />
+    <ComponentRef Id="c_System.Text.Encoding.Extensions.dll_0C6D6E1D" />
+    <ComponentRef Id="c_System.Text.Encodings.Web.dll_61B7EA9B" />
+    <ComponentRef Id="c_System.Text.Json.dll_11A43862" />
+    <ComponentRef Id="c_System.Text.RegularExpressions.dll_2FAC2DB4" />
+    <ComponentRef Id="c_System.Threading.AccessControl.dll_5BFE1BEC" />
+    <ComponentRef Id="c_System.Threading.Channels.dll_B1AF0061" />
+    <ComponentRef Id="c_System.Threading.dll_39DA6487" />
+    <ComponentRef Id="c_System.Threading.Overlapped.dll_CBDBA98A" />
+    <ComponentRef Id="c_System.Threading.Tasks.Dataflow.dll_5653ED47" />
+    <ComponentRef Id="c_System.Threading.Tasks.dll_A01A12B0" />
+    <ComponentRef Id="c_System.Threading.Tasks.Extensions.dll_B475AC49" />
+    <ComponentRef Id="c_System.Threading.Tasks.Parallel.dll_BE348D32" />
+    <ComponentRef Id="c_System.Threading.Thread.dll_8B79780C" />
+    <ComponentRef Id="c_System.Threading.ThreadPool.dll_40185A2D" />
+    <ComponentRef Id="c_System.Threading.Timer.dll_027DD507" />
+    <ComponentRef Id="c_System.Transactions.dll_687D8940" />
+    <ComponentRef Id="c_System.Transactions.Local.dll_0A8352D7" />
+    <ComponentRef Id="c_System.ValueTuple.dll_BA09FBBD" />
+    <ComponentRef Id="c_System.Web.dll_AA222A73" />
+    <ComponentRef Id="c_System.Web.HttpUtility.dll_8A730CD7" />
+    <ComponentRef Id="c_System.Windows.Controls.Ribbon.dll_D167F438" />
+    <ComponentRef Id="c_System.Windows.dll_2B2B30A4" />
+    <ComponentRef Id="c_System.Windows.Extensions.dll_5113AE9C" />
+    <ComponentRef Id="c_System.Windows.Forms.Design.dll_30AA5289" />
+    <ComponentRef Id="c_System.Windows.Forms.Design.Editors.dll_12DDF98C" />
+    <ComponentRef Id="c_System.Windows.Forms.dll_8BD4A031" />
+    <ComponentRef Id="c_System.Windows.Forms.Primitives.dll_5AD5EE24" />
+    <ComponentRef Id="c_System.Windows.Input.Manipulations.dll_08A5D81C" />
+    <ComponentRef Id="c_System.Windows.Presentation.dll_1B64B36A" />
+    <ComponentRef Id="c_System.Windows.Primitives.dll_8F0EEBA4" />
+    <ComponentRef Id="c_System.Xaml.dll_3835C7C4" />
+    <ComponentRef Id="c_System.Xml.dll_63946FB7" />
+    <ComponentRef Id="c_System.Xml.Linq.dll_AF810015" />
+    <ComponentRef Id="c_System.Xml.ReaderWriter.dll_3E4E187F" />
+    <ComponentRef Id="c_System.Xml.Serialization.dll_E5256E4C" />
+    <ComponentRef Id="c_System.Xml.XDocument.dll_61EF49C2" />
+    <ComponentRef Id="c_System.Xml.XmlDocument.dll_496B7AFF" />
+    <ComponentRef Id="c_System.Xml.XmlSerializer.dll_B20055C4" />
+    <ComponentRef Id="c_System.Xml.XPath.dll_720EC1EF" />
+    <ComponentRef Id="c_System.Xml.XPath.XDocument.dll_776F9FBE" />
+    <ComponentRef Id="c_UIAutomationClient.dll_8FDE6C47" />
+    <ComponentRef Id="c_UIAutomationClientSideProviders.dll_3F97DD13" />
+    <ComponentRef Id="c_UIAutomationProvider.dll_CB5D061E" />
+    <ComponentRef Id="c_UIAutomationTypes.dll_E8D79E79" />
+    <ComponentRef Id="c_vcruntime140_cor3.dll_D2B36A3E" />
+    <ComponentRef Id="c_WindowsBase.dll_27EF1F45" />
+    <ComponentRef Id="c_WindowsFormsIntegration.dll_938038C0" />
+    <ComponentRef Id="c_wpfgfx_cor3.dll_FB9368A8" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_61764BC1" />
+    <ComponentRef Id="c_cs_PresentationCore.resources.dll_1AB0C8F6" />
+    <ComponentRef Id="c_cs_PresentationFramework.resources.dll_9A2E9F63" />
+    <ComponentRef Id="c_cs_PresentationUI.resources.dll_C8E7CE96" />
+    <ComponentRef Id="c_cs_ReachFramework.resources.dll_63D1ED30" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_C3CA4A0B" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_F7C52E4D" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_BC85F831" />
+    <ComponentRef Id="c_cs_System.Windows.Forms.resources.dll_3A0CA1AE" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_D8C0EBF5" />
+    <ComponentRef Id="c_cs_System.Xaml.resources.dll_8BD44521" />
+    <ComponentRef Id="c_cs_UIAutomationClient.resources.dll_8E867067" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_A48645A4" />
+    <ComponentRef Id="c_cs_UIAutomationProvider.resources.dll_A5C151F0" />
+    <ComponentRef Id="c_cs_UIAutomationTypes.resources.dll_B7004C24" />
+    <ComponentRef Id="c_cs_WindowsBase.resources.dll_17EF6535" />
+    <ComponentRef Id="c_cs_WindowsFormsIntegration.resources.dll_38521D34" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_49E79674" />
+    <ComponentRef Id="c_de_PresentationCore.resources.dll_D09D02A3" />
+    <ComponentRef Id="c_de_PresentationFramework.resources.dll_F8D30915" />
+    <ComponentRef Id="c_de_PresentationUI.resources.dll_5EC9C5F1" />
+    <ComponentRef Id="c_de_ReachFramework.resources.dll_9027205E" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_28F88A99" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_92161CAD" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_25F1FC95" />
+    <ComponentRef Id="c_de_System.Windows.Forms.resources.dll_B02F9154" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_5BE9B5EF" />
+    <ComponentRef Id="c_de_System.Xaml.resources.dll_1D1E5765" />
+    <ComponentRef Id="c_de_UIAutomationClient.resources.dll_6BE1C610" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_0ECD53AD" />
+    <ComponentRef Id="c_de_UIAutomationProvider.resources.dll_D26A4F6A" />
+    <ComponentRef Id="c_de_UIAutomationTypes.resources.dll_0FED15AB" />
+    <ComponentRef Id="c_de_WindowsBase.resources.dll_B3C1B058" />
+    <ComponentRef Id="c_de_WindowsFormsIntegration.resources.dll_26F38097" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_71D17232" />
+    <ComponentRef Id="c_es_PresentationCore.resources.dll_215359D7" />
+    <ComponentRef Id="c_es_PresentationFramework.resources.dll_9A18AF61" />
+    <ComponentRef Id="c_es_PresentationUI.resources.dll_039281AA" />
+    <ComponentRef Id="c_es_ReachFramework.resources.dll_94324457" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_347AF894" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_ADE8FCA8" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_CD2E0159" />
+    <ComponentRef Id="c_es_System.Windows.Forms.resources.dll_E9611396" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_51F29B2E" />
+    <ComponentRef Id="c_es_System.Xaml.resources.dll_7553F399" />
+    <ComponentRef Id="c_es_UIAutomationClient.resources.dll_525B5C99" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_C2615B07" />
+    <ComponentRef Id="c_es_UIAutomationProvider.resources.dll_26367A6E" />
+    <ComponentRef Id="c_es_UIAutomationTypes.resources.dll_6FFF911E" />
+    <ComponentRef Id="c_es_WindowsBase.resources.dll_0560D27A" />
+    <ComponentRef Id="c_es_WindowsFormsIntegration.resources.dll_0FEF5468" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_ADE1F970" />
+    <ComponentRef Id="c_fr_PresentationCore.resources.dll_107E9998" />
+    <ComponentRef Id="c_fr_PresentationFramework.resources.dll_5E1571AE" />
+    <ComponentRef Id="c_fr_PresentationUI.resources.dll_D0625016" />
+    <ComponentRef Id="c_fr_ReachFramework.resources.dll_C0237074" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_4097411D" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_5C95902A" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_76240C0D" />
+    <ComponentRef Id="c_fr_System.Windows.Forms.resources.dll_EFAA38CF" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_8EF38A29" />
+    <ComponentRef Id="c_fr_System.Xaml.resources.dll_C36E6AE0" />
+    <ComponentRef Id="c_fr_UIAutomationClient.resources.dll_6718CF1B" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_6E807B6B" />
+    <ComponentRef Id="c_fr_UIAutomationProvider.resources.dll_7491B1C4" />
+    <ComponentRef Id="c_fr_UIAutomationTypes.resources.dll_21B04280" />
+    <ComponentRef Id="c_fr_WindowsBase.resources.dll_0C301895" />
+    <ComponentRef Id="c_fr_WindowsFormsIntegration.resources.dll_5314F740" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_067337B3" />
+    <ComponentRef Id="c_it_PresentationCore.resources.dll_0B6715B0" />
+    <ComponentRef Id="c_it_PresentationFramework.resources.dll_9CBB1ECF" />
+    <ComponentRef Id="c_it_PresentationUI.resources.dll_D2282879" />
+    <ComponentRef Id="c_it_ReachFramework.resources.dll_3801D308" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_9C460652" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_C5606DE1" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_65253A5B" />
+    <ComponentRef Id="c_it_System.Windows.Forms.resources.dll_0FCD3B3D" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_C988BA9A" />
+    <ComponentRef Id="c_it_System.Xaml.resources.dll_DC1A35DA" />
+    <ComponentRef Id="c_it_UIAutomationClient.resources.dll_4D8CB570" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_E3FB6BA9" />
+    <ComponentRef Id="c_it_UIAutomationProvider.resources.dll_FF56A3CE" />
+    <ComponentRef Id="c_it_UIAutomationTypes.resources.dll_CC5EB7FC" />
+    <ComponentRef Id="c_it_WindowsBase.resources.dll_7A702077" />
+    <ComponentRef Id="c_it_WindowsFormsIntegration.resources.dll_91B9DE2A" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_9E63E3BA" />
+    <ComponentRef Id="c_ja_PresentationCore.resources.dll_B57D4A86" />
+    <ComponentRef Id="c_ja_PresentationFramework.resources.dll_4A4DA610" />
+    <ComponentRef Id="c_ja_PresentationUI.resources.dll_2D729945" />
+    <ComponentRef Id="c_ja_ReachFramework.resources.dll_7F2386FE" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_412B9F2F" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_BB6FB213" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_672AB2A4" />
+    <ComponentRef Id="c_ja_System.Windows.Forms.resources.dll_9BA6F301" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_45E18FEF" />
+    <ComponentRef Id="c_ja_System.Xaml.resources.dll_E8EA38CB" />
+    <ComponentRef Id="c_ja_UIAutomationClient.resources.dll_EA773A69" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_40E6A1C5" />
+    <ComponentRef Id="c_ja_UIAutomationProvider.resources.dll_D3219BD8" />
+    <ComponentRef Id="c_ja_UIAutomationTypes.resources.dll_EF93DB69" />
+    <ComponentRef Id="c_ja_WindowsBase.resources.dll_D685F36F" />
+    <ComponentRef Id="c_ja_WindowsFormsIntegration.resources.dll_0A0CC0F4" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_90D36CB6" />
+    <ComponentRef Id="c_ko_PresentationCore.resources.dll_FB97CBFE" />
+    <ComponentRef Id="c_ko_PresentationFramework.resources.dll_C6D11467" />
+    <ComponentRef Id="c_ko_PresentationUI.resources.dll_5266A53B" />
+    <ComponentRef Id="c_ko_ReachFramework.resources.dll_14C9A6F6" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_56FED78C" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_58AB3FBB" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_50D0F07C" />
+    <ComponentRef Id="c_ko_System.Windows.Forms.resources.dll_CDD8DAEB" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_E2BD543E" />
+    <ComponentRef Id="c_ko_System.Xaml.resources.dll_2BC67662" />
+    <ComponentRef Id="c_ko_UIAutomationClient.resources.dll_162901D1" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_CEE8941C" />
+    <ComponentRef Id="c_ko_UIAutomationProvider.resources.dll_75E4ADF0" />
+    <ComponentRef Id="c_ko_UIAutomationTypes.resources.dll_AC12D0AA" />
+    <ComponentRef Id="c_ko_WindowsBase.resources.dll_2EBA10C3" />
+    <ComponentRef Id="c_ko_WindowsFormsIntegration.resources.dll_955F9C33" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_9EFF439C" />
+    <ComponentRef Id="c_pl_PresentationCore.resources.dll_EA8F7DB3" />
+    <ComponentRef Id="c_pl_PresentationFramework.resources.dll_BAA1BC4C" />
+    <ComponentRef Id="c_pl_PresentationUI.resources.dll_315FFA90" />
+    <ComponentRef Id="c_pl_ReachFramework.resources.dll_809E8FEA" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_BABDAE06" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_F0B304AA" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_0DA2F08A" />
+    <ComponentRef Id="c_pl_System.Windows.Forms.resources.dll_A27A2A32" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_2CA79E53" />
+    <ComponentRef Id="c_pl_System.Xaml.resources.dll_60C7745C" />
+    <ComponentRef Id="c_pl_UIAutomationClient.resources.dll_9E08794E" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_9DB71C12" />
+    <ComponentRef Id="c_pl_UIAutomationProvider.resources.dll_B2CB61A8" />
+    <ComponentRef Id="c_pl_UIAutomationTypes.resources.dll_2B041CED" />
+    <ComponentRef Id="c_pl_WindowsBase.resources.dll_F2C3F72F" />
+    <ComponentRef Id="c_pl_WindowsFormsIntegration.resources.dll_F370CE7D" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_92CF9C8E" />
+    <ComponentRef Id="c_pt_BR_PresentationCore.resources.dll_42E1AD73" />
+    <ComponentRef Id="c_t_BR_PresentationFramework.resources.dll_22674E5B" />
+    <ComponentRef Id="c_pt_BR_PresentationUI.resources.dll_2A4439FE" />
+    <ComponentRef Id="c_pt_BR_ReachFramework.resources.dll_ACC602BD" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_C16B31B7" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_A3838678" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_D2E0F466" />
+    <ComponentRef Id="c_pt_BR_System.Windows.Forms.resources.dll_4D8AD4AA" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_767C034D" />
+    <ComponentRef Id="c_pt_BR_System.Xaml.resources.dll_52186FA0" />
+    <ComponentRef Id="c_pt_BR_UIAutomationClient.resources.dll_F3A24D3F" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_5781C0FD" />
+    <ComponentRef Id="c_pt_BR_UIAutomationProvider.resources.dll_66B7A8B1" />
+    <ComponentRef Id="c_pt_BR_UIAutomationTypes.resources.dll_03036D12" />
+    <ComponentRef Id="c_pt_BR_WindowsBase.resources.dll_A38C48F9" />
+    <ComponentRef Id="c_BR_WindowsFormsIntegration.resources.dll_597E55F2" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_5E17D929" />
+    <ComponentRef Id="c_ru_PresentationCore.resources.dll_0DE46106" />
+    <ComponentRef Id="c_ru_PresentationFramework.resources.dll_3EA02B9E" />
+    <ComponentRef Id="c_ru_PresentationUI.resources.dll_33900B78" />
+    <ComponentRef Id="c_ru_ReachFramework.resources.dll_8A06AF47" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_5ABAFCEA" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_88599E59" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_925742E3" />
+    <ComponentRef Id="c_ru_System.Windows.Forms.resources.dll_B2C8E771" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_407C7B58" />
+    <ComponentRef Id="c_ru_System.Xaml.resources.dll_4D15F11F" />
+    <ComponentRef Id="c_ru_UIAutomationClient.resources.dll_D69949C5" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_557EDBB3" />
+    <ComponentRef Id="c_ru_UIAutomationProvider.resources.dll_7B3F4843" />
+    <ComponentRef Id="c_ru_UIAutomationTypes.resources.dll_B9739597" />
+    <ComponentRef Id="c_ru_WindowsBase.resources.dll_56861533" />
+    <ComponentRef Id="c_ru_WindowsFormsIntegration.resources.dll_C041490B" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_BBACF7C2" />
+    <ComponentRef Id="c_tr_PresentationCore.resources.dll_8C9C8CD5" />
+    <ComponentRef Id="c_tr_PresentationFramework.resources.dll_C5E13056" />
+    <ComponentRef Id="c_tr_PresentationUI.resources.dll_6495E7B9" />
+    <ComponentRef Id="c_tr_ReachFramework.resources.dll_48D888AD" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_592F43C2" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_60473F52" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_11C134D8" />
+    <ComponentRef Id="c_tr_System.Windows.Forms.resources.dll_A6B736B2" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_F91E9CE5" />
+    <ComponentRef Id="c_tr_System.Xaml.resources.dll_E4E5F631" />
+    <ComponentRef Id="c_tr_UIAutomationClient.resources.dll_9786AC8D" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_2D2A1AF5" />
+    <ComponentRef Id="c_tr_UIAutomationProvider.resources.dll_C4E06E5E" />
+    <ComponentRef Id="c_tr_UIAutomationTypes.resources.dll_6F22D60E" />
+    <ComponentRef Id="c_tr_WindowsBase.resources.dll_299E4686" />
+    <ComponentRef Id="c_tr_WindowsFormsIntegration.resources.dll_BB831D08" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_313690BE" />
+    <ComponentRef Id="c_zh_Hans_PresentationCore.resources.dll_B0907383" />
+    <ComponentRef Id="c_Hans_PresentationFramework.resources.dll_58EF735A" />
+    <ComponentRef Id="c_zh_Hans_PresentationUI.resources.dll_6EA7DAD9" />
+    <ComponentRef Id="c_zh_Hans_ReachFramework.resources.dll_766F864C" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_7B8665B9" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_72F7AFDB" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_E8E8702B" />
+    <ComponentRef Id="c__Hans_System.Windows.Forms.resources.dll_AB3CF010" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_5F75DC46" />
+    <ComponentRef Id="c_zh_Hans_System.Xaml.resources.dll_73698668" />
+    <ComponentRef Id="c_zh_Hans_UIAutomationClient.resources.dll_8218A27E" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_2DBAC5BF" />
+    <ComponentRef Id="c__Hans_UIAutomationProvider.resources.dll_0437E352" />
+    <ComponentRef Id="c_zh_Hans_UIAutomationTypes.resources.dll_4FBF1A43" />
+    <ComponentRef Id="c_zh_Hans_WindowsBase.resources.dll_B8E35E3D" />
+    <ComponentRef Id="c_ns_WindowsFormsIntegration.resources.dll_C9115621" />
+    <ComponentRef Id="c_icrosoft.VisualBasic.Forms.resources.dll_A8B89AB1" />
+    <ComponentRef Id="c_zh_Hant_PresentationCore.resources.dll_86CBC526" />
+    <ComponentRef Id="c_Hant_PresentationFramework.resources.dll_ABDC01A3" />
+    <ComponentRef Id="c_zh_Hant_PresentationUI.resources.dll_719179A7" />
+    <ComponentRef Id="c_zh_Hant_ReachFramework.resources.dll_A0A4AF4D" />
+    <ComponentRef Id="c_em.Windows.Controls.Ribbon.resources.dll_FB30641F" />
+    <ComponentRef Id="c_ystem.Windows.Forms.Design.resources.dll_B6E2BA01" />
+    <ComponentRef Id="c_m.Windows.Forms.Primitives.resources.dll_243C59D3" />
+    <ComponentRef Id="c__Hant_System.Windows.Forms.resources.dll_EFEF1B6E" />
+    <ComponentRef Id="c_indows.Input.Manipulations.resources.dll_018BCB86" />
+    <ComponentRef Id="c_zh_Hant_System.Xaml.resources.dll_407C6E39" />
+    <ComponentRef Id="c_zh_Hant_UIAutomationClient.resources.dll_B9F69E87" />
+    <ComponentRef Id="c_omationClientSideProviders.resources.dll_D14CA635" />
+    <ComponentRef Id="c__Hant_UIAutomationProvider.resources.dll_775BA36C" />
+    <ComponentRef Id="c_zh_Hant_UIAutomationTypes.resources.dll_9ECB1E20" />
+    <ComponentRef Id="c_zh_Hant_WindowsBase.resources.dll_7A6A57DE" />
+    <ComponentRef Id="c_nt_WindowsFormsIntegration.resources.dll_E3982A69" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

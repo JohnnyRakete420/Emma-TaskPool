@@ -1,0 +1,11 @@
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\bin\Debug\net10.0\Emma.Shared.deps.json
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\bin\Debug\net10.0\Emma.Shared.dll
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\bin\Debug\net10.0\Emma.Shared.pdb
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\Emma.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\Emma.Shared.AssemblyInfoInputs.cache
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\Emma.Shared.AssemblyInfo.cs
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\Emma.Shared.csproj.CoreCompileInputs.cache
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\Emma.Shared.dll
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\refint\Emma.Shared.dll
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\Emma.Shared.pdb
+C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\src\Emma.Shared\obj\Debug\net10.0\ref\Emma.Shared.dll

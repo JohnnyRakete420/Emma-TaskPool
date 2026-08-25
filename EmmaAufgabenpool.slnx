@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Emma.Service/Emma.Service.csproj" />
+    <Project Path="src/Emma.Shared/Emma.Shared.csproj" />
+    <Project Path="src/Emma.TrayApp/Emma.TrayApp.csproj" />
+    <Project Path="src/Emma.Viewer/Emma.Viewer.csproj" />
+  </Folder>
+</Solution>

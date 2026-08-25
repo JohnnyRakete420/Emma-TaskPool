@@ -1,0 +1,44 @@
+<Window x:Class="Emma.TrayApp.ProzessAuswahlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EMMA Aufgabenpool" Height="560" Width="400" MinHeight="420"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResizeWithGrip"
+        Icon="Icon.ico">
+    <Border Background="{StaticResource CardBrush}" CornerRadius="16" Margin="14">
+        <Border.Effect>
+            <DropShadowEffect Color="#93C003" BlurRadius="24" ShadowDepth="0" Opacity="0.18" />
+        </Border.Effect>
+        <Grid Margin="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" MinHeight="80" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="EMMA Aufgabenpool" FontSize="20" FontWeight="Bold" />
+            <TextBlock Grid.Row="1" Text="Welchen Prozess soll EMMA ausführen?"
+                       Foreground="{StaticResource TextSecondaryBrush}" Margin="0,4,0,16" />
+
+            <ListBox Grid.Row="2" x:Name="ProzessListBox" DisplayMemberPath="Name" Margin="0,0,0,12"
+                     MinHeight="80" MaxHeight="180"
+                     SelectionChanged="ProzessListBox_SelectionChanged" />
+
+            <ScrollViewer Grid.Row="3" x:Name="ParameterScroll" Visibility="Collapsed" Margin="0,0,0,12"
+                          VerticalScrollBarVisibility="Auto">
+                <ItemsControl x:Name="ParameterItemsControl"
+                              ItemTemplateSelector="{StaticResource ParameterFeldTemplateSelector}" />
+            </ScrollViewer>
+
+            <Button Grid.Row="4" x:Name="AufgabeAnlegenButton" Content="An EMMA übergeben"
+                    Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch"
+                    Click="AufgabeAnlegenButton_Click" Margin="0,0,0,10" />
+
+            <TextBlock Grid.Row="5" x:Name="StatusText" TextWrapping="Wrap"
+                       Foreground="{StaticResource TextSecondaryBrush}" FontSize="12" />
+        </Grid>
+    </Border>
+</Window>

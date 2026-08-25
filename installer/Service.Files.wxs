@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <Component Id="c_appsettings.Development.json_3EC51493" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_appsettings.Development.json_3EC51493" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\appsettings.Development.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_appsettings.json_F2FE7545" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_appsettings.json_F2FE7545" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\appsettings.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_aspnetcorev2_inprocess.dll_3AB9F8DD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_aspnetcorev2_inprocess.dll_3AB9F8DD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\aspnetcorev2_inprocess.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clretwrc.dll_0E761262" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clretwrc.dll_0E761262" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\clretwrc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clrgc.dll_5F6E0AA0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clrgc.dll_5F6E0AA0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\clrgc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clrgcexp.dll_C429E07C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clrgcexp.dll_C429E07C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\clrgcexp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_clrjit.dll_FD82F850" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_clrjit.dll_FD82F850" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\clrjit.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_coreclr.dll_E1D86768" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_coreclr.dll_E1D86768" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\coreclr.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_createdump.exe_058B99C3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_createdump.exe_058B99C3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\createdump.exe" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Service.deps.json_2B63D93B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Service.deps.json_2B63D93B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Service.deps.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Service.dll_5F65C085" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Service.dll_5F65C085" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Service.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Service.pdb_8BCB9749" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Service.pdb_8BCB9749" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Service.pdb" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Service.runtimeconfig.json_18CA36D2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Service.runtimeconfig.json_18CA36D2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Service.runtimeconfig.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_a.Service.staticwebassets.endpoints.json_A5815392" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_a.Service.staticwebassets.endpoints.json_A5815392" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Service.staticwebassets.endpoints.json" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Shared.dll_A4B47CF4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Shared.dll_A4B47CF4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Shared.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Emma.Shared.pdb_85D1E157" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Emma.Shared.pdb_85D1E157" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Emma.Shared.pdb" KeyPath="yes" />
+    </Component>
+    <Component Id="c_e_sqlite3.dll_F4376723" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_e_sqlite3.dll_F4376723" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\e_sqlite3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_hostfxr.dll_B35FD665" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_hostfxr.dll_B35FD665" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\hostfxr.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_hostpolicy.dll_74DB664C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_hostpolicy.dll_74DB664C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\hostpolicy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Antiforgery.dll_ECAE7DD2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Antiforgery.dll_ECAE7DD2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Antiforgery.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pNetCore.Authentication.Abstractions.dll_537F6A9D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_pNetCore.Authentication.Abstractions.dll_537F6A9D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authentication.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_spNetCore.Authentication.BearerToken.dll_1B9293DB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_spNetCore.Authentication.BearerToken.dll_1B9293DB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authentication.BearerToken.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ft.AspNetCore.Authentication.Cookies.dll_8C659B1F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ft.AspNetCore.Authentication.Cookies.dll_8C659B1F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authentication.Cookies.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.AspNetCore.Authentication.Core.dll_CBF9F870" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.AspNetCore.Authentication.Core.dll_CBF9F870" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authentication.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Authentication.dll_F4DEAFC5" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Authentication.dll_F4DEAFC5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authentication.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.Authentication.OAuth.dll_7403DB20" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.Authentication.OAuth.dll_7403DB20" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authentication.OAuth.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Authorization.dll_14142C59" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Authorization.dll_14142C59" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authorization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.Authorization.Policy.dll_59017BFA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.Authorization.Policy.dll_59017BFA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Authorization.Policy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.AspNetCore.Components.Authorization.dll_98A26107" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.AspNetCore.Components.Authorization.dll_98A26107" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Components.Authorization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Components.dll_4CA46C08" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Components.dll_4CA46C08" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Components.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.Components.Endpoints.dll_E1F14B40" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.Components.Endpoints.dll_E1F14B40" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Components.Endpoints.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.AspNetCore.Components.Forms.dll_1597D983" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_icrosoft.AspNetCore.Components.Forms.dll_1597D983" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Components.Forms.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_crosoft.AspNetCore.Components.Server.dll_F563C0A8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_crosoft.AspNetCore.Components.Server.dll_F563C0A8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Components.Server.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Components.Web.dll_D9386B58" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Components.Web.dll_D9386B58" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Components.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.AspNetCore.Connections.Abstractions.dll_D30AEE63" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.AspNetCore.Connections.Abstractions.dll_D30AEE63" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Connections.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.CookiePolicy.dll_5D5CB118" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.CookiePolicy.dll_5D5CB118" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.CookiePolicy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Cors.dll_14966C4F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Cors.dll_14966C4F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Cors.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_oft.AspNetCore.Cryptography.Internal.dll_B8689640" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_oft.AspNetCore.Cryptography.Internal.dll_B8689640" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Cryptography.Internal.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_spNetCore.Cryptography.KeyDerivation.dll_7184BAD0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_spNetCore.Cryptography.KeyDerivation.dll_7184BAD0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pNetCore.DataProtection.Abstractions.dll_E6A6E5C4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_pNetCore.DataProtection.Abstractions.dll_E6A6E5C4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.DataProtection.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.DataProtection.dll_2B325A8C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.DataProtection.dll_2B325A8C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.DataProtection.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_AspNetCore.DataProtection.Extensions.dll_AE2BB9EE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_AspNetCore.DataProtection.Extensions.dll_AE2BB9EE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.DataProtection.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.AspNetCore.Diagnostics.Abstractions.dll_52AA2E66" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.AspNetCore.Diagnostics.Abstractions.dll_52AA2E66" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Diagnostics.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Diagnostics.dll_C4521A00" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Diagnostics.dll_C4521A00" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Diagnostics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.AspNetCore.Diagnostics.HealthChecks.dll_E882CB60" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.AspNetCore.Diagnostics.HealthChecks.dll_E882CB60" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.dll_CD24E517" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.dll_CD24E517" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.HostFiltering.dll_B7E441D9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.HostFiltering.dll_B7E441D9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.HostFiltering.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.Hosting.Abstractions.dll_DB7868AA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.Hosting.Abstractions.dll_DB7868AA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Hosting.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Hosting.dll_CB990698" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Hosting.dll_CB990698" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Hosting.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_pNetCore.Hosting.Server.Abstractions.dll_09AAC4E0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_pNetCore.Hosting.Server.Abstractions.dll_09AAC4E0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_crosoft.AspNetCore.Html.Abstractions.dll_9CD7FD99" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_crosoft.AspNetCore.Html.Abstractions.dll_9CD7FD99" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Html.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_crosoft.AspNetCore.Http.Abstractions.dll_431A41A9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_crosoft.AspNetCore.Http.Abstractions.dll_431A41A9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_t.AspNetCore.Http.Connections.Common.dll_553C0608" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_t.AspNetCore.Http.Connections.Common.dll_553C0608" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.Connections.Common.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.AspNetCore.Http.Connections.dll_811F994B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_icrosoft.AspNetCore.Http.Connections.dll_811F994B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.Connections.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Http.dll_D9E05DB7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Http.dll_D9E05DB7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Http.Extensions.dll_12E2F38D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Http.Extensions.dll_12E2F38D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Http.Features.dll_D94A2A1C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Http.Features.dll_D94A2A1C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.Features.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Http.Results.dll_1C291C06" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Http.Results.dll_1C291C06" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Http.Results.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.HttpLogging.dll_3C6FF780" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.HttpLogging.dll_3C6FF780" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.HttpLogging.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.HttpOverrides.dll_AA50FF45" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.HttpOverrides.dll_AA50FF45" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.HttpOverrides.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.HttpsPolicy.dll_EC91DE21" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.HttpsPolicy.dll_EC91DE21" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.HttpsPolicy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Identity.dll_83F4C1A3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Identity.dll_83F4C1A3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Identity.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Localization.dll_FB11AED6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Localization.dll_FB11AED6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Localization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.Localization.Routing.dll_27C77F0F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.Localization.Routing.dll_27C77F0F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Localization.Routing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Metadata.dll_36A4328A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Metadata.dll_36A4328A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Metadata.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.AspNetCore.Mvc.Abstractions.dll_F09B0E79" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_icrosoft.AspNetCore.Mvc.Abstractions.dll_F09B0E79" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.ApiExplorer.dll_7244FF61" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.ApiExplorer.dll_7244FF61" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.ApiExplorer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.Core.dll_642627FE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.Core.dll_642627FE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.Cors.dll_4E60F4FE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.Cors.dll_4E60F4FE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Cors.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.AspNetCore.Mvc.DataAnnotations.dll_509AE765" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.AspNetCore.Mvc.DataAnnotations.dll_509AE765" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.DataAnnotations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.dll_A5C740C5" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.dll_A5C740C5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.AspNetCore.Mvc.Formatters.Json.dll_DB8FAF96" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.AspNetCore.Mvc.Formatters.Json.dll_DB8FAF96" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Formatters.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_rosoft.AspNetCore.Mvc.Formatters.Xml.dll_44C46FBA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_rosoft.AspNetCore.Mvc.Formatters.Xml.dll_44C46FBA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.AspNetCore.Mvc.Localization.dll_4B10BEC4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_icrosoft.AspNetCore.Mvc.Localization.dll_4B10BEC4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Localization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.Razor.dll_4D6E4EC7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.Razor.dll_4D6E4EC7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.Razor.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.RazorPages.dll_3D7EC9E8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.RazorPages.dll_3D7EC9E8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.RazorPages.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Mvc.TagHelpers.dll_BA5CA980" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Mvc.TagHelpers.dll_BA5CA980" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.TagHelpers.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.AspNetCore.Mvc.ViewFeatures.dll_52FD3E08" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_icrosoft.AspNetCore.Mvc.ViewFeatures.dll_52FD3E08" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Mvc.ViewFeatures.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.OutputCaching.dll_B4132CA2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.OutputCaching.dll_B4132CA2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.OutputCaching.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.RateLimiting.dll_AA50C860" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.RateLimiting.dll_AA50C860" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.RateLimiting.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Razor.dll_4AAE50B9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Razor.dll_4AAE50B9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Razor.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Razor.Runtime.dll_D08C699F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Razor.Runtime.dll_D08C699F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Razor.Runtime.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.RequestDecompression.dll_CB70F413" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.RequestDecompression.dll_CB70F413" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.RequestDecompression.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_NetCore.ResponseCaching.Abstractions.dll_C23A368B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_NetCore.ResponseCaching.Abstractions.dll_C23A368B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.ResponseCaching.dll_0636EC62" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.ResponseCaching.dll_0636EC62" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.ResponseCaching.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.AspNetCore.ResponseCompression.dll_C91E4E51" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.AspNetCore.ResponseCompression.dll_C91E4E51" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.ResponseCompression.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Rewrite.dll_32BEF8A4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Rewrite.dll_32BEF8A4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Rewrite.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.AspNetCore.Routing.Abstractions.dll_7E2D51E8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.AspNetCore.Routing.Abstractions.dll_7E2D51E8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Routing.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Routing.dll_243F1971" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Routing.dll_243F1971" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Routing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Server.HttpSys.dll_19D1D75F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Server.HttpSys.dll_19D1D75F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.HttpSys.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Server.IIS.dll_88C6474A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Server.IIS.dll_88C6474A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.IIS.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_oft.AspNetCore.Server.IISIntegration.dll_0F25CCA8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_oft.AspNetCore.Server.IISIntegration.dll_0F25CCA8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.IISIntegration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.AspNetCore.Server.Kestrel.Core.dll_E9B8479E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.AspNetCore.Server.Kestrel.Core.dll_E9B8479E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.Kestrel.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Server.Kestrel.dll_F46B128A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Server.Kestrel.dll_F46B128A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.Kestrel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Server.Kestrel.Transport.NamedPipes.dll_720C3C68" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Server.Kestrel.Transport.NamedPipes.dll_720C3C68" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_etCore.Server.Kestrel.Transport.Quic.dll_4CED951F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_etCore.Server.Kestrel.Transport.Quic.dll_4CED951F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ore.Server.Kestrel.Transport.Sockets.dll_97C17318" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ore.Server.Kestrel.Transport.Sockets.dll_97C17318" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.Session.dll_EDE086B1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.Session.dll_EDE086B1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.Session.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.SignalR.Common.dll_785AC118" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.SignalR.Common.dll_785AC118" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.SignalR.Common.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.SignalR.Core.dll_5BC9A1EE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.SignalR.Core.dll_5BC9A1EE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.SignalR.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.SignalR.dll_9DB5CA19" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.SignalR.dll_9DB5CA19" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.SignalR.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ft.AspNetCore.SignalR.Protocols.Json.dll_BE85B243" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ft.AspNetCore.SignalR.Protocols.Json.dll_BE85B243" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.SignalR.Protocols.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.StaticAssets.dll_4518334A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.StaticAssets.dll_4518334A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.StaticAssets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.StaticFiles.dll_22D25467" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.StaticFiles.dll_22D25467" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.StaticFiles.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.WebSockets.dll_73452A4D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.WebSockets.dll_73452A4D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.WebSockets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.AspNetCore.WebUtilities.dll_E51594BF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.AspNetCore.WebUtilities.dll_E51594BF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.AspNetCore.WebUtilities.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.CSharp.dll_A04F819E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.CSharp.dll_A04F819E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.CSharp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Data.Sqlite.dll_FBD3FD22" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Data.Sqlite.dll_FBD3FD22" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Data.Sqlite.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.DiaSymReader.Native.amd64.dll_EB2C5360" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.DiaSymReader.Native.amd64.dll_EB2C5360" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_oft.EntityFrameworkCore.Abstractions.dll_AA0E6DEC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_oft.EntityFrameworkCore.Abstractions.dll_AA0E6DEC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.EntityFrameworkCore.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.EntityFrameworkCore.dll_EBE2136A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.EntityFrameworkCore.dll_EBE2136A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.EntityFrameworkCore.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.EntityFrameworkCore.Relational.dll_C8A5AD5E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.EntityFrameworkCore.Relational.dll_C8A5AD5E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.EntityFrameworkCore.Relational.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.EntityFrameworkCore.Sqlite.dll_FD0EE31E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.EntityFrameworkCore.Sqlite.dll_FD0EE31E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.EntityFrameworkCore.Sqlite.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.Extensions.Caching.Abstractions.dll_2FA7B515" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.Extensions.Caching.Abstractions.dll_2FA7B515" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Caching.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Caching.Memory.dll_6825A670" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Caching.Memory.dll_6825A670" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Caching.Memory.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_xtensions.Configuration.Abstractions.dll_4A09D293" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_xtensions.Configuration.Abstractions.dll_4A09D293" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.Extensions.Configuration.Binder.dll_7157AF8D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.Extensions.Configuration.Binder.dll_7157AF8D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.Binder.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Extensions.Configuration.CommandLine.dll_D1E75B84" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Extensions.Configuration.CommandLine.dll_D1E75B84" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.CommandLine.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Configuration.dll_11DCB218" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Configuration.dll_11DCB218" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_s.Configuration.EnvironmentVariables.dll_A8C4F96C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_s.Configuration.EnvironmentVariables.dll_A8C4F96C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ensions.Configuration.FileExtensions.dll_F6066965" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ensions.Configuration.FileExtensions.dll_F6066965" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.FileExtensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_crosoft.Extensions.Configuration.Ini.dll_6751D36A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_crosoft.Extensions.Configuration.Ini.dll_6751D36A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.Ini.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_rosoft.Extensions.Configuration.Json.dll_68536E1C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_rosoft.Extensions.Configuration.Json.dll_68536E1C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Extensions.Configuration.KeyPerFile.dll_C3C410CA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Extensions.Configuration.KeyPerFile.dll_C3C410CA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.KeyPerFile.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Extensions.Configuration.UserSecrets.dll_F728E02E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Extensions.Configuration.UserSecrets.dll_F728E02E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.UserSecrets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_crosoft.Extensions.Configuration.Xml.dll_E7C1D960" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_crosoft.Extensions.Configuration.Xml.dll_E7C1D960" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Configuration.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ons.DependencyInjection.Abstractions.dll_FA2BCDB8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ons.DependencyInjection.Abstractions.dll_FA2BCDB8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.DependencyInjection.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.Extensions.DependencyInjection.dll_0ECC1D1C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.Extensions.DependencyInjection.dll_0ECC1D1C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.DependencyInjection.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.DependencyModel.dll_D6547DCE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.DependencyModel.dll_D6547DCE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.DependencyModel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Extensions.Diagnostics.Abstractions.dll_32AB7E71" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Extensions.Diagnostics.Abstractions.dll_32AB7E71" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Diagnostics.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Diagnostics.dll_0001DD8D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Diagnostics.dll_0001DD8D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Diagnostics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_iagnostics.HealthChecks.Abstractions.dll_C7EEE8BD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_iagnostics.HealthChecks.Abstractions.dll_C7EEE8BD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Extensions.Diagnostics.HealthChecks.dll_709FE45B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Extensions.Diagnostics.HealthChecks.dll_709FE45B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Diagnostics.HealthChecks.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Features.dll_0DFC1222" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Features.dll_0DFC1222" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Features.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_xtensions.FileProviders.Abstractions.dll_470DF65E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_xtensions.FileProviders.Abstractions.dll_470DF65E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.FileProviders.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_t.Extensions.FileProviders.Composite.dll_6F46B0DC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_t.Extensions.FileProviders.Composite.dll_6F46B0DC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.FileProviders.Composite.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ft.Extensions.FileProviders.Embedded.dll_D6786688" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ft.Extensions.FileProviders.Embedded.dll_D6786688" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.FileProviders.Embedded.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ft.Extensions.FileProviders.Physical.dll_63000E8C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ft.Extensions.FileProviders.Physical.dll_63000E8C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.FileProviders.Physical.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_rosoft.Extensions.FileSystemGlobbing.dll_0A2B07B6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_rosoft.Extensions.FileSystemGlobbing.dll_0A2B07B6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.FileSystemGlobbing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.Extensions.Hosting.Abstractions.dll_632B715D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.Extensions.Hosting.Abstractions.dll_632B715D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Hosting.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Hosting.dll_0F1E2DF7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Hosting.dll_0F1E2DF7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Hosting.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_t.Extensions.Hosting.WindowsServices.dll_7455C10D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_t.Extensions.Hosting.WindowsServices.dll_7455C10D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Hosting.WindowsServices.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Http.dll_B0778E32" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Http.dll_B0778E32" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Http.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Identity.Core.dll_1E95E563" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Identity.Core.dll_1E95E563" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Identity.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Identity.Stores.dll_1C615D8F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Identity.Stores.dll_1C615D8F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Identity.Stores.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Extensions.Localization.Abstractions.dll_76B57653" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Extensions.Localization.Abstractions.dll_76B57653" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Localization.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Localization.dll_D4D2C20B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Localization.dll_D4D2C20B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Localization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_soft.Extensions.Logging.Abstractions.dll_0ECA1D0B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_soft.Extensions.Logging.Abstractions.dll_0ECA1D0B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.Abstractions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_oft.Extensions.Logging.Configuration.dll_808F5317" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_oft.Extensions.Logging.Configuration.dll_808F5317" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.Configuration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Logging.Console.dll_25E0CE5D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Logging.Console.dll_25E0CE5D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.Console.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Logging.Debug.dll_994E071E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Logging.Debug.dll_994E071E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.Debug.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Logging.dll_FDCD0C51" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Logging.dll_FDCD0C51" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_icrosoft.Extensions.Logging.EventLog.dll_F419CB7F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_icrosoft.Extensions.Logging.EventLog.dll_F419CB7F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.EventLog.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.Extensions.Logging.EventSource.dll_0C0BA2BD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.Extensions.Logging.EventSource.dll_0C0BA2BD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.EventSource.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_osoft.Extensions.Logging.TraceSource.dll_D3AB57E4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_osoft.Extensions.Logging.TraceSource.dll_D3AB57E4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Logging.TraceSource.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.ObjectPool.dll_CC60CE7C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.ObjectPool.dll_CC60CE7C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.ObjectPool.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ions.Options.ConfigurationExtensions.dll_3B52DCEA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ions.Options.ConfigurationExtensions.dll_3B52DCEA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Options.ConfigurationExtensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_t.Extensions.Options.DataAnnotations.dll_5D655ABA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_t.Extensions.Options.DataAnnotations.dll_5D655ABA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Options.DataAnnotations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Options.dll_7C6A74F7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Options.dll_7C6A74F7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Options.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Primitives.dll_89303690" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Primitives.dll_89303690" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.Validation.dll_989E8259" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.Validation.dll_989E8259" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.Validation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Extensions.WebEncoders.dll_34D0713C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Extensions.WebEncoders.dll_34D0713C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Extensions.WebEncoders.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.JSInterop.dll_BC9EC161" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.JSInterop.dll_BC9EC161" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.JSInterop.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Net.Http.Headers.dll_AD421F1F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Net.Http.Headers.dll_AD421F1F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Net.Http.Headers.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.VisualBasic.Core.dll_625D0848" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.VisualBasic.Core.dll_625D0848" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.VisualBasic.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.VisualBasic.dll_6FDDA9DF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.VisualBasic.dll_6FDDA9DF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.VisualBasic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Win32.Primitives.dll_6844B938" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Win32.Primitives.dll_6844B938" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Win32.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_Microsoft.Win32.Registry.dll_96F8A0E2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_Microsoft.Win32.Registry.dll_96F8A0E2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\Microsoft.Win32.Registry.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscordaccore.dll_275B3E66" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscordaccore.dll_275B3E66" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\mscordaccore.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_rdaccore_amd64_amd64_10.0.1026.32716.dll_1DF06F0A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_rdaccore_amd64_amd64_10.0.1026.32716.dll_1DF06F0A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\mscordaccore_amd64_amd64_10.0.1026.32716.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscordbi.dll_940936AD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscordbi.dll_940936AD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\mscordbi.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscorlib.dll_74601154" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscorlib.dll_74601154" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\mscorlib.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_mscorrc.dll_7AEFA2E3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_mscorrc.dll_7AEFA2E3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\mscorrc.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_msquic.dll_0876328C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_msquic.dll_0876328C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\msquic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_netstandard.dll_8C10CFD1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_netstandard.dll_8C10CFD1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\netstandard.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_SQLitePCLRaw.batteries_v2.dll_70E1DF96" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_SQLitePCLRaw.batteries_v2.dll_70E1DF96" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\SQLitePCLRaw.batteries_v2.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_SQLitePCLRaw.core.dll_B04A0A8A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_SQLitePCLRaw.core.dll_B04A0A8A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\SQLitePCLRaw.core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_SQLitePCLRaw.provider.e_sqlite3.dll_1BD632CC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_SQLitePCLRaw.provider.e_sqlite3.dll_1BD632CC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\SQLitePCLRaw.provider.e_sqlite3.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.AppContext.dll_825D35CF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.AppContext.dll_825D35CF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.AppContext.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Buffers.dll_FEF37070" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Buffers.dll_FEF37070" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Buffers.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.Concurrent.dll_16A06EFB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.Concurrent.dll_16A06EFB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Collections.Concurrent.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.dll_84A1C539" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.dll_84A1C539" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Collections.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.Immutable.dll_933EA1EF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.Immutable.dll_933EA1EF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Collections.Immutable.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.NonGeneric.dll_B4F083E3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.NonGeneric.dll_B4F083E3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Collections.NonGeneric.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Collections.Specialized.dll_CB23773A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Collections.Specialized.dll_CB23773A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Collections.Specialized.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.Annotations.dll_CAB0F1D6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.Annotations.dll_CAB0F1D6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ComponentModel.Annotations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.ComponentModel.DataAnnotations.dll_1E7EA632" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.ComponentModel.DataAnnotations.dll_1E7EA632" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ComponentModel.DataAnnotations.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.dll_BFA77E7A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.dll_BFA77E7A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ComponentModel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.ComponentModel.EventBasedAsync.dll_9498AE93" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.ComponentModel.EventBasedAsync.dll_9498AE93" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.Primitives.dll_7A1D8267" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.Primitives.dll_7A1D8267" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ComponentModel.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ComponentModel.TypeConverter.dll_BBD0F76D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ComponentModel.TypeConverter.dll_BBD0F76D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ComponentModel.TypeConverter.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Configuration.dll_D131F39B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Configuration.dll_D131F39B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Configuration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Console.dll_355C1293" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Console.dll_355C1293" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Console.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Core.dll_E77F633C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Core.dll_E77F633C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Core.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Data.Common.dll_78AFB26D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Data.Common.dll_78AFB26D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Data.Common.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Data.DataSetExtensions.dll_7EA2EB3D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Data.DataSetExtensions.dll_7EA2EB3D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Data.DataSetExtensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Data.dll_58154E13" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Data.dll_58154E13" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Data.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Contracts.dll_684B6C0F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Contracts.dll_684B6C0F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.Contracts.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Debug.dll_D501E00B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Debug.dll_D501E00B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.Debug.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.DiagnosticSource.dll_947E770A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.DiagnosticSource.dll_947E770A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.EventLog.dll_6C627046" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.EventLog.dll_6C627046" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.EventLog.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.EventLog.Messages.dll_F2889D17" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.EventLog.Messages.dll_F2889D17" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.EventLog.Messages.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.FileVersionInfo.dll_34077D53" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.FileVersionInfo.dll_34077D53" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Process.dll_CF820ED7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Process.dll_CF820ED7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.Process.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.StackTrace.dll_45FAB6BB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.StackTrace.dll_45FAB6BB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.StackTrace.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_.Diagnostics.TextWriterTraceListener.dll_A32A6479" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_.Diagnostics.TextWriterTraceListener.dll_A32A6479" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Tools.dll_2D5C3C1A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Tools.dll_2D5C3C1A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.Tools.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.TraceSource.dll_5793ABE6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.TraceSource.dll_5793ABE6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.TraceSource.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Diagnostics.Tracing.dll_03617A49" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Diagnostics.Tracing.dll_03617A49" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Diagnostics.Tracing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.dll_A674FFDF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.dll_A674FFDF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Drawing.dll_1F6C6C9A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Drawing.dll_1F6C6C9A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Drawing.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Drawing.Primitives.dll_6DE2AAF7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Drawing.Primitives.dll_6DE2AAF7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Drawing.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Dynamic.Runtime.dll_D0546209" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Dynamic.Runtime.dll_D0546209" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Dynamic.Runtime.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Formats.Asn1.dll_E64E9B18" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Formats.Asn1.dll_E64E9B18" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Formats.Asn1.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Formats.Cbor.dll_4C945A49" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Formats.Cbor.dll_4C945A49" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Formats.Cbor.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Formats.Tar.dll_42700B7C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Formats.Tar.dll_42700B7C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Formats.Tar.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Globalization.Calendars.dll_F85D9ED6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Globalization.Calendars.dll_F85D9ED6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Globalization.Calendars.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Globalization.dll_D1B2C6B6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Globalization.dll_D1B2C6B6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Globalization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Globalization.Extensions.dll_11A8D004" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Globalization.Extensions.dll_11A8D004" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Globalization.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.Brotli.dll_FE86A889" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.Brotli.dll_FE86A889" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Compression.Brotli.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.dll_2E9012E7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.dll_2E9012E7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Compression.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.FileSystem.dll_FAF3D44C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.FileSystem.dll_FAF3D44C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Compression.FileSystem.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.Native.dll_FC11E194" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.Native.dll_FC11E194" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Compression.Native.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Compression.ZipFile.dll_F4B9534C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Compression.ZipFile.dll_F4B9534C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Compression.ZipFile.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.dll_06DB5174" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.dll_06DB5174" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.AccessControl.dll_F1C33BB1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.AccessControl.dll_F1C33BB1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.FileSystem.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.dll_C9953D4D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.dll_C9953D4D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.FileSystem.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.DriveInfo.dll_4066D14E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.DriveInfo.dll_4066D14E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.Primitives.dll_5F895B5D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.Primitives.dll_5F895B5D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.FileSystem.Watcher.dll_92462581" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.FileSystem.Watcher.dll_92462581" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.FileSystem.Watcher.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.IsolatedStorage.dll_80789B9D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.IsolatedStorage.dll_80789B9D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.IsolatedStorage.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.MemoryMappedFiles.dll_42937536" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.MemoryMappedFiles.dll_42937536" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.MemoryMappedFiles.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Pipelines.dll_20998DC2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Pipelines.dll_20998DC2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Pipelines.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Pipes.AccessControl.dll_B6DE5536" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Pipes.AccessControl.dll_B6DE5536" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Pipes.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.Pipes.dll_F4D0A904" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.Pipes.dll_F4D0A904" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.Pipes.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.IO.UnmanagedMemoryStream.dll_41FD69A0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.IO.UnmanagedMemoryStream.dll_41FD69A0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.AsyncEnumerable.dll_A29A8696" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.AsyncEnumerable.dll_A29A8696" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Linq.AsyncEnumerable.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.dll_513B78B8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.dll_513B78B8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Linq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.Expressions.dll_A7A636E8" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.Expressions.dll_A7A636E8" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Linq.Expressions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.Parallel.dll_B209AAED" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.Parallel.dll_B209AAED" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Linq.Parallel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Linq.Queryable.dll_06FE5FB1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Linq.Queryable.dll_06FE5FB1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Linq.Queryable.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Memory.dll_413B04CC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Memory.dll_413B04CC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Memory.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.dll_111FF7E0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.dll_111FF7E0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Http.dll_6674532B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Http.dll_6674532B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Http.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Http.Json.dll_084C98E1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Http.Json.dll_084C98E1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Http.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.HttpListener.dll_9A0138D1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.HttpListener.dll_9A0138D1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.HttpListener.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Mail.dll_654E0050" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Mail.dll_654E0050" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Mail.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.NameResolution.dll_E676BF22" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.NameResolution.dll_E676BF22" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.NameResolution.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.NetworkInformation.dll_ED547C15" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.NetworkInformation.dll_ED547C15" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.NetworkInformation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Ping.dll_C33D3B15" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Ping.dll_C33D3B15" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Ping.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Primitives.dll_2BC8E06D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Primitives.dll_2BC8E06D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Quic.dll_3FA8163C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Quic.dll_3FA8163C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Quic.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Requests.dll_4C132C80" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Requests.dll_4C132C80" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Requests.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Security.dll_9EC85993" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Security.dll_9EC85993" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Security.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.ServerSentEvents.dll_9890FEFB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.ServerSentEvents.dll_9890FEFB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.ServerSentEvents.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.ServicePoint.dll_90D2AEF7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.ServicePoint.dll_90D2AEF7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.ServicePoint.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.Sockets.dll_D8EE744B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.Sockets.dll_D8EE744B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.Sockets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebClient.dll_909D122C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebClient.dll_909D122C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.WebClient.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebHeaderCollection.dll_682E28F3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebHeaderCollection.dll_682E28F3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.WebHeaderCollection.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebProxy.dll_566E84C1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebProxy.dll_566E84C1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.WebProxy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebSockets.Client.dll_39A7E751" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebSockets.Client.dll_39A7E751" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.WebSockets.Client.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Net.WebSockets.dll_46DFA227" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Net.WebSockets.dll_46DFA227" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Net.WebSockets.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Numerics.dll_3555DEC6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Numerics.dll_3555DEC6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Numerics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Numerics.Vectors.dll_DF054063" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Numerics.Vectors.dll_DF054063" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Numerics.Vectors.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ObjectModel.dll_D3D2FA67" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ObjectModel.dll_D3D2FA67" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ObjectModel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.CoreLib.dll_BCCC6F16" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.CoreLib.dll_BCCC6F16" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Private.CoreLib.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_em.Private.DataContractSerialization.dll_BE2EB9A0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_em.Private.DataContractSerialization.dll_BE2EB9A0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Private.DataContractSerialization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Uri.dll_4BD94145" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Uri.dll_4BD94145" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Private.Uri.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Xml.dll_7605AB18" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Xml.dll_7605AB18" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Private.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Private.Xml.Linq.dll_D0B42C74" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Private.Xml.Linq.dll_D0B42C74" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Private.Xml.Linq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.DispatchProxy.dll_73B1E3DB" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.DispatchProxy.dll_73B1E3DB" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.DispatchProxy.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.dll_60C7DFE1" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.dll_60C7DFE1" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Emit.dll_1A4AC658" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Emit.dll_1A4AC658" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.Emit.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Emit.ILGeneration.dll_7CE761C0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Emit.ILGeneration.dll_7CE761C0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Emit.Lightweight.dll_EA84A17C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Emit.Lightweight.dll_EA84A17C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.Emit.Lightweight.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Extensions.dll_098C4242" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Extensions.dll_098C4242" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Metadata.dll_4973EE48" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Metadata.dll_4973EE48" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.Metadata.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.Primitives.dll_A3FAE730" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.Primitives.dll_A3FAE730" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Reflection.TypeExtensions.dll_003C3549" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Reflection.TypeExtensions.dll_003C3549" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Reflection.TypeExtensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.Reader.dll_C9DF54AF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.Reader.dll_C9DF54AF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Resources.Reader.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.ResourceManager.dll_DD5CF897" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.ResourceManager.dll_DD5CF897" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Resources.ResourceManager.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Resources.Writer.dll_6D31FDF6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Resources.Writer.dll_6D31FDF6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Resources.Writer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_stem.Runtime.CompilerServices.Unsafe.dll_B372F953" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_stem.Runtime.CompilerServices.Unsafe.dll_B372F953" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Runtime.CompilerServices.VisualC.dll_CAF2B39A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Runtime.CompilerServices.VisualC.dll_CAF2B39A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.dll_CFBB2B5C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.dll_CFBB2B5C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Extensions.dll_945DFCA9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Extensions.dll_945DFCA9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Handles.dll_15949052" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Handles.dll_15949052" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Handles.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.InteropServices.dll_A779180C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.InteropServices.dll_A779180C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.InteropServices.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_m.Runtime.InteropServices.JavaScript.dll_954A714B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_m.Runtime.InteropServices.JavaScript.dll_954A714B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_e.InteropServices.RuntimeInformation.dll_463C6599" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_e.InteropServices.RuntimeInformation.dll_463C6599" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Intrinsics.dll_3F7E8B28" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Intrinsics.dll_3F7E8B28" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Intrinsics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Loader.dll_26DDA1F5" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Loader.dll_26DDA1F5" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Loader.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Numerics.dll_D271976E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Numerics.dll_D271976E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Numerics.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Serialization.dll_B3750820" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Serialization.dll_B3750820" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Serialization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Runtime.Serialization.Formatters.dll_57BAD482" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Runtime.Serialization.Formatters.dll_57BAD482" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Serialization.Formatters.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Serialization.Json.dll_EAE85B22" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Serialization.Json.dll_EAE85B22" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Serialization.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Runtime.Serialization.Primitives.dll_2EA423D6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Runtime.Serialization.Primitives.dll_2EA423D6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Serialization.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Runtime.Serialization.Xml.dll_5C812A0D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Runtime.Serialization.Xml.dll_5C812A0D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Runtime.Serialization.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.AccessControl.dll_3D2DB02B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.AccessControl.dll_3D2DB02B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Claims.dll_891808AE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Claims.dll_891808AE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Claims.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Security.Cryptography.Algorithms.dll_DB9E7BC3" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Security.Cryptography.Algorithms.dll_DB9E7BC3" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Cng.dll_2D17D42F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Cng.dll_2D17D42F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Cng.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Csp.dll_69DBE10B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Csp.dll_69DBE10B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Csp.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.dll_EDB23E56" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.dll_EDB23E56" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_ystem.Security.Cryptography.Encoding.dll_52138CC9" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_ystem.Security.Cryptography.Encoding.dll_52138CC9" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.OpenSsl.dll_45ADF146" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.OpenSsl.dll_45ADF146" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Pkcs.dll_14A4686C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Pkcs.dll_14A4686C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Pkcs.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.Security.Cryptography.Primitives.dll_A39DE482" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.Security.Cryptography.Primitives.dll_A39DE482" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_curity.Cryptography.X509Certificates.dll_839A39C6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_curity.Cryptography.X509Certificates.dll_839A39C6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Cryptography.Xml.dll_1B003E83" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Cryptography.Xml.dll_1B003E83" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Cryptography.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.dll_E6A266E2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.dll_E6A266E2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Principal.dll_0D88121E" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Principal.dll_0D88121E" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Principal.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.Principal.Windows.dll_459E4D64" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.Principal.Windows.dll_459E4D64" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.Principal.Windows.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Security.SecureString.dll_EF93AE26" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Security.SecureString.dll_EF93AE26" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Security.SecureString.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ServiceModel.Web.dll_0A1A4081" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ServiceModel.Web.dll_0A1A4081" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ServiceModel.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ServiceProcess.dll_B09B7E90" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ServiceProcess.dll_B09B7E90" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ServiceProcess.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_tem.ServiceProcess.ServiceController.dll_1793AECA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_tem.ServiceProcess.ServiceController.dll_1793AECA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ServiceProcess.ServiceController.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encoding.CodePages.dll_8F909CDA" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encoding.CodePages.dll_8F909CDA" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Text.Encoding.CodePages.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encoding.dll_DA8EA9B6" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encoding.dll_DA8EA9B6" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Text.Encoding.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encoding.Extensions.dll_0C6D6E1D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encoding.Extensions.dll_0C6D6E1D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Text.Encoding.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Encodings.Web.dll_61B7EA9B" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Encodings.Web.dll_61B7EA9B" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Text.Encodings.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.Json.dll_11A43862" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.Json.dll_11A43862" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Text.Json.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Text.RegularExpressions.dll_2FAC2DB4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Text.RegularExpressions.dll_2FAC2DB4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Text.RegularExpressions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.AccessControl.dll_5BFE1BEC" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.AccessControl.dll_5BFE1BEC" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.AccessControl.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Channels.dll_B1AF0061" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Channels.dll_B1AF0061" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Channels.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.dll_39DA6487" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.dll_39DA6487" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Overlapped.dll_CBDBA98A" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Overlapped.dll_CBDBA98A" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Overlapped.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.RateLimiting.dll_5BF39A43" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.RateLimiting.dll_5BF39A43" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.RateLimiting.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.Dataflow.dll_5653ED47" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.Dataflow.dll_5653ED47" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Tasks.Dataflow.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.dll_A01A12B0" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.dll_A01A12B0" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Tasks.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.Extensions.dll_B475AC49" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.Extensions.dll_B475AC49" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Tasks.Extensions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Tasks.Parallel.dll_BE348D32" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Tasks.Parallel.dll_BE348D32" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Tasks.Parallel.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Thread.dll_8B79780C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Thread.dll_8B79780C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Thread.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.ThreadPool.dll_40185A2D" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.ThreadPool.dll_40185A2D" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.ThreadPool.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Threading.Timer.dll_027DD507" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Threading.Timer.dll_027DD507" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Threading.Timer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Transactions.dll_687D8940" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Transactions.dll_687D8940" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Transactions.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Transactions.Local.dll_0A8352D7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Transactions.Local.dll_0A8352D7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Transactions.Local.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.ValueTuple.dll_BA09FBBD" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.ValueTuple.dll_BA09FBBD" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.ValueTuple.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Web.dll_AA222A73" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Web.dll_AA222A73" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Web.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Web.HttpUtility.dll_8A730CD7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Web.HttpUtility.dll_8A730CD7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Web.HttpUtility.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Windows.dll_2B2B30A4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Windows.dll_2B2B30A4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Windows.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.dll_63946FB7" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.dll_63946FB7" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.Linq.dll_AF810015" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.Linq.dll_AF810015" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.Linq.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.ReaderWriter.dll_3E4E187F" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.ReaderWriter.dll_3E4E187F" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.ReaderWriter.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.Serialization.dll_E5256E4C" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.Serialization.dll_E5256E4C" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.Serialization.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XDocument.dll_61EF49C2" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XDocument.dll_61EF49C2" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.XDocument.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XmlDocument.dll_496B7AFF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XmlDocument.dll_496B7AFF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.XmlDocument.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XmlSerializer.dll_B20055C4" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XmlSerializer.dll_B20055C4" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.XmlSerializer.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XPath.dll_720EC1EF" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XPath.dll_720EC1EF" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.XPath.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_System.Xml.XPath.XDocument.dll_776F9FBE" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_System.Xml.XPath.XDocument.dll_776F9FBE" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+    </Component>
+    <Component Id="c_web.config_0ED3C211" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_web.config_0ED3C211" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\web.config" KeyPath="yes" />
+    </Component>
+    <Component Id="c_WindowsBase.dll_27EF1F45" Directory="INSTALLFOLDER" Guid="*">
+      <File Id="f_WindowsBase.dll_27EF1F45" Source="C:\Users\j_voelker\Documents\AA_Claude\Emma-Aufgabenpool\publish\Emma.Service\WindowsBase.dll" KeyPath="yes" />
+    </Component>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="ServiceFiles">
+    <ComponentRef Id="c_appsettings.Development.json_3EC51493" />
+    <ComponentRef Id="c_appsettings.json_F2FE7545" />
+    <ComponentRef Id="c_aspnetcorev2_inprocess.dll_3AB9F8DD" />
+    <ComponentRef Id="c_clretwrc.dll_0E761262" />
+    <ComponentRef Id="c_clrgc.dll_5F6E0AA0" />
+    <ComponentRef Id="c_clrgcexp.dll_C429E07C" />
+    <ComponentRef Id="c_clrjit.dll_FD82F850" />
+    <ComponentRef Id="c_coreclr.dll_E1D86768" />
+    <ComponentRef Id="c_createdump.exe_058B99C3" />
+    <ComponentRef Id="c_Emma.Service.deps.json_2B63D93B" />
+    <ComponentRef Id="c_Emma.Service.dll_5F65C085" />
+    <ComponentRef Id="c_Emma.Service.pdb_8BCB9749" />
+    <ComponentRef Id="c_Emma.Service.runtimeconfig.json_18CA36D2" />
+    <ComponentRef Id="c_a.Service.staticwebassets.endpoints.json_A5815392" />
+    <ComponentRef Id="c_Emma.Shared.dll_A4B47CF4" />
+    <ComponentRef Id="c_Emma.Shared.pdb_85D1E157" />
+    <ComponentRef Id="c_e_sqlite3.dll_F4376723" />
+    <ComponentRef Id="c_hostfxr.dll_B35FD665" />
+    <ComponentRef Id="c_hostpolicy.dll_74DB664C" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Antiforgery.dll_ECAE7DD2" />
+    <ComponentRef Id="c_pNetCore.Authentication.Abstractions.dll_537F6A9D" />
+    <ComponentRef Id="c_spNetCore.Authentication.BearerToken.dll_1B9293DB" />
+    <ComponentRef Id="c_ft.AspNetCore.Authentication.Cookies.dll_8C659B1F" />
+    <ComponentRef Id="c_osoft.AspNetCore.Authentication.Core.dll_CBF9F870" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Authentication.dll_F4DEAFC5" />
+    <ComponentRef Id="c_soft.AspNetCore.Authentication.OAuth.dll_7403DB20" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Authorization.dll_14142C59" />
+    <ComponentRef Id="c_soft.AspNetCore.Authorization.Policy.dll_59017BFA" />
+    <ComponentRef Id="c_.AspNetCore.Components.Authorization.dll_98A26107" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Components.dll_4CA46C08" />
+    <ComponentRef Id="c_soft.AspNetCore.Components.Endpoints.dll_E1F14B40" />
+    <ComponentRef Id="c_icrosoft.AspNetCore.Components.Forms.dll_1597D983" />
+    <ComponentRef Id="c_crosoft.AspNetCore.Components.Server.dll_F563C0A8" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Components.Web.dll_D9386B58" />
+    <ComponentRef Id="c_.AspNetCore.Connections.Abstractions.dll_D30AEE63" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.CookiePolicy.dll_5D5CB118" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Cors.dll_14966C4F" />
+    <ComponentRef Id="c_oft.AspNetCore.Cryptography.Internal.dll_B8689640" />
+    <ComponentRef Id="c_spNetCore.Cryptography.KeyDerivation.dll_7184BAD0" />
+    <ComponentRef Id="c_pNetCore.DataProtection.Abstractions.dll_E6A6E5C4" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.DataProtection.dll_2B325A8C" />
+    <ComponentRef Id="c_AspNetCore.DataProtection.Extensions.dll_AE2BB9EE" />
+    <ComponentRef Id="c_.AspNetCore.Diagnostics.Abstractions.dll_52AA2E66" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Diagnostics.dll_C4521A00" />
+    <ComponentRef Id="c_.AspNetCore.Diagnostics.HealthChecks.dll_E882CB60" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.dll_CD24E517" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.HostFiltering.dll_B7E441D9" />
+    <ComponentRef Id="c_soft.AspNetCore.Hosting.Abstractions.dll_DB7868AA" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Hosting.dll_CB990698" />
+    <ComponentRef Id="c_pNetCore.Hosting.Server.Abstractions.dll_09AAC4E0" />
+    <ComponentRef Id="c_crosoft.AspNetCore.Html.Abstractions.dll_9CD7FD99" />
+    <ComponentRef Id="c_crosoft.AspNetCore.Http.Abstractions.dll_431A41A9" />
+    <ComponentRef Id="c_t.AspNetCore.Http.Connections.Common.dll_553C0608" />
+    <ComponentRef Id="c_icrosoft.AspNetCore.Http.Connections.dll_811F994B" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Http.dll_D9E05DB7" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Http.Extensions.dll_12E2F38D" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Http.Features.dll_D94A2A1C" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Http.Results.dll_1C291C06" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.HttpLogging.dll_3C6FF780" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.HttpOverrides.dll_AA50FF45" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.HttpsPolicy.dll_EC91DE21" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Identity.dll_83F4C1A3" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Localization.dll_FB11AED6" />
+    <ComponentRef Id="c_soft.AspNetCore.Localization.Routing.dll_27C77F0F" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Metadata.dll_36A4328A" />
+    <ComponentRef Id="c_icrosoft.AspNetCore.Mvc.Abstractions.dll_F09B0E79" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.ApiExplorer.dll_7244FF61" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.Core.dll_642627FE" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.Cors.dll_4E60F4FE" />
+    <ComponentRef Id="c_osoft.AspNetCore.Mvc.DataAnnotations.dll_509AE765" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.dll_A5C740C5" />
+    <ComponentRef Id="c_osoft.AspNetCore.Mvc.Formatters.Json.dll_DB8FAF96" />
+    <ComponentRef Id="c_rosoft.AspNetCore.Mvc.Formatters.Xml.dll_44C46FBA" />
+    <ComponentRef Id="c_icrosoft.AspNetCore.Mvc.Localization.dll_4B10BEC4" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.Razor.dll_4D6E4EC7" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.RazorPages.dll_3D7EC9E8" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Mvc.TagHelpers.dll_BA5CA980" />
+    <ComponentRef Id="c_icrosoft.AspNetCore.Mvc.ViewFeatures.dll_52FD3E08" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.OutputCaching.dll_B4132CA2" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.RateLimiting.dll_AA50C860" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Razor.dll_4AAE50B9" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Razor.Runtime.dll_D08C699F" />
+    <ComponentRef Id="c_soft.AspNetCore.RequestDecompression.dll_CB70F413" />
+    <ComponentRef Id="c_NetCore.ResponseCaching.Abstractions.dll_C23A368B" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.ResponseCaching.dll_0636EC62" />
+    <ComponentRef Id="c_osoft.AspNetCore.ResponseCompression.dll_C91E4E51" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Rewrite.dll_32BEF8A4" />
+    <ComponentRef Id="c_soft.AspNetCore.Routing.Abstractions.dll_7E2D51E8" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Routing.dll_243F1971" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Server.HttpSys.dll_19D1D75F" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Server.IIS.dll_88C6474A" />
+    <ComponentRef Id="c_oft.AspNetCore.Server.IISIntegration.dll_0F25CCA8" />
+    <ComponentRef Id="c_osoft.AspNetCore.Server.Kestrel.Core.dll_E9B8479E" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Server.Kestrel.dll_F46B128A" />
+    <ComponentRef Id="c_.Server.Kestrel.Transport.NamedPipes.dll_720C3C68" />
+    <ComponentRef Id="c_etCore.Server.Kestrel.Transport.Quic.dll_4CED951F" />
+    <ComponentRef Id="c_ore.Server.Kestrel.Transport.Sockets.dll_97C17318" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.Session.dll_EDE086B1" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.SignalR.Common.dll_785AC118" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.SignalR.Core.dll_5BC9A1EE" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.SignalR.dll_9DB5CA19" />
+    <ComponentRef Id="c_ft.AspNetCore.SignalR.Protocols.Json.dll_BE85B243" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.StaticAssets.dll_4518334A" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.StaticFiles.dll_22D25467" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.WebSockets.dll_73452A4D" />
+    <ComponentRef Id="c_Microsoft.AspNetCore.WebUtilities.dll_E51594BF" />
+    <ComponentRef Id="c_Microsoft.CSharp.dll_A04F819E" />
+    <ComponentRef Id="c_Microsoft.Data.Sqlite.dll_FBD3FD22" />
+    <ComponentRef Id="c_Microsoft.DiaSymReader.Native.amd64.dll_EB2C5360" />
+    <ComponentRef Id="c_oft.EntityFrameworkCore.Abstractions.dll_AA0E6DEC" />
+    <ComponentRef Id="c_Microsoft.EntityFrameworkCore.dll_EBE2136A" />
+    <ComponentRef Id="c_osoft.EntityFrameworkCore.Relational.dll_C8A5AD5E" />
+    <ComponentRef Id="c_Microsoft.EntityFrameworkCore.Sqlite.dll_FD0EE31E" />
+    <ComponentRef Id="c_soft.Extensions.Caching.Abstractions.dll_2FA7B515" />
+    <ComponentRef Id="c_Microsoft.Extensions.Caching.Memory.dll_6825A670" />
+    <ComponentRef Id="c_xtensions.Configuration.Abstractions.dll_4A09D293" />
+    <ComponentRef Id="c_soft.Extensions.Configuration.Binder.dll_7157AF8D" />
+    <ComponentRef Id="c_Extensions.Configuration.CommandLine.dll_D1E75B84" />
+    <ComponentRef Id="c_Microsoft.Extensions.Configuration.dll_11DCB218" />
+    <ComponentRef Id="c_s.Configuration.EnvironmentVariables.dll_A8C4F96C" />
+    <ComponentRef Id="c_ensions.Configuration.FileExtensions.dll_F6066965" />
+    <ComponentRef Id="c_crosoft.Extensions.Configuration.Ini.dll_6751D36A" />
+    <ComponentRef Id="c_rosoft.Extensions.Configuration.Json.dll_68536E1C" />
+    <ComponentRef Id="c_.Extensions.Configuration.KeyPerFile.dll_C3C410CA" />
+    <ComponentRef Id="c_Extensions.Configuration.UserSecrets.dll_F728E02E" />
+    <ComponentRef Id="c_crosoft.Extensions.Configuration.Xml.dll_E7C1D960" />
+    <ComponentRef Id="c_ons.DependencyInjection.Abstractions.dll_FA2BCDB8" />
+    <ComponentRef Id="c_osoft.Extensions.DependencyInjection.dll_0ECC1D1C" />
+    <ComponentRef Id="c_Microsoft.Extensions.DependencyModel.dll_D6547DCE" />
+    <ComponentRef Id="c_.Extensions.Diagnostics.Abstractions.dll_32AB7E71" />
+    <ComponentRef Id="c_Microsoft.Extensions.Diagnostics.dll_0001DD8D" />
+    <ComponentRef Id="c_iagnostics.HealthChecks.Abstractions.dll_C7EEE8BD" />
+    <ComponentRef Id="c_.Extensions.Diagnostics.HealthChecks.dll_709FE45B" />
+    <ComponentRef Id="c_Microsoft.Extensions.Features.dll_0DFC1222" />
+    <ComponentRef Id="c_xtensions.FileProviders.Abstractions.dll_470DF65E" />
+    <ComponentRef Id="c_t.Extensions.FileProviders.Composite.dll_6F46B0DC" />
+    <ComponentRef Id="c_ft.Extensions.FileProviders.Embedded.dll_D6786688" />
+    <ComponentRef Id="c_ft.Extensions.FileProviders.Physical.dll_63000E8C" />
+    <ComponentRef Id="c_rosoft.Extensions.FileSystemGlobbing.dll_0A2B07B6" />
+    <ComponentRef Id="c_soft.Extensions.Hosting.Abstractions.dll_632B715D" />
+    <ComponentRef Id="c_Microsoft.Extensions.Hosting.dll_0F1E2DF7" />
+    <ComponentRef Id="c_t.Extensions.Hosting.WindowsServices.dll_7455C10D" />
+    <ComponentRef Id="c_Microsoft.Extensions.Http.dll_B0778E32" />
+    <ComponentRef Id="c_Microsoft.Extensions.Identity.Core.dll_1E95E563" />
+    <ComponentRef Id="c_Microsoft.Extensions.Identity.Stores.dll_1C615D8F" />
+    <ComponentRef Id="c_Extensions.Localization.Abstractions.dll_76B57653" />
+    <ComponentRef Id="c_Microsoft.Extensions.Localization.dll_D4D2C20B" />
+    <ComponentRef Id="c_soft.Extensions.Logging.Abstractions.dll_0ECA1D0B" />
+    <ComponentRef Id="c_oft.Extensions.Logging.Configuration.dll_808F5317" />
+    <ComponentRef Id="c_Microsoft.Extensions.Logging.Console.dll_25E0CE5D" />
+    <ComponentRef Id="c_Microsoft.Extensions.Logging.Debug.dll_994E071E" />
+    <ComponentRef Id="c_Microsoft.Extensions.Logging.dll_FDCD0C51" />
+    <ComponentRef Id="c_icrosoft.Extensions.Logging.EventLog.dll_F419CB7F" />
+    <ComponentRef Id="c_osoft.Extensions.Logging.EventSource.dll_0C0BA2BD" />
+    <ComponentRef Id="c_osoft.Extensions.Logging.TraceSource.dll_D3AB57E4" />
+    <ComponentRef Id="c_Microsoft.Extensions.ObjectPool.dll_CC60CE7C" />
+    <ComponentRef Id="c_ions.Options.ConfigurationExtensions.dll_3B52DCEA" />
+    <ComponentRef Id="c_t.Extensions.Options.DataAnnotations.dll_5D655ABA" />
+    <ComponentRef Id="c_Microsoft.Extensions.Options.dll_7C6A74F7" />
+    <ComponentRef Id="c_Microsoft.Extensions.Primitives.dll_89303690" />
+    <ComponentRef Id="c_Microsoft.Extensions.Validation.dll_989E8259" />
+    <ComponentRef Id="c_Microsoft.Extensions.WebEncoders.dll_34D0713C" />
+    <ComponentRef Id="c_Microsoft.JSInterop.dll_BC9EC161" />
+    <ComponentRef Id="c_Microsoft.Net.Http.Headers.dll_AD421F1F" />
+    <ComponentRef Id="c_Microsoft.VisualBasic.Core.dll_625D0848" />
+    <ComponentRef Id="c_Microsoft.VisualBasic.dll_6FDDA9DF" />
+    <ComponentRef Id="c_Microsoft.Win32.Primitives.dll_6844B938" />
+    <ComponentRef Id="c_Microsoft.Win32.Registry.dll_96F8A0E2" />
+    <ComponentRef Id="c_mscordaccore.dll_275B3E66" />
+    <ComponentRef Id="c_rdaccore_amd64_amd64_10.0.1026.32716.dll_1DF06F0A" />
+    <ComponentRef Id="c_mscordbi.dll_940936AD" />
+    <ComponentRef Id="c_mscorlib.dll_74601154" />
+    <ComponentRef Id="c_mscorrc.dll_7AEFA2E3" />
+    <ComponentRef Id="c_msquic.dll_0876328C" />
+    <ComponentRef Id="c_netstandard.dll_8C10CFD1" />
+    <ComponentRef Id="c_SQLitePCLRaw.batteries_v2.dll_70E1DF96" />
+    <ComponentRef Id="c_SQLitePCLRaw.core.dll_B04A0A8A" />
+    <ComponentRef Id="c_SQLitePCLRaw.provider.e_sqlite3.dll_1BD632CC" />
+    <ComponentRef Id="c_System.AppContext.dll_825D35CF" />
+    <ComponentRef Id="c_System.Buffers.dll_FEF37070" />
+    <ComponentRef Id="c_System.Collections.Concurrent.dll_16A06EFB" />
+    <ComponentRef Id="c_System.Collections.dll_84A1C539" />
+    <ComponentRef Id="c_System.Collections.Immutable.dll_933EA1EF" />
+    <ComponentRef Id="c_System.Collections.NonGeneric.dll_B4F083E3" />
+    <ComponentRef Id="c_System.Collections.Specialized.dll_CB23773A" />
+    <ComponentRef Id="c_System.ComponentModel.Annotations.dll_CAB0F1D6" />
+    <ComponentRef Id="c_ystem.ComponentModel.DataAnnotations.dll_1E7EA632" />
+    <ComponentRef Id="c_System.ComponentModel.dll_BFA77E7A" />
+    <ComponentRef Id="c_ystem.ComponentModel.EventBasedAsync.dll_9498AE93" />
+    <ComponentRef Id="c_System.ComponentModel.Primitives.dll_7A1D8267" />
+    <ComponentRef Id="c_System.ComponentModel.TypeConverter.dll_BBD0F76D" />
+    <ComponentRef Id="c_System.Configuration.dll_D131F39B" />
+    <ComponentRef Id="c_System.Console.dll_355C1293" />
+    <ComponentRef Id="c_System.Core.dll_E77F633C" />
+    <ComponentRef Id="c_System.Data.Common.dll_78AFB26D" />
+    <ComponentRef Id="c_System.Data.DataSetExtensions.dll_7EA2EB3D" />
+    <ComponentRef Id="c_System.Data.dll_58154E13" />
+    <ComponentRef Id="c_System.Diagnostics.Contracts.dll_684B6C0F" />
+    <ComponentRef Id="c_System.Diagnostics.Debug.dll_D501E00B" />
+    <ComponentRef Id="c_System.Diagnostics.DiagnosticSource.dll_947E770A" />
+    <ComponentRef Id="c_System.Diagnostics.EventLog.dll_6C627046" />
+    <ComponentRef Id="c_System.Diagnostics.EventLog.Messages.dll_F2889D17" />
+    <ComponentRef Id="c_System.Diagnostics.FileVersionInfo.dll_34077D53" />
+    <ComponentRef Id="c_System.Diagnostics.Process.dll_CF820ED7" />
+    <ComponentRef Id="c_System.Diagnostics.StackTrace.dll_45FAB6BB" />
+    <ComponentRef Id="c_.Diagnostics.TextWriterTraceListener.dll_A32A6479" />
+    <ComponentRef Id="c_System.Diagnostics.Tools.dll_2D5C3C1A" />
+    <ComponentRef Id="c_System.Diagnostics.TraceSource.dll_5793ABE6" />
+    <ComponentRef Id="c_System.Diagnostics.Tracing.dll_03617A49" />
+    <ComponentRef Id="c_System.dll_A674FFDF" />
+    <ComponentRef Id="c_System.Drawing.dll_1F6C6C9A" />
+    <ComponentRef Id="c_System.Drawing.Primitives.dll_6DE2AAF7" />
+    <ComponentRef Id="c_System.Dynamic.Runtime.dll_D0546209" />
+    <ComponentRef Id="c_System.Formats.Asn1.dll_E64E9B18" />
+    <ComponentRef Id="c_System.Formats.Cbor.dll_4C945A49" />
+    <ComponentRef Id="c_System.Formats.Tar.dll_42700B7C" />
+    <ComponentRef Id="c_System.Globalization.Calendars.dll_F85D9ED6" />
+    <ComponentRef Id="c_System.Globalization.dll_D1B2C6B6" />
+    <ComponentRef Id="c_System.Globalization.Extensions.dll_11A8D004" />
+    <ComponentRef Id="c_System.IO.Compression.Brotli.dll_FE86A889" />
+    <ComponentRef Id="c_System.IO.Compression.dll_2E9012E7" />
+    <ComponentRef Id="c_System.IO.Compression.FileSystem.dll_FAF3D44C" />
+    <ComponentRef Id="c_System.IO.Compression.Native.dll_FC11E194" />
+    <ComponentRef Id="c_System.IO.Compression.ZipFile.dll_F4B9534C" />
+    <ComponentRef Id="c_System.IO.dll_06DB5174" />
+    <ComponentRef Id="c_System.IO.FileSystem.AccessControl.dll_F1C33BB1" />
+    <ComponentRef Id="c_System.IO.FileSystem.dll_C9953D4D" />
+    <ComponentRef Id="c_System.IO.FileSystem.DriveInfo.dll_4066D14E" />
+    <ComponentRef Id="c_System.IO.FileSystem.Primitives.dll_5F895B5D" />
+    <ComponentRef Id="c_System.IO.FileSystem.Watcher.dll_92462581" />
+    <ComponentRef Id="c_System.IO.IsolatedStorage.dll_80789B9D" />
+    <ComponentRef Id="c_System.IO.MemoryMappedFiles.dll_42937536" />
+    <ComponentRef Id="c_System.IO.Pipelines.dll_20998DC2" />
+    <ComponentRef Id="c_System.IO.Pipes.AccessControl.dll_B6DE5536" />
+    <ComponentRef Id="c_System.IO.Pipes.dll_F4D0A904" />
+    <ComponentRef Id="c_System.IO.UnmanagedMemoryStream.dll_41FD69A0" />
+    <ComponentRef Id="c_System.Linq.AsyncEnumerable.dll_A29A8696" />
+    <ComponentRef Id="c_System.Linq.dll_513B78B8" />
+    <ComponentRef Id="c_System.Linq.Expressions.dll_A7A636E8" />
+    <ComponentRef Id="c_System.Linq.Parallel.dll_B209AAED" />
+    <ComponentRef Id="c_System.Linq.Queryable.dll_06FE5FB1" />
+    <ComponentRef Id="c_System.Memory.dll_413B04CC" />
+    <ComponentRef Id="c_System.Net.dll_111FF7E0" />
+    <ComponentRef Id="c_System.Net.Http.dll_6674532B" />
+    <ComponentRef Id="c_System.Net.Http.Json.dll_084C98E1" />
+    <ComponentRef Id="c_System.Net.HttpListener.dll_9A0138D1" />
+    <ComponentRef Id="c_System.Net.Mail.dll_654E0050" />
+    <ComponentRef Id="c_System.Net.NameResolution.dll_E676BF22" />
+    <ComponentRef Id="c_System.Net.NetworkInformation.dll_ED547C15" />
+    <ComponentRef Id="c_System.Net.Ping.dll_C33D3B15" />
+    <ComponentRef Id="c_System.Net.Primitives.dll_2BC8E06D" />
+    <ComponentRef Id="c_System.Net.Quic.dll_3FA8163C" />
+    <ComponentRef Id="c_System.Net.Requests.dll_4C132C80" />
+    <ComponentRef Id="c_System.Net.Security.dll_9EC85993" />
+    <ComponentRef Id="c_System.Net.ServerSentEvents.dll_9890FEFB" />
+    <ComponentRef Id="c_System.Net.ServicePoint.dll_90D2AEF7" />
+    <ComponentRef Id="c_System.Net.Sockets.dll_D8EE744B" />
+    <ComponentRef Id="c_System.Net.WebClient.dll_909D122C" />
+    <ComponentRef Id="c_System.Net.WebHeaderCollection.dll_682E28F3" />
+    <ComponentRef Id="c_System.Net.WebProxy.dll_566E84C1" />
+    <ComponentRef Id="c_System.Net.WebSockets.Client.dll_39A7E751" />
+    <ComponentRef Id="c_System.Net.WebSockets.dll_46DFA227" />
+    <ComponentRef Id="c_System.Numerics.dll_3555DEC6" />
+    <ComponentRef Id="c_System.Numerics.Vectors.dll_DF054063" />
+    <ComponentRef Id="c_System.ObjectModel.dll_D3D2FA67" />
+    <ComponentRef Id="c_System.Private.CoreLib.dll_BCCC6F16" />
+    <ComponentRef Id="c_em.Private.DataContractSerialization.dll_BE2EB9A0" />
+    <ComponentRef Id="c_System.Private.Uri.dll_4BD94145" />
+    <ComponentRef Id="c_System.Private.Xml.dll_7605AB18" />
+    <ComponentRef Id="c_System.Private.Xml.Linq.dll_D0B42C74" />
+    <ComponentRef Id="c_System.Reflection.DispatchProxy.dll_73B1E3DB" />
+    <ComponentRef Id="c_System.Reflection.dll_60C7DFE1" />
+    <ComponentRef Id="c_System.Reflection.Emit.dll_1A4AC658" />
+    <ComponentRef Id="c_System.Reflection.Emit.ILGeneration.dll_7CE761C0" />
+    <ComponentRef Id="c_System.Reflection.Emit.Lightweight.dll_EA84A17C" />
+    <ComponentRef Id="c_System.Reflection.Extensions.dll_098C4242" />
+    <ComponentRef Id="c_System.Reflection.Metadata.dll_4973EE48" />
+    <ComponentRef Id="c_System.Reflection.Primitives.dll_A3FAE730" />
+    <ComponentRef Id="c_System.Reflection.TypeExtensions.dll_003C3549" />
+    <ComponentRef Id="c_System.Resources.Reader.dll_C9DF54AF" />
+    <ComponentRef Id="c_System.Resources.ResourceManager.dll_DD5CF897" />
+    <ComponentRef Id="c_System.Resources.Writer.dll_6D31FDF6" />
+    <ComponentRef Id="c_stem.Runtime.CompilerServices.Unsafe.dll_B372F953" />
+    <ComponentRef Id="c_tem.Runtime.CompilerServices.VisualC.dll_CAF2B39A" />
+    <ComponentRef Id="c_System.Runtime.dll_CFBB2B5C" />
+    <ComponentRef Id="c_System.Runtime.Extensions.dll_945DFCA9" />
+    <ComponentRef Id="c_System.Runtime.Handles.dll_15949052" />
+    <ComponentRef Id="c_System.Runtime.InteropServices.dll_A779180C" />
+    <ComponentRef Id="c_m.Runtime.InteropServices.JavaScript.dll_954A714B" />
+    <ComponentRef Id="c_e.InteropServices.RuntimeInformation.dll_463C6599" />
+    <ComponentRef Id="c_System.Runtime.Intrinsics.dll_3F7E8B28" />
+    <ComponentRef Id="c_System.Runtime.Loader.dll_26DDA1F5" />
+    <ComponentRef Id="c_System.Runtime.Numerics.dll_D271976E" />
+    <ComponentRef Id="c_System.Runtime.Serialization.dll_B3750820" />
+    <ComponentRef Id="c_tem.Runtime.Serialization.Formatters.dll_57BAD482" />
+    <ComponentRef Id="c_System.Runtime.Serialization.Json.dll_EAE85B22" />
+    <ComponentRef Id="c_tem.Runtime.Serialization.Primitives.dll_2EA423D6" />
+    <ComponentRef Id="c_System.Runtime.Serialization.Xml.dll_5C812A0D" />
+    <ComponentRef Id="c_System.Security.AccessControl.dll_3D2DB02B" />
+    <ComponentRef Id="c_System.Security.Claims.dll_891808AE" />
+    <ComponentRef Id="c_tem.Security.Cryptography.Algorithms.dll_DB9E7BC3" />
+    <ComponentRef Id="c_System.Security.Cryptography.Cng.dll_2D17D42F" />
+    <ComponentRef Id="c_System.Security.Cryptography.Csp.dll_69DBE10B" />
+    <ComponentRef Id="c_System.Security.Cryptography.dll_EDB23E56" />
+    <ComponentRef Id="c_ystem.Security.Cryptography.Encoding.dll_52138CC9" />
+    <ComponentRef Id="c_System.Security.Cryptography.OpenSsl.dll_45ADF146" />
+    <ComponentRef Id="c_System.Security.Cryptography.Pkcs.dll_14A4686C" />
+    <ComponentRef Id="c_tem.Security.Cryptography.Primitives.dll_A39DE482" />
+    <ComponentRef Id="c_curity.Cryptography.X509Certificates.dll_839A39C6" />
+    <ComponentRef Id="c_System.Security.Cryptography.Xml.dll_1B003E83" />
+    <ComponentRef Id="c_System.Security.dll_E6A266E2" />
+    <ComponentRef Id="c_System.Security.Principal.dll_0D88121E" />
+    <ComponentRef Id="c_System.Security.Principal.Windows.dll_459E4D64" />
+    <ComponentRef Id="c_System.Security.SecureString.dll_EF93AE26" />
+    <ComponentRef Id="c_System.ServiceModel.Web.dll_0A1A4081" />
+    <ComponentRef Id="c_System.ServiceProcess.dll_B09B7E90" />
+    <ComponentRef Id="c_tem.ServiceProcess.ServiceController.dll_1793AECA" />
+    <ComponentRef Id="c_System.Text.Encoding.CodePages.dll_8F909CDA" />
+    <ComponentRef Id="c_System.Text.Encoding.dll_DA8EA9B6" />
+    <ComponentRef Id="c_System.Text.Encoding.Extensions.dll_0C6D6E1D" />
+    <ComponentRef Id="c_System.Text.Encodings.Web.dll_61B7EA9B" />
+    <ComponentRef Id="c_System.Text.Json.dll_11A43862" />
+    <ComponentRef Id="c_System.Text.RegularExpressions.dll_2FAC2DB4" />
+    <ComponentRef Id="c_System.Threading.AccessControl.dll_5BFE1BEC" />
+    <ComponentRef Id="c_System.Threading.Channels.dll_B1AF0061" />
+    <ComponentRef Id="c_System.Threading.dll_39DA6487" />
+    <ComponentRef Id="c_System.Threading.Overlapped.dll_CBDBA98A" />
+    <ComponentRef Id="c_System.Threading.RateLimiting.dll_5BF39A43" />
+    <ComponentRef Id="c_System.Threading.Tasks.Dataflow.dll_5653ED47" />
+    <ComponentRef Id="c_System.Threading.Tasks.dll_A01A12B0" />
+    <ComponentRef Id="c_System.Threading.Tasks.Extensions.dll_B475AC49" />
+    <ComponentRef Id="c_System.Threading.Tasks.Parallel.dll_BE348D32" />
+    <ComponentRef Id="c_System.Threading.Thread.dll_8B79780C" />
+    <ComponentRef Id="c_System.Threading.ThreadPool.dll_40185A2D" />
+    <ComponentRef Id="c_System.Threading.Timer.dll_027DD507" />
+    <ComponentRef Id="c_System.Transactions.dll_687D8940" />
+    <ComponentRef Id="c_System.Transactions.Local.dll_0A8352D7" />
+    <ComponentRef Id="c_System.ValueTuple.dll_BA09FBBD" />
+    <ComponentRef Id="c_System.Web.dll_AA222A73" />
+    <ComponentRef Id="c_System.Web.HttpUtility.dll_8A730CD7" />
+    <ComponentRef Id="c_System.Windows.dll_2B2B30A4" />
+    <ComponentRef Id="c_System.Xml.dll_63946FB7" />
+    <ComponentRef Id="c_System.Xml.Linq.dll_AF810015" />
+    <ComponentRef Id="c_System.Xml.ReaderWriter.dll_3E4E187F" />
+    <ComponentRef Id="c_System.Xml.Serialization.dll_E5256E4C" />
+    <ComponentRef Id="c_System.Xml.XDocument.dll_61EF49C2" />
+    <ComponentRef Id="c_System.Xml.XmlDocument.dll_496B7AFF" />
+    <ComponentRef Id="c_System.Xml.XmlSerializer.dll_B20055C4" />
+    <ComponentRef Id="c_System.Xml.XPath.dll_720EC1EF" />
+    <ComponentRef Id="c_System.Xml.XPath.XDocument.dll_776F9FBE" />
+    <ComponentRef Id="c_web.config_0ED3C211" />
+    <ComponentRef Id="c_WindowsBase.dll_27EF1F45" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

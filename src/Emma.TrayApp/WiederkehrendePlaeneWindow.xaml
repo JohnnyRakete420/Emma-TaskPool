@@ -1,0 +1,50 @@
+<Window x:Class="Emma.TrayApp.WiederkehrendePlaeneWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wiederkehrende Pläne" Height="620" Width="760" MinWidth="640"
+        WindowStartupLocation="CenterScreen"
+        Icon="Icon.ico">
+    <Border Background="{StaticResource CardBrush}" CornerRadius="16" Margin="14">
+        <Border.Effect>
+            <DropShadowEffect Color="#93C003" BlurRadius="24" ShadowDepth="0" Opacity="0.18" />
+        </Border.Effect>
+        <Grid Margin="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <DockPanel Grid.Row="0" Margin="0,0,0,16">
+                <Button DockPanel.Dock="Right" Content="Neu" Style="{StaticResource PrimaryButton}"
+                        Padding="20,9" Click="NeuButton_Click" />
+                <TextBlock Text="Wiederkehrende Pläne" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" />
+            </DockPanel>
+
+            <TextBlock Grid.Row="1" Text="Doppelklick auf eine Zeile zeigt alle Details" FontSize="11"
+                       Foreground="{StaticResource TextSecondaryBrush}" Margin="0,0,0,6" />
+
+            <DataGrid Grid.Row="2" x:Name="PlaeneGrid" AutoGenerateColumns="False" IsReadOnly="True"
+                      CanUserAddRows="False" CanUserDeleteRows="False"
+                      MouseDoubleClick="PlaeneGrid_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Prozess" Binding="{Binding ProzessName}" Width="*" MinWidth="140" />
+                    <DataGridTextColumn Header="Wochentage &amp; Uhrzeiten" Binding="{Binding ZeitplanText}" Width="2*" MinWidth="220" />
+                    <DataGridTextColumn Header="Parameter" Binding="{Binding ParameterText}" Width="180" />
+                    <DataGridTemplateColumn Header="" Width="110">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Bearbeiten" Style="{StaticResource SecondaryButton}"
+                                        Click="BearbeitenButton_Click" Tag="{Binding Id}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <TextBlock Grid.Row="3" x:Name="StatusText" Margin="0,12,0,0"
+                       Foreground="{StaticResource TextSecondaryBrush}" FontSize="12" TextWrapping="Wrap" />
+        </Grid>
+    </Border>
+</Window>

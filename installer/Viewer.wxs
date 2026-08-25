@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="EMMA Aufgabenpool - Viewer"
+           Manufacturer="EMMA Aufgabenpool"
+           Version="1.4.0"
+           UpgradeCode="87A8B285-EF62-479C-BCE5-DE1ECC3E4898"
+           Scope="perMachine">
+
+    <MajorUpgrade DowngradeErrorMessage="Es ist bereits eine neuere Version von EMMA Aufgabenpool - Viewer installiert." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" Name="EMMA Aufgabenpool Viewer" />
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="AppProgramMenuFolder" Name="EMMA Aufgabenpool">
+        <Component Id="ViewerShortcut" Guid="*">
+          <Shortcut Id="ViewerStartMenuShortcut"
+                    Name="EMMA Viewer"
+                    Description="Fenster, das EMMA beobachtet, um Aufgaben zu erkennen und abzuschließen"
+                    Target="[INSTALLFOLDER]Emma.Viewer.exe"
+                    WorkingDirectory="INSTALLFOLDER" />
+          <RemoveFolder Id="RemoveAppProgramMenuFolder" On="uninstall" />
+          <RegistryValue Root="HKCU" Key="Software\EmmaAufgabenpool\Viewer" Name="Installed" Type="integer" Value="1" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+
+    <Feature Id="Main" Title="EMMA Aufgabenpool Viewer" Level="1">
+      <ComponentGroupRef Id="ViewerFiles" />
+      <ComponentRef Id="ViewerShortcut" />
+    </Feature>
+
+  </Package>
+</Wix>

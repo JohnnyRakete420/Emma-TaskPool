@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="EMMA Aufgabenpool - Service"
+           Manufacturer="EMMA Aufgabenpool"
+           Version="1.2.4"
+           UpgradeCode="6B911C9C-DCA4-4524-BCCD-5BCC85BCC2CC"
+           Scope="perMachine">
+
+    <MajorUpgrade DowngradeErrorMessage="Es ist bereits eine neuere Version von EMMA Aufgabenpool - Service installiert." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" Name="EMMA Aufgabenpool Service">
+        <Component Id="ServiceExe" Guid="*">
+          <File Id="ServiceExeFile" Source="..\publish\Emma.Service\Emma.Service.exe" KeyPath="yes" />
+
+          <ServiceInstall Id="EmmaServiceInstall"
+                           Name="EmmaAufgabenpoolService"
+                           DisplayName="EMMA Aufgabenpool Service"
+                           Description="Zentrale API für den EMMA Aufgabenpool (Aufgaben, wiederkehrende Pläne, Zeitüberschreitungs-Wächter). Erreichbar über https://&lt;dieser-rechner&gt;:5271/"
+                           Start="auto"
+                           Type="ownProcess"
+                           ErrorControl="normal"
+                           Account="LocalSystem" />
+          <ServiceControl Id="EmmaServiceControl"
+                           Name="EmmaAufgabenpoolService"
+                           Start="install"
+                           Stop="both"
+                           Remove="uninstall"
+                           Wait="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+
+    <Feature Id="Main" Title="EMMA Aufgabenpool Service" Level="1">
+      <ComponentGroupRef Id="ServiceFiles" />
+      <ComponentRef Id="ServiceExe" />
+    </Feature>
+
+  </Package>
+</Wix>
