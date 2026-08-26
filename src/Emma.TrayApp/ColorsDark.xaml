@@ -19,5 +19,6 @@
     <SolidColorBrush x:Key="TextPrimaryBrush" Color="#FFFFFF" />
     <SolidColorBrush x:Key="TextSecondaryBrush" Color="#C7D4B8" />
     <SolidColorBrush x:Key="FehlerBrush" Color="#E2726D" />
+    <SolidColorBrush x:Key="FehlerHintergrundBrush" Color="#4A2A28" />
 
 </ResourceDictionary>

@@ -15,10 +15,11 @@
                 <TextBlock x:Name="StatusText" FontWeight="SemiBold" FontSize="13" />
             </Border>
 
-            <Border x:Name="FehlermeldungPanel" Background="#FBEAEA" CornerRadius="8" Padding="14,10" Margin="0,16,0,0">
+            <Border x:Name="FehlermeldungPanel" Background="{StaticResource FehlerHintergrundBrush}" CornerRadius="8" Padding="14,10" Margin="0,16,0,0">
                 <StackPanel>
                     <TextBlock Text="Fehlermeldung" FontSize="12" Foreground="{StaticResource TextSecondaryBrush}" />
-                    <TextBlock x:Name="FehlermeldungText" FontSize="15" FontWeight="SemiBold" Margin="0,2,0,0" TextWrapping="Wrap" />
+                    <TextBlock x:Name="FehlermeldungText" FontSize="15" FontWeight="SemiBold" Margin="0,2,0,0"
+                               TextWrapping="Wrap" Foreground="{StaticResource FehlerBrush}" />
                 </StackPanel>
             </Border>
 

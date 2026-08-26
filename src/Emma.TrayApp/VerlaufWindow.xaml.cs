@@ -74,11 +74,11 @@ public partial class VerlaufWindow : Window
             && Enum.TryParse<AufgabeStatus>(statusFilter, out var status))
             gefiltert = gefiltert.Where(a => a.Status == status);
 
-        if (VonDatePicker.SelectedDate is { } von)
-            gefiltert = gefiltert.Where(a => a.ErstelltAm.Date >= von.Date);
+        if (TryParseDatum(VonTextBox.Text, out var von))
+            gefiltert = gefiltert.Where(a => DateOnly.FromDateTime(a.ErstelltAm) >= von);
 
-        if (BisDatePicker.SelectedDate is { } bis)
-            gefiltert = gefiltert.Where(a => a.ErstelltAm.Date <= bis.Date);
+        if (TryParseDatum(BisTextBox.Text, out var bis))
+            gefiltert = gefiltert.Where(a => DateOnly.FromDateTime(a.ErstelltAm) <= bis);
 
         if (!string.IsNullOrWhiteSpace(SucheTextBox.Text))
             gefiltert = gefiltert.Where(a => a.ErstelltVon.Contains(SucheTextBox.Text, StringComparison.OrdinalIgnoreCase));
@@ -96,8 +96,13 @@ public partial class VerlaufWindow : Window
     }
 
     private void Filter_SelectionChanged(object sender, SelectionChangedEventArgs e) => AktualisiereListe();
-    private void Filter_DateChanged(object sender, EventArgs e) => AktualisiereListe();
     private void Filter_TextChanged(object sender, TextChangedEventArgs e) => AktualisiereListe();
+
+    /// <summary>Leeres Feld = kein Filter; unvollständige/ungültige Eingabe wird beim Tippen
+    /// stillschweigend ignoriert (kein Fehlerhinweis bei einem live filternden Feld).</summary>
+    private static bool TryParseDatum(string text, out DateOnly datum) =>
+        DateOnly.TryParseExact(text.Trim(), "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None, out datum);
 
     private void HistorieGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
     {

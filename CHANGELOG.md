@@ -33,6 +33,14 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.10.0
+- Der 1.9.2-Fix für das Kalender-Popup hat das Problem nicht gelöst - vermutlich hatte das komplette Ersetzen des DatePicker-Eingabefeld-Templates (bei der ursprünglichen Dark-Mode-Anpassung) Teile entfernt, von denen die Größenberechnung des Kalender-Popups abhing. Statt weiter an WPFs eingebautem Kalender-Steuerelement zu debuggen: **Von/Bis im Verlauf sind jetzt normale Textfelder** (Format TT.MM.JJJJ, wie die Uhrzeiten bei Wiederkehrenden Plänen) - der DatePicker/Kalender wurde komplett entfernt, das Problem existiert dadurch nicht mehr
+- Die Fehlermeldungs-Box in der Aufgaben-Detailansicht hatte einen fest einprogrammierten hellen pinken Hintergrund, der im Dunklen Design als greller Fleck auffiel - jetzt ebenfalls themafähig (dunkles Rot im Dunklen Design, Text in der Fehlerfarbe)
+
+### 1.9.2
+- Kalender-Popup (Verlauf-Filter "Von"/"Bis") zeigte im Dunklen Design fast alle Tageszahlen nicht an (nur der aktuelle Tag war sichtbar) - Ursache war dieselbe globale `TextBlock`-Textfarbe, die auch in WPFs eingebaute Kalender-Vorlage durchsickert (dort intern ebenfalls über TextBlocks gerendert). Für den Kalender jetzt eine eigene, nur dort gültige Textfarbe hinterlegt, die den hellen Kalenderhintergrund berücksichtigt
+- Hinweis: konnte diesen Fix nicht wie sonst per Screenshot bestätigen - Kalender-Popups lassen sich mit meiner Offscreen-Rendering-Technik nicht zuverlässig isoliert darstellen. Der Fix beruht auf einer klar nachvollzogenen Ursache, bitte nach der Installation kurz gegenchecken
+
 ### 1.9.1
 - Zwei weitere Lesbarkeits-Bugs desselben Musters (fehlende explizite Farbe) behoben:
   - Textfelder (u.a. Server-Verbindung in den Einstellungen, Parameter bei "Prozess auswählen"/"Benutzer anlegen") zeigten schwarzen Text auf dunklem Grund - jetzt korrekt hell

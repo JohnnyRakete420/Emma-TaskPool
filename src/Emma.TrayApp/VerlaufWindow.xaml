@@ -66,11 +66,11 @@
                 </StackPanel>
                 <StackPanel Margin="0,0,12,0">
                     <TextBlock Text="Von" FontSize="11" Foreground="{StaticResource TextSecondaryBrush}" />
-                    <DatePicker x:Name="VonDatePicker" Width="130" SelectedDateChanged="Filter_DateChanged" />
+                    <TextBox x:Name="VonTextBox" Width="130" ToolTip="TT.MM.JJJJ" TextChanged="Filter_TextChanged" />
                 </StackPanel>
                 <StackPanel Margin="0,0,12,0">
                     <TextBlock Text="Bis" FontSize="11" Foreground="{StaticResource TextSecondaryBrush}" />
-                    <DatePicker x:Name="BisDatePicker" Width="130" SelectedDateChanged="Filter_DateChanged" />
+                    <TextBox x:Name="BisTextBox" Width="130" ToolTip="TT.MM.JJJJ" TextChanged="Filter_TextChanged" />
                 </StackPanel>
                 <StackPanel>
                     <TextBlock Text="Suche (erstellt von)" FontSize="11" Foreground="{StaticResource TextSecondaryBrush}" />
