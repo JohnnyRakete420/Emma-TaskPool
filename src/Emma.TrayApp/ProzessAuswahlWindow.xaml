@@ -4,7 +4,7 @@
         Title="EMMA Aufgabenpool" Height="560" Width="400" MinHeight="420"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanResizeWithGrip"
-        Icon="Icon.ico">
+        Icon="Icon.ico" Style="{StaticResource FensterChrome}">
     <Border Background="{StaticResource CardBrush}" CornerRadius="16" Margin="14">
         <Border.Effect>
             <DropShadowEffect Color="#93C003" BlurRadius="24" ShadowDepth="0" Opacity="0.18" />

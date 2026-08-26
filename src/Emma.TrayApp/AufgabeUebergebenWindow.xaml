@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="EMMA Aufgabenpool" SizeToContent="Height" Width="360"
         WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Topmost="True"
-        Icon="Icon.ico">
+        Icon="Icon.ico" Style="{StaticResource FensterChrome}">
     <Border Background="{StaticResource CardBrush}" CornerRadius="16" Margin="14">
         <Border.Effect>
             <DropShadowEffect Color="#93C003" BlurRadius="24" ShadowDepth="0" Opacity="0.18" />

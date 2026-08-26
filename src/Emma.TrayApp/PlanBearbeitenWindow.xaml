@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Plan" Height="760" Width="560" MinWidth="500" MinHeight="500"
         WindowStartupLocation="CenterScreen"
-        Icon="Icon.ico">
+        Icon="Icon.ico" Style="{StaticResource FensterChrome}">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis" />
     </Window.Resources>

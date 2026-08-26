@@ -39,31 +39,34 @@ public partial class App : System.Windows.Application
     [System.Runtime.InteropServices.DllImport("user32.dll", SetLastError = true)]
     private static extern bool DestroyIcon(IntPtr hIcon);
 
-    [System.Runtime.InteropServices.DllImport("dwmapi.dll")]
-    private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attribute, ref int value, int valueSize);
-
-    private const int DwmwaUseImmersiveDarkMode = 20;
-
-    // Windows 11 zeichnet um jedes Fenster einen dünnen Akzentrahmen (separat von der
-    // Titelleiste) - DWMWA_USE_IMMERSIVE_DARK_MODE allein färbt den nicht mit, deshalb
-    // zusätzlich DWMWA_BORDER_COLOR setzen. Nur ab Windows 11 22H2 unterstützt; auf älteren
-    // Systemen schlägt der Aufruf einfach folgenlos fehl (kein Absturz).
-    private const int DwmwaBorderColor = 34;
-
-    /// <summary>Setzt Titelleiste UND Rahmen jedes Fensters (Windows 10 1809+/11) auf dunkel,
-    /// damit kein heller Fremdkörper um den dunklen Fensterinhalt übrig bleibt.</summary>
-    private static void FaerbeTitelleisteDunkel(Window fenster)
+    /// <summary>
+    /// Zentrale Klick-Weiterleitung für die drei selbst gezeichneten Titelleisten-Buttons
+    /// (siehe Window-Style in Styles.xaml) - erkannt am Tag, damit kein einzelnes Fenster dafür
+    /// eigenen Code-Behind braucht. Andere Buttons (ohne diese Tags) sind davon nicht betroffen.
+    /// </summary>
+    private static void BehandleChromeButtonKlick(object sender, RoutedEventArgs e)
     {
-        var handle = new System.Windows.Interop.WindowInteropHelper(fenster).Handle;
-        if (handle == IntPtr.Zero)
+        if (sender is not System.Windows.Controls.Button { Tag: string tag } button)
             return;
 
-        var dunkelModus = 1;
-        DwmSetWindowAttribute(handle, DwmwaUseImmersiveDarkMode, ref dunkelModus, sizeof(int));
+        var fenster = Window.GetWindow(button);
+        if (fenster is null)
+            return;
 
-        // COLORREF (0x00BBGGRR) für die dunkle Seitenhintergrundfarbe #1B2416 aus ColorsDark.xaml.
-        var rahmenfarbe = 0x00162419;
-        DwmSetWindowAttribute(handle, DwmwaBorderColor, ref rahmenfarbe, sizeof(int));
+        switch (tag)
+        {
+            case "ChromeMinimize":
+                fenster.WindowState = WindowState.Minimized;
+                break;
+            case "ChromeMaximizeRestore":
+                fenster.WindowState = fenster.WindowState == WindowState.Maximized
+                    ? WindowState.Normal
+                    : WindowState.Maximized;
+                break;
+            case "ChromeClose":
+                fenster.Close();
+                break;
+        }
     }
 
     protected override void OnStartup(StartupEventArgs e)
@@ -79,13 +82,10 @@ public partial class App : System.Windows.Application
         Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri(farbdatei, UriKind.Relative) });
         Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("Styles.xaml", UriKind.Relative) });
 
-        // Bei Dunklem Design auch die native Titelleiste jedes Fensters einfärben (sonst bliebe
-        // sie hell, egal was im Fenster steht) - für alle Fenster zentral statt pro Fenster.
-        if (dunkel)
-        {
-            EventManager.RegisterClassHandler(typeof(Window), Window.LoadedEvent,
-                new RoutedEventHandler((sender, _) => FaerbeTitelleisteDunkel((Window)sender)));
-        }
+        // Klicks auf die selbst gezeichneten Titelleisten-Buttons (Minimieren/Maximieren/
+        // Schließen) zentral behandeln statt in jedem Fenster einzeln.
+        EventManager.RegisterClassHandler(typeof(System.Windows.Controls.Button), System.Windows.Controls.Button.ClickEvent,
+            new RoutedEventHandler(BehandleChromeButtonKlick));
 
         // Sicherheitsnetz: ein unerwarteter Fehler soll eine Meldung zeigen statt die
         // Anwendung stillschweigend abstürzen zu lassen.

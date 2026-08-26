@@ -33,6 +33,10 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.9.0
+- **Komplett selbst gezeichnetes Fenster-Chrome** (WindowChrome) statt der nativen Windows-Titelleiste/des nativen Rahmens - löst den hellen Akzentrahmen aus 1.8.3 endgültig, weil es den nativen Rahmen gar nicht mehr gibt. Jedes Fenster hat jetzt eine eigene, thematisch passende Titelleiste mit Icon, Titel und eigenen Minimieren/Maximieren/Schließen-Buttons; Ziehen/Doppelklick-zum-Maximieren/Größe ändern funktioniert weiterhin wie gewohnt (übernimmt WindowChrome automatisch)
+- Technische Notiz: der Fenster-Style musste **explizit** referenziert werden (`Style="{StaticResource FensterChrome}"` in jedem Fenster) - die sonst übliche implizite Zuordnung (nur `TargetType`, ohne Key) hat das Template beim Testen nicht zuverlässig angewendet
+
 ### 1.8.3
 - Echter Lesbarkeits-Bug behoben: Tabellenzellen (Verlauf, Prozesse verwalten, Wiederkehrende Pläne) hatten nie eine explizite Textfarbe gesetzt - nur beim Anklicken/Auswählen einer Zeile griff ein Trigger, der die Farbe auf Weiß setzte. Im hellen Design fiel das nie auf (WPFs Standard-Textfarbe ist zufällig dunkel), im Dunklen Design war der Text dadurch bis zum Anklicken quasi unsichtbar. Jetzt hat jede Zelle von Anfang an die richtige Farbe
 - Der Windows-11-Akzentrahmen um die Fenster ist bei manchen Nutzern weiterhin hell geblieben - liegt vermutlich an fehlender/übersteuerter Unterstützung des `DWMWA_BORDER_COLOR`-Attributs auf dem jeweiligen System, nicht behebbar ohne auf komplett selbst gezeichnetes Fenster-Chrome umzusteigen

@@ -5,7 +5,7 @@
         xmlns:shared="clr-namespace:Emma.Shared;assembly=Emma.Shared"
         Title="Prozess" Height="640" Width="560" MinWidth="500" MinHeight="480"
         WindowStartupLocation="CenterScreen"
-        Icon="Icon.ico">
+        Icon="Icon.ico" Style="{StaticResource FensterChrome}">
     <Window.Resources>
         <ObjectDataProvider x:Key="ParameterFeldTypWerte" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
             <ObjectDataProvider.MethodParameters>
