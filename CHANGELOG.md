@@ -33,6 +33,12 @@ Versionsverlauf der drei Pakete (`installer/Service.msi`, `installer/TrayApp.msi
 
 ## Emma.TrayApp (`TrayApp.msi`)
 
+### 1.9.1
+- Zwei weitere Lesbarkeits-Bugs desselben Musters (fehlende explizite Farbe) behoben:
+  - Textfelder (u.a. Server-Verbindung in den Einstellungen, Parameter bei "Prozess auswählen"/"Benutzer anlegen") zeigten schwarzen Text auf dunklem Grund - jetzt korrekt hell
+  - Der Text-Cursor (Caret) in Textfeldern war aus demselben Grund unsichtbar - jetzt ebenfalls hell
+- "Bearbeiten"-Buttons in Tabellen (Prozesse verwalten, Wiederkehrende Pläne) hatten keinen Rand und verschwammen optisch mit dem Zeilenhintergrund - jetzt mit sichtbarem Rand abgesetzt
+
 ### 1.9.0
 - **Komplett selbst gezeichnetes Fenster-Chrome** (WindowChrome) statt der nativen Windows-Titelleiste/des nativen Rahmens - löst den hellen Akzentrahmen aus 1.8.3 endgültig, weil es den nativen Rahmen gar nicht mehr gibt. Jedes Fenster hat jetzt eine eigene, thematisch passende Titelleiste mit Icon, Titel und eigenen Minimieren/Maximieren/Schließen-Buttons; Ziehen/Doppelklick-zum-Maximieren/Größe ändern funktioniert weiterhin wie gewohnt (übernimmt WindowChrome automatisch)
 - Technische Notiz: der Fenster-Style musste **explizit** referenziert werden (`Style="{StaticResource FensterChrome}"` in jedem Fenster) - die sonst übliche implizite Zuordnung (nur `TargetType`, ohne Key) hat das Template beim Testen nicht zuverlässig angewendet

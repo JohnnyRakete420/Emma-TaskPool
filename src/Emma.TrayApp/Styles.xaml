@@ -145,7 +145,9 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="8">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="8">
                         <ContentPresenter Margin="{TemplateBinding Padding}"
                                            HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
@@ -172,6 +174,10 @@
         <Setter Property="Padding" Value="12,6" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontWeight" Value="Normal" />
+        <!-- Sichtbarer Rand, damit sich der Button z.B. in einer Tabellenzeile klar vom
+             Hintergrund abhebt statt zu verschwimmen (v.a. im Dunklen Design aufgefallen). -->
+        <Setter Property="BorderBrush" Value="{StaticResource SoftGreenBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
     </Style>
 
     <!-- Textfelder -->
@@ -182,6 +188,11 @@
         <Setter Property="BorderBrush" Value="{StaticResource SoftGreenBrush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Background" Value="{StaticResource CardBrush}" />
+        <!-- Ohne diesen Setter erbt das Feld WPFs Standard-Textfarbe (dunkel) statt unserer
+             Palette - selbes Muster wie zuvor bei DataGridCell: im hellen Design nie aufgefallen,
+             im Dunklen Design praktisch unlesbar. -->
+        <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+        <Setter Property="CaretBrush" Value="{StaticResource TextPrimaryBrush}" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
